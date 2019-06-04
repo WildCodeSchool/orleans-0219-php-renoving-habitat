@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Nos bons plans</h1>
+            {% for good_deal in good_deal %}
+                <h2>{{ good_deal.title }}</h2>
+                <p>{{ good_deal.description }}</p>
+            {% endfor %}
+           <p>Appeller nous au 06 11 22 33 44 pour organiser un RDV avec l'un de nos conseillers.</p>
+        </div>
+    </div>
+
+{% endblock %}
