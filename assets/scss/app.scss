@@ -1,7 +1,5 @@
 @import "vars";
-@import "bootstrap";
-@import "homepage";
-@import "tooltipster.bundle";
+@import "~bootstrap/scss/bootstrap";
 
 body {
     background-color: $secondary-color;
