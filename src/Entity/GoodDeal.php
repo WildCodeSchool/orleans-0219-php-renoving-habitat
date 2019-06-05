@@ -54,5 +54,4 @@ class GoodDeal
 
         return $this;
     }
-
 }
