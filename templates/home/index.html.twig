@@ -1,4 +1,26 @@
 {% extends "base.html.twig" %}
 {% block body %}
-    <h1>homepage</h1>
+    <section id="beforeAfter">
+        <div class="section_title text-center light_gray">
+            <h2 class="p-0 m-0">Nos travaux</h2>
+        </div>
+        <div class="container-fluid pb-5 pt-5 light_gray">
+            <div class="beforeAfterContainer">
+                <div id="sliderContainer">
+                    <a type="button" class="nav_button_beforeAfter" id="prevImageButton"><i class="left arrow"></i></a>
+                    <div id="slider"></div>
+                    <a type="button" class="nav_button_beforeAfter" id="nextImageButton"><i class="right arrow"></i></a>
+                </div>
+            </div>
+
+            <div id="image_counter">
+                <div></div>
+            </div>
+        </div>
+        </div>
+    </section>
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('juxtapose') }}
+    {{ encore_entry_script_tags('beforeAfterSlider') }}
 {% endblock %}
