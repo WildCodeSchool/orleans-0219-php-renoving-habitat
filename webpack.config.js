@@ -18,10 +18,6 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    .addEntry('jquery', './assets/js/jquery.js')
-    .addEntry('bootstrap', './assets/js/bootstrap.bundle.js')
-    .addEntry('mapster', './assets/js/mapster.js')
-    .addEntry('tooltipster', './assets/js/tooltipster.bundle.js')
     .addEntry('mapedImage', './assets/js/mapedImage.js')
     //.addEntry('page2', './assets/js/page2.js')
 

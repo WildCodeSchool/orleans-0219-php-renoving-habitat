@@ -1,4 +1,3 @@
-
 const resizeTime = 100;     // total duration of the resize effect, 0 is instant
 const resizeDelay = 10;    // time to wait before checking the window size again
                           // the shorter the time, the more reactive it will be.
