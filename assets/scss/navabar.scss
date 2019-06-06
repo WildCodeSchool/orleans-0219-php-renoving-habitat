@@ -1,0 +1,89 @@
+@import "vars";
+@import "app";
+@import "~bootstrap/scss/bootstrap";
+
+.navbar {
+  background-color: $primary-color;
+  padding-bottom: 0;
+  padding-top: 0;
+  font-size: 1em;
+  box-shadow: 0 5px 5px #888888;
+
+  li {
+
+    a {
+      color: #555;
+    }
+
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 1.563em;
+
+    height: 100%;
+    width: 15em;
+
+    cursor: pointer;
+    user-select: none;
+
+    background: #EEE;
+
+    text-align: center;
+    line-height: 1.5em;
+  }
+  li::before {
+    content: '';
+    position: absolute;
+    display: block;
+
+    right: -1.5em;
+
+    width: 0;
+    height: 0;
+
+    border-top: 2.5em solid transparent;
+    border-left: 1.563em solid #EEE;
+  }
+  li::after {
+    content: '';
+    position: absolute;
+    display: block;
+
+    top: 0;
+    left: -1.5em;
+
+    width: 0;
+    height: 0;
+
+    border-top: 2.5em solid #EEE;
+    border-left: 1.563em solid transparent;
+  }
+
+  /* Hover */
+
+  li:hover {
+    background: $brand-color;
+    a{
+      color: $primary-color;
+    }
+  }
+  li:hover::after {
+    border-top: 2.5em solid $brand-color;
+    border-right: 1.563em solid transparent;
+  }
+  li:hover::before {
+    border-top: 2.5em solid transparent;
+    border-left: 1.563em solid $brand-color;
+  }
+
+  .dropdown-menu {
+    width: 16.5em;
+    .dropdown-item {
+      color: #4e555b;
+    }
+    :hover {
+      color: $primary-color;
+      background-color: $brand-color;
+    }
+  }
+}
