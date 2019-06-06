@@ -9,6 +9,7 @@
 const $ = require('jquery');
 require('../scss/app.scss');
 require('bootstrap');
+require('leaflet');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 
 

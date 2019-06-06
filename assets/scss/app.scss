@@ -1,5 +1,7 @@
 @import "vars";
+@import "home_map";
 @import "~bootstrap/scss/bootstrap";
+@import "~leaflet/dist/leaflet.css";
 
 body {
     background-color: $secondary-color;
