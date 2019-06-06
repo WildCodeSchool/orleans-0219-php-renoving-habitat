@@ -19,4 +19,3 @@ class GoodDealRepository extends ServiceEntityRepository
         parent::__construct($registry, GoodDeal::class);
     }
 }
-
