@@ -1,4 +1,3 @@
-
 #maped_house_container{
 	width: 100%;
 	display: flex;
@@ -17,9 +16,10 @@
 }
 
 #slider{
-  width: 800px;
+  width: 800px !important;
   margin: 0 auto;
 }
+
 
 #sliderContainer {
   width: 50%;
@@ -69,5 +69,11 @@
 
 .light_gray{
   background-color: #c9c9c9;
+}
+
+.beforeAfterCounter > div{
+  border: 1px solid #4CAF50;
+  background-color: white;
+  border-radius: 5px;
 }
 
