@@ -57,9 +57,18 @@
   padding: 15px;
 }
 
+.arrow:hover {
+  border-width: 0 20px 20px 0;
+}
+
 .right {
   transform: rotate(-45deg);
   margin-left: 50px;
+}
+
+.right:hover {
+  transform: rotate(-45deg);
+  margin-left: 45px;
 }
 
 .left {
@@ -67,13 +76,18 @@
   margin-right: 50px;
 }
 
+.left:hover {
+  margin-right: 45px;
+}
+
 .light_gray{
   background-color: #c9c9c9;
 }
 
 .beforeAfterCounter > div{
-  border: 1px solid #4CAF50;
+
   background-color: white;
   border-radius: 5px;
+  box-shadow: 0 0 2px 1px #000;
 }
 
