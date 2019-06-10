@@ -1,0 +1,73 @@
+
+#maped_house_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.maped_house_image{
+  display: block;
+  max-width: 700px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+#img-tooltip {
+  position: absolute;
+}
+
+#slider{
+  width: 800px;
+  margin: 0 auto;
+}
+
+#sliderContainer {
+  width: 50%;
+  height: auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_button_beforeAfter{
+  max-height: 50px;
+}
+
+.beforeAfterContainer{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image_counter{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jx-knightlab{
+  visibility: hidden;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+  padding: 15px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  margin-left: 50px;
+}
+
+.left {
+  transform: rotate(135deg);
+  margin-right: 50px;
+}
+
+.light_gray{
+  background-color: #c9c9c9;
+}
+

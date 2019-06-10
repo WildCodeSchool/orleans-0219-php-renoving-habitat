@@ -9,6 +9,8 @@
 const $ = require('jquery');
 require('../scss/app.scss');
 require('bootstrap');
+require('tooltipster')
+require('jquery-imagemapster')
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 
 

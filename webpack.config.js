@@ -19,6 +19,11 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('mapedImage', './assets/js/mapedImage.js')
+    .addEntry('tooltipster', './assets/js/tooltipster.bundle.js')
+    .addEntry('maph', './assets/js/maph.js')
+    .addEntry('maphigh', './assets/js/maphigh.js')
+    .addEntry('mapster', './assets/js/mapster.js')
+    .addEntry('mapresizer', './assets/js/mapResizer2.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
@@ -58,7 +63,7 @@ Encore
     //.enableIntegrityHashes()
 
     // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
+    .autoProvidejQuery()
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
