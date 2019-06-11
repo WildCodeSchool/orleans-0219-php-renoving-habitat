@@ -10,7 +10,7 @@
   box-shadow: 0 1px 10px $secondary-color;
 
   .navbar-light {
-    color: $darkerSecondary-color;
+    color: $darker-secondary-color;
     :hover {
       color: $primary-color;
     }
@@ -19,7 +19,7 @@
   li {
 
     a {
-      color: $darkerSecondary-color;
+      color: $darker-secondary-color;
     }
 
     position: relative;
@@ -85,7 +85,7 @@
   .dropdown-menu {
     width: 16.5em;
     .dropdown-item {
-      color: $darkerSecondary-color;
+      color: $darker-secondary-color;
     }
     :hover {
       color: $primary-color;
