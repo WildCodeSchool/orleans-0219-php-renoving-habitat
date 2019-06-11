@@ -7,10 +7,10 @@
   padding-bottom: 0;
   padding-top: 0;
   font-size: 1em;
-  box-shadow: 0 1px 10px #888888;
+  box-shadow: 0 1px 10px $secondary-color;
 
   .navbar-light {
-    color: #4e555b;
+    color: $darkerSecondary-color;
     :hover {
       color: $primary-color;
     }
@@ -19,7 +19,7 @@
   li {
 
     a {
-      color: #555;
+      color: $darkerSecondary-color;
     }
 
     position: relative;
@@ -33,7 +33,7 @@
     cursor: pointer;
     user-select: none;
 
-    background: #EEE;
+    background: $secondary-color;
 
     text-align: center;
     line-height: 1.5em;
@@ -49,7 +49,7 @@
     height: 0;
 
     border-top: 2.5em solid transparent;
-    border-left: 1.563em solid #EEE;
+    border-left: 1.563em solid $secondary-color;
   }
   li::after {
     content: '';
@@ -62,7 +62,7 @@
     width: 0;
     height: 0;
 
-    border-top: 2.5em solid #EEE;
+    border-top: 2.5em solid $secondary-color;
     border-left: 1.563em solid transparent;
   }
 
@@ -85,7 +85,7 @@
   .dropdown-menu {
     width: 16.5em;
     .dropdown-item {
-      color: #4e555b;
+      color: $darkerSecondary-color;
     }
     :hover {
       color: $primary-color;
@@ -99,7 +99,7 @@
     padding: 0;
 
     :hover {
-      background-color: white;
+      background-color: $primary-color;
     }
 
     span {
