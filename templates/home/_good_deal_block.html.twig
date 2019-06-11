@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+            <h2>Nos bons plans</h2>
+        </div>
+        <div class="card-body">
+            {% for good_deal in good_deals %}
+                <h3 class="card-title">{{ good_deal.title }}</h3>
+                <p class="card-text">{{ good_deal.description }}</p>
+            {% endfor %}
+            <p>Appeller nous au 06 11 22 33 44 pour organiser un RDV avec l'un de nos conseillers.</p>
+        </div>
+    </div>
+</div>
