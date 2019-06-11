@@ -18,11 +18,9 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    .addEntry('mapedImage', './assets/js/mapedImage.js')
     .addEntry('tooltipster', './assets/js/tooltipster.bundle.js')
     .addEntry('maph', './assets/js/maph.js')
-    .addEntry('maphigh', './assets/js/maphigh.js')
-    .addEntry('mapster', './assets/js/mapster.js')
+    .addEntry('mappedImage', './assets/js/mappedImage.js')
     .addEntry('mapresizer', './assets/js/mapResizer2.js')
     //.addEntry('page2', './assets/js/page2.js')
 
