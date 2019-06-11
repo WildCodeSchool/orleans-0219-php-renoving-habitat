@@ -1,6 +1,18 @@
 {% extends "base.html.twig" %}
 {% block body %}
-
+    <h1>homepage</h1>
+    <div class="container-fluid"
+    <div class="row">
+        <div class="col-6">
+            <h2>Nos bons plans</h2>
+            {% for good_deal in good_deals %}
+                <h3>{{ good_deal.title }}</h3>
+                <p>{{ good_deal.description }}</p>
+            {% endfor %}
+            <p>Appeller nous au 06 11 22 33 44 pour organiser un RDV avec l'un de nos conseillers.</p>
+        </div>
+    </div>
+    </div>
 {% endblock %}
 {% block footer %}
     {% include 'footer/index.html.twig' %}
