@@ -1,3 +1,6 @@
 .jumbotron {
   background-image: url("/assets/entreprise_images/team.jpg");
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
