@@ -1,6 +1,5 @@
 {% extends "base.html.twig" %}
 {% block body %}
-    <h1>homepage</h1>
     <div class="container-fluid"
     <div class="row">
         <div class="col-6">
@@ -13,7 +12,11 @@
         </div>
     </div>
     </div>
-{% endblock %}
+    <section>
+        {% include 'home/_good_deal_block.html.twig' %}
+    </section>
+{% endblock body %}
 {% block footer %}
     {% include 'footer/index.html.twig' %}
 {% endblock %}
+
