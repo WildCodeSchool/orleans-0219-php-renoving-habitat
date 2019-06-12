@@ -1,5 +1,25 @@
 {% extends "base.html.twig" %}
 {% block body %}
+    <section id="beforeAfter">
+        <div class="section_title text-center light_gray">
+            <h2 class="p-0 m-0">Nos travaux</h2>
+        </div>
+        <div class="container-fluid pb-5 pt-5 light_gray">
+            <div class="beforeAfterContainer">
+                <div id="sliderContainer">
+                    <a type="button" class="nav_button_beforeAfter" id="prevImageButton"><i class="left arrow"></i></a>
+                    <div id="slider"></div>
+                    <a type="button" class="nav_button_beforeAfter" id="nextImageButton"><i class="right arrow"></i></a>
+                </div>
+            </div>
+
+            <div id="image_counter" class="beforeAfterCounter mt-3">
+                <div class="px-2 py-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid">
 
     {% include'map/index.html.twig' %}
 
@@ -21,6 +41,10 @@
 {% endblock body %}
 {% block footer %}
     {% include 'footer/index.html.twig' %}
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('juxtapose') }}
+    {{ encore_entry_script_tags('beforeAfterSlider') }}
 {% endblock %}
 
 
