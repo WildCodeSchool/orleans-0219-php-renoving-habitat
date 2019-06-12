@@ -19,6 +19,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\HttpFoundation\Request;
 
+
 class MonProjetController extends AbstractController
 {
 
@@ -52,32 +53,31 @@ class MonProjetController extends AbstractController
             // $entityManager = $this->getDoctrine()->getManager();
             // $entityManager->persist($task);
             // $entityManager->flush();
-            $selectedForms = [];
-            foreach ($task as $key => $val) {
-                $subFormClass = new FormCouverture();
-                if ($key === 'Couverture' && $val === true) {
-                    $subForm = $this->createFormBuilder($subFormClass)
-                        ->add('TuileCassee', CheckboxType::class, ['label' => 'TuileCassee', 'required' => ''])
-                        ->add('FuiteDeau', CheckboxType::class, ['label' => 'FuiteDeau', 'required' => ''])
-                        ->add('MousseLichenEct', CheckboxType::class, ['label' => 'Mousse, lichen, algue ou champignon ?', 'required' => ''])
-                        ->add('DernierTraitement', CheckboxType::class, ['label' => 'Ravalement', 'required' => ''])
-                        ->getForm();
-
-                    $subForm->handleRequest($request);
-                    $selectedForms[] = $subForm;
-                }
-            }
-
             var_dump($task);
-            if(count($selectedForms)>0){
-            return $this->render('monProjet/index.html.twig', [
-                'form' => $selectedForms[0]->createView(),
-            ]);
-            }
         }
 
         return $this->render('monProjet/index.html.twig', [
             'form' => $form->createView(),
         ]);
     }
+
+    /**
+     * @Route("/projetForm", name="projet2")
+     */
+
+    public function create(Request $request)
+    {
+        $mainWork = new MainWorkCategories();
+        $form = $this->createForm(MainWorkCategories::class, $mainWork);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            // ... save the meetup, redirect etc.
+        }
+
+        return $this->render(
+            'monProjet/index.html.twig',
+            ['form' => $form->createView()]
+        );
+    }
+
 }
