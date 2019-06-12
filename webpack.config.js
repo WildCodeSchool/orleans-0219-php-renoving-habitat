@@ -18,10 +18,10 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    .addEntry('tooltipster', './assets/js/tooltipster.bundle.js')
-    .addEntry('maph', './assets/js/maph.js')
+    .addEntry('tooltipster', './node_modules/tooltipster/dist/js/tooltipster.bundle.js')
+    .addEntry('maph', './node_modules/maphilight/jquery.maphilight.js')
     .addEntry('mappedImage', './assets/js/mappedImage.js')
-    .addEntry('mapresizer', './assets/js/mapResizer2.js')
+    .addEntry('mapresizer', './assets/js/mapResizer.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
