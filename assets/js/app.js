@@ -10,6 +10,7 @@ const $ = require('jquery');
 require('../scss/app.scss');
 require('bootstrap');
 require('leaflet');
+require('arcgispack');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 
 

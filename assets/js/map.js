@@ -1,5 +1,6 @@
 require('leaflet');
 
+
 var cities = [
     ["Orleans",47.901402, 1.903920],
     ["Fleury-les-aubrais",47.930916,1.920888],
@@ -89,16 +90,24 @@ var cities = [
 
 
 var map = L.map('mapid').setView([47.901402, 1.903920], 9);
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution:'&copy;<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>',
-        maxZoom: 18,
-    }).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 30,
+}).addTo(map);
+
+var homeIcon = L.icon({
+    iconUrl: './assets/homepage_image/leaf-home.png',
+    iconSize:     [25, 35], // size of the icon
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 
 for (var i = 0; i < cities.length; i++) {
-    marker = new L.marker([cities[i][1],cities[i][2]])
+    marker = new L.marker([cities[i][1],cities[i][2]], {icon: homeIcon})
         .bindPopup(cities[i][0])
         .addTo(map);
 }
-
 
 
