@@ -18,7 +18,7 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    .addEntry('juxtapose', './assets/js/juxtapose.js')
+    .addEntry('juxtapose', './node_modules/juxtaposejs/build/js/juxtapose.js')
     .addEntry('beforeAfterSlider', './assets/js/beforeAfterSlider.js')
     //.addEntry('page2', './assets/js/page2.js')
 

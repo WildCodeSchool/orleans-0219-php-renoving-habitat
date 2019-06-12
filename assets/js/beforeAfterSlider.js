@@ -25,24 +25,18 @@ function switchImage(direction){
     if(direction === 'next'){
         if(photoArrayIndex === beforeArray.length - 1){
             photoArrayIndex = 0;
-            removeElem();
-            refreshSlider();
         }else{
-            photoArrayIndex++
-            removeElem();
-            refreshSlider();
+            photoArrayIndex++;
         }
     }else{
         if(photoArrayIndex === 0){
             photoArrayIndex = beforeArray.length - 1;
-            removeElem();
-            refreshSlider();
         }else{
-            photoArrayIndex--
-            removeElem();
-            refreshSlider();
+            photoArrayIndex--;
         }
     }
+    removeElem();
+    refreshSlider();
 }
 
 function removeElem(){
