@@ -22,6 +22,7 @@ Encore
     .addEntry('maph', './node_modules/maphilight/jquery.maphilight.js')
     .addEntry('mappedImage', './assets/js/mappedImage.js')
     .addEntry('mapresizer', './assets/js/mapResizer.js')
+    .addEntry('map', './assets/js/map.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
