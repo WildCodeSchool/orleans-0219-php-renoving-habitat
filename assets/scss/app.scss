@@ -1,6 +1,9 @@
 @import "vars";
+@import "home_map";
 @import "footer";
 @import "~bootstrap/scss/bootstrap";
+@import "~leaflet/dist/leaflet.css";
+
 
 body {
     background-color: $primary-color;
