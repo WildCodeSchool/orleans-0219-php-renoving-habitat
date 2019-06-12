@@ -2,7 +2,7 @@
 @import "footer";
 @import "~bootstrap/scss/bootstrap";
 @import "homepage.scss";
-@import "juxtapose.scss";
+@import "~juxtaposejs/build/css/juxtapose";
 
 body {
     background-color: $primary-color;
