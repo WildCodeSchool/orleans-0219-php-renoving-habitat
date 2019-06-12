@@ -8,6 +8,7 @@
 // any CSS you require will output into a single css file (app.css in this case)
 const $ = require('jquery');
 require('../scss/app.scss');
+require('../scss/navabar.scss');
 require('bootstrap');
 require('leaflet');
 require('arcgispack');

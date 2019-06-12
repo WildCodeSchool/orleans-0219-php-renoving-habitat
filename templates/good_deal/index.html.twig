@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block title %}Administration des bons plans{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-center">
+                <h3>Bon plan actuel</h3>
+                <div class="card-body">
+                    {% for good_deal in good_deals %}
+                    <h4 class="card-title">{{ good_deal.title }}</h4>
+                    <p class="card-text">{{ good_deal.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card text-center">
+                <h3>Modifier le bon plan</h3>
+                <div class="card-body">
+                    {{ include('good_deal/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
