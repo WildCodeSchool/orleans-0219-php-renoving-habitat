@@ -1,21 +1,26 @@
 
 #maped_house_container{
-  width: 100%;
-  display: flex;
-  justify-content: center;
+	width: 100%;
+	display: flex;
+  	justify-content: center;
 }
 
 .maped_house_image{
-  display: block;
-  max-width: 700px;
-  max-height: 500px;
-  margin: 0 auto;
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+#img-tooltip {
+  	position: absolute;
 }
 
 #slider{
-  width: 800px;
+  width: 800px !important;
   margin: 0 auto;
 }
+
 
 #sliderContainer {
   width: 50%;
@@ -53,9 +58,18 @@
   padding: 15px;
 }
 
+.arrow:hover {
+  border-width: 0 20px 20px 0;
+}
+
 .right {
   transform: rotate(-45deg);
   margin-left: 50px;
+}
+
+.right:hover {
+  transform: rotate(-45deg);
+  margin-left: 45px;
 }
 
 .left {
@@ -63,7 +77,18 @@
   margin-right: 50px;
 }
 
+.left:hover {
+  margin-right: 45px;
+}
+
 .light_gray{
   background-color: #c9c9c9;
+}
+
+.beforeAfterCounter > div{
+
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px #000;
 }
 
