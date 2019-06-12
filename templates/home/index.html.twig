@@ -1,14 +1,7 @@
-{% extends "base.html.twig" %}
+{% extends 'layout_visitor.html.twig' %}
 
-{% block header %}
-    {% include 'navbar.html.twig' %}
-{% endblock header %}
 {% block body %}
     <section>
         {% include 'home/_good_deal_block.html.twig' %}
     </section>
 {% endblock body %}
-{% block footer %}
-    {% include 'footer/index.html.twig' %}
-{% endblock %}
-
