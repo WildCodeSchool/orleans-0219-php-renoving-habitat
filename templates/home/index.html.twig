@@ -1,5 +1,7 @@
-{% extends "base.html.twig" %}
+{% extends 'layout_visitor.html.twig' %}
+
 {% block body %}
+
     <section id="beforeAfter">
         <div class="section_title text-center light_gray">
             <h2 class="p-0 m-0">Nos travaux</h2>
@@ -19,26 +21,15 @@
         </div>
     </section>
 
-    <div class="container-fluid">
-
+<section> 
     {% include'map/index.html.twig' %}
+</section>
 
-    <div class="container-fluid"
-    <div class="row">
-        <div class="col-6">
-            <h2>Nos bons plans</h2>
-            {% for good_deal in good_deals %}
-                <h3>{{ good_deal.title }}</h3>
-                <p>{{ good_deal.description }}</p>
-            {% endfor %}
-            <p>Appeller nous au 06 11 22 33 44 pour organiser un RDV avec l'un de nos conseillers.</p>
-        </div>
-    </div>
-    </div>
     <section>
         {% include 'home/_good_deal_block.html.twig' %}
     </section>
 {% endblock body %}
+
 {% block footer %}
     {% include 'footer/index.html.twig' %}
 {% endblock %}
@@ -46,5 +37,6 @@
     {{ encore_entry_script_tags('juxtapose') }}
     {{ encore_entry_script_tags('beforeAfterSlider') }}
 {% endblock %}
+
 
 
