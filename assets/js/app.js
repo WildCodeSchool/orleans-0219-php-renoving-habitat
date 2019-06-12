@@ -9,7 +9,6 @@
 const $ = require('jquery');
 require('../scss/app.scss');
 require('bootstrap');
-import tippy from 'tippy.js'
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 
 
