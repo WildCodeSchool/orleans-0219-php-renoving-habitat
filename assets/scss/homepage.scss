@@ -5,10 +5,16 @@
 }
 
 .maped_house_image {
-    display: block;
+  display: block;
   max-width: 700px;
   max-height: 500px;
-    margin: 0 auto;
+  margin: 0 auto;
+}
+.maped_house_image{
+    margin-top: 5em;
+    display: block;
+    max-width: 700px;
+    max-height: 500px;
 }
 
 #img-tooltip {
@@ -16,8 +22,8 @@
 }
 
 #slider {
-  width: 800px !important;
-  margin: 0 auto;
+    width: 800px !important;
+    margin: 0 auto;
 }
 
 
@@ -81,13 +87,19 @@
 }
 
 .light_gray{
-  background-color: #c9c9c9;
+  background-color: $secondary-color;
 }
 
-.beforeAfterCounter > div {
+
+.gooddeal {
+  background-color: $brand-color;
+}
+
+/*.beforeAfterCounter > div{
+
 
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 2px 1px #000;
-}
+}*/
 
