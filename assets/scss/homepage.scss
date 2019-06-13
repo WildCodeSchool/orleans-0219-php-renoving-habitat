@@ -1,14 +1,13 @@
-
-#maped_house_container{
+#maped_house_container {
 	width: 100%;
 	display: flex;
   	justify-content: center;
 }
 
-.maped_house_image{
+.maped_house_image {
     display: block;
-    width: 60%;
-    height: 60%;
+  max-width: 700px;
+  max-height: 500px;
     margin: 0 auto;
 }
 
@@ -16,7 +15,7 @@
   	position: absolute;
 }
 
-#slider{
+#slider {
   width: 800px !important;
   margin: 0 auto;
 }
@@ -30,11 +29,11 @@
   justify-content: center;
 }
 
-.nav_button_beforeAfter{
+.nav_button_beforeAfter {
   max-height: 50px;
 }
 
-.beforeAfterContainer{
+.beforeAfterContainer {
   width: 100%;
   display:flex;
   align-items: center;
@@ -47,7 +46,7 @@
   justify-content: center;
 }
 
-.jx-knightlab{
+.jx-knightlab {
   visibility: hidden;
 }
 
@@ -85,7 +84,7 @@
   background-color: #c9c9c9;
 }
 
-.beforeAfterCounter > div{
+.beforeAfterCounter > div {
 
   background-color: white;
   border-radius: 5px;

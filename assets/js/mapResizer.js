@@ -8,6 +8,7 @@
 * http://mattstow.com
 * Licensed under the MIT license
 */
+$(document).ready(()=>{
 ;(function($) {
 	$.fn.rwdImageMaps = function() {
 		var $img = this;
@@ -65,3 +66,4 @@
 		return this;
 	};
 })(jQuery);
+})

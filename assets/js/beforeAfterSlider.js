@@ -58,11 +58,11 @@ function refreshSlider(){
         ],
 
         {
-            animate: false,
+            animate: true,
             showLabels: true,
             showCredits: false,
             startingPosition: "50%",
-            makeResponsive: false
+            makeResponsive: true
         });
 
     document.querySelector('#image_counter > div').innerHTML = (photoArrayIndex+1) + '/' + beforeArray.length;
