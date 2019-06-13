@@ -1,5 +1,4 @@
 {% extends 'base.html.twig' %}
-
 {% block body %}
     <h1>mon projet</h1>
     <div class="container">
@@ -43,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div id="form_container"><div id="formCouverture">lol</div></div>
+        <div id="form_container">{% include 'monProjet/forms/formCouverture.html.twig' %}</div>
     </div>
 
 {% endblock %}

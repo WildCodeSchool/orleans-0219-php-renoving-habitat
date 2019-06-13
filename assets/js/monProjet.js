@@ -17,9 +17,7 @@ $(document).ready(() => {
 
     elementsArray.forEach(function(elem, index) {
         elem.addEventListener("change", function() {
-
-                controlForm(elem, index)
-
+            controlForm(elem, index)
             console.log('elem ' + index + ' checked')
         });
     });
