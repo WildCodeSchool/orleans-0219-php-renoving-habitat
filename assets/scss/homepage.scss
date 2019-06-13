@@ -4,17 +4,11 @@
   	justify-content: center;
 }
 
-.maped_house_image {
-  display: block;
-  max-width: 700px;
-  max-height: 500px;
-  margin: 0 auto;
-}
+
 .maped_house_image{
     margin-top: 5em;
     display: block;
-    max-width: 700px;
-    max-height: 500px;
+    width: 80%;
 }
 
 #img-tooltip {
@@ -86,18 +80,28 @@
   margin-right: 45px;
 }
 
-.light_gray{
+.light_gray {
   background-color: $secondary-color;
 }
-
 
 .gooddeal {
   background-color: $brand-color;
 }
 
+.green_container {
+  background-color: #d9eec4;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gooddeal_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
 /*.beforeAfterCounter > div{
-
-
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 2px 1px #000;
