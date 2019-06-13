@@ -1,15 +1,13 @@
 let beforeArray =
     [
-        'https://juxtapose.knightlab.com/static/img/Sochi_11April2005.jpg',
-        'https://images.unsplash.com/photo-1528920304568-7aa06b3dda8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-        'https://images-na.ssl-images-amazon.com/images/I/61mJ3oVegKL._SY550_.jpg',
+        'https://image.noelshack.com/fichiers/2019/23/5/1559898020-image1.png',
+        'https://image.noelshack.com/fichiers/2019/23/5/1559899276-image3.png',
     ];
 
 let afterArray =
     [
-        'https://juxtapose.knightlab.com/static/img/Sochi_22Nov2013.jpg',
-        'https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?cs=srgb&dl=clouds-cloudy-conifers-247478.jpg&fm=jpg',
-        'https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-slaurentii_terracotta_4_800x.jpg?v=1537308389',
+        'https://image.noelshack.com/fichiers/2019/23/5/1559898320-image2.png',
+        'https://image.noelshack.com/fichiers/2019/23/5/1559899282-image4.jpeg',
     ];
 
 let photoArrayIndex = 0;
