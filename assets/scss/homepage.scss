@@ -82,13 +82,15 @@
 }
 
 .light_gray{
-  background-color: #c9c9c9;
+  background-color: $secondary-color;
 }
 
-.beforeAfterCounter > div{
+
+
+/*.beforeAfterCounter > div{
 
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 2px 1px #000;
-}
+}*/
 
