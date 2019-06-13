@@ -18,8 +18,8 @@
         "bootstrap": "^4.3.1",
         "core-js": "^3.0.0",
         "jquery": "^3.4.1",
-        "jquery-imagemapster": "^1.2.10",
-        "jquery-tooltipster": "^3.3.0",
+        "maphilight": "^1.4.0",
+        "tooltipster": "^4.2.6"
         "juxtaposejs": "^1.1.6",
         "leaflet": "^1.5.1",
         "node-sass": "^4.12.0",
