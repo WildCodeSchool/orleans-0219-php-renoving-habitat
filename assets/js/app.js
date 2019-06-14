@@ -8,7 +8,7 @@
 // any CSS you require will output into a single css file (app.css in this case)
 const $ = require('jquery');
 require('../scss/app.scss');
-require('../scss/navabar.scss');
+require('../scss/navbar.scss');
 require('../scss/footer.scss');
 require('bootstrap');
 require('leaflet');
