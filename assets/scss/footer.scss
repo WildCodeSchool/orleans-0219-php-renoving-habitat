@@ -1,0 +1,78 @@
+@import "vars";
+@import "app";
+@import "~bootstrap/scss/bootstrap";
+
+footer {
+
+  width: 100%;
+  margin-top: 3em;
+  background: rgb(76,147,78);
+  background: linear-gradient(0deg, $footer_color1 0%, $footer_color2 100%);
+
+  ul {
+    list-style-type: none;
+  }
+
+  .footer_left_list,
+  .footer_right_list {
+    display: block;
+    margin-left: 10%;
+  }
+
+  .footer_left_list {
+    text-align: left;
+  }
+  .footer_right_list {
+    text-align: right;
+    padding-right: 4em;
+  }
+
+  .renovlogo {
+    width: 90%;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a {
+    font-size: 1em;
+
+    color: $dark-color;
+    transition: color 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: $darker-secondary-color;
+    text-decoration: underline;
+    //text-shadow: 2px 2px 2px $primary-color;
+    transition: color 0.2s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .footer_right_list,
+    .footer_left_list {
+      text-align: center;
+    }
+    .footer_right_list{
+      padding-right: 0;
+    }
+    a {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .first {
+      order: 1;
+    }
+    .second {
+      order: 3;
+    }
+    .third {
+      order: 2;
+    }
+  }
+}
