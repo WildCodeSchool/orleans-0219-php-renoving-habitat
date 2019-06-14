@@ -1,3 +1,4 @@
+
 #maped_house_container {
 	width: 100%;
 	display: flex;
@@ -92,10 +93,19 @@
   background-color: #d9eec4;
   width: 80%;
   margin: 0 auto;
+  border-bottom-left-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
 }
 
 .gooddeal_container {
   width: 80%;
+  margin: 0 auto;
+}
+
+.h2_box {
+  width: 400px;
+  background-color: #009933;
+  border-radius: 30px;
   margin: 0 auto;
 }
 

@@ -1,13 +1,13 @@
 let beforeArray =
     [
-        'https://image.noelshack.com/fichiers/2019/23/5/1559898020-image1.png',
-        'https://image.noelshack.com/fichiers/2019/23/5/1559899276-image3.png',
+        '/assets/homepage_image/imgbf1_1.jpeg',
+        '/assets/homepage_image/imgbf2_1.png',
     ];
 
 let afterArray =
     [
-        'https://image.noelshack.com/fichiers/2019/23/5/1559898320-image2.png',
-        'https://image.noelshack.com/fichiers/2019/23/5/1559899282-image4.jpeg',
+        '/assets/homepage_image/imgbf1_2.jpeg',
+        '/assets/homepage_image/imgbf2_2.jpeg',
     ];
 
 let photoArrayIndex = 0;
