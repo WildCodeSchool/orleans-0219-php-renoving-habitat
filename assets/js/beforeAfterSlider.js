@@ -63,7 +63,6 @@ function refreshSlider(){
             makeResponsive: true
         });
 
-    // document.querySelector('#image_counter > div').innerHTML = (photoArrayIndex+1) + '/' + beforeArray.length;
 }
 
 refreshSlider();
