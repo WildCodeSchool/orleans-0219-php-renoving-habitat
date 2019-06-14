@@ -1,13 +1,74 @@
 {% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
 
 {% block title %}Recruitment{% endblock %}
 
 {% block body %}
-    <h1>Recrutement</h1>
-<div>
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    {{ form_end(form) }}
-</div>
+
+    <div class="text-center">
+        <h2>Recrutement</h2>
+    </div>
+
+    {% for message in app.flashes('success-message') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    <div class="container-fluid">
+        <div class="form-group">
+        {{ form_start(form) }}
+        <div class="row">
+            <div class="col-5">
+            {{ form_row(form.lastname, {'label': 'Nom'}) }}
+            </div>
+            <div class="col-5">
+                {{ form_row(form.firstname, {'label': 'Prénom'}) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                {{ form_row(form.telephone, {'label': 'Téléphone'}) }}
+            </div>
+            <div class="col-5">
+                {{ form_row(form.email, {'label': 'Email'}) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                {{ form_row(form.streetNumber, {'label': 'Adresse'}) }}
+            </div>
+            <div class="col-5">
+                {{ form_row(form.streetName, {'label': '.'}) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                {{ form_row(form.city, {'label': 'Ville'}) }}
+            </div>
+            <div class="col-5">
+                {{ form_row(form.postCode, {'label': 'Code postal'}) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                {{ form_row(form.occupation, {'label': 'Sélectionnez votre métier'}) }}
+            </div>
+            <div class="col-5">
+                {{ form_row(form.area, {'label': 'Sélectionnez votre disponibilité géographique'}) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                {{ form_row(form.cv, {'label': 'Joindre votre CV'}) }}
+            </div>
+            <div class="col-5">
+                {{ form_row(form.message, {'label': 'Votre message'}) }}
+            </div>
+        </div>
+        <button class="btn btn-primary btn-admin">Envoyer</button>
+        {{ form_end(form) }}
+        </div>
+    </div>
 
 {% endblock %}
