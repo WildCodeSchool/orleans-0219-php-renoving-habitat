@@ -1,84 +1,49 @@
-<form id="formCouverture" class="form-horizontal form_projet">
-    <fieldset>
 
-        <!-- Form Name -->
-        <legend>Couverture</legend>
 
-        <!-- Multiple Radios -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="radios1">Tuiles cassées ?</label>
-            <div class="col-md-4">
-                <div class="radio">
-                    <label for="radios1-0">
-                        <input type="radio" name="radios1" id="radios1-0" value="true" checked="checked">
-                        Oui
-                    </label>
-                </div>
-                <div class="radio">
-                    <label for="radios1-1">
-                        <input type="radio" name="radios1" id="radios1-1" value="false">
-                        Non
-                    </label>
-                </div>
+
+
+        <div class="col-md-6 form_projet" id="formCouverture">
+            <form>
+            <div class="card" style="margin:50px 0">
+                <!-- Default panel contents -->
+                <div class="card-header">Couverture</div>
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">
+                        Tuiles cassées ?
+                        <label class="switch ">
+                            <input type="checkbox" class="primary">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+
+                    <li class="list-group-item">
+                        Fuite d'eau ?
+                        <label class="switch">
+                            <input type="checkbox" class="primary">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+
+                    <li class="list-group-item">
+                        Dernier traitement ?
+                        <div class="radio_container float-right">
+                        <div class="form-check mt-1">
+                            <label>
+                                <input type="radio" name="radio" checked> <span class="label-text">+ de 5 ans</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label>
+                                <input type="radio" name="radio"> <span class="label-text">- de 5 ans</span>
+                            </label>
+                        </div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
+            </form>
         </div>
 
-        <!-- Multiple Radios -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="radios2">Fuite d'eau ?</label>
-            <div class="col-md-4">
-                <div class="radio">
-                    <label for="radios2-0">
-                        <input type="radio" name="radios2" id="radios2-0" value="true" checked="checked">
-                        Oui
-                    </label>
-                </div>
-                <div class="radio">
-                    <label for="radios2-1">
-                        <input type="radio" name="radios2" id="radios2-1" value="false">
-                        Non
-                    </label>
-                </div>
-            </div>
-        </div>
-
-        <!-- Multiple Radios -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="radios3">Présence de mousse, de lichen, d'algues ou de champignons ?</label>
-            <div class="col-md-4">
-                <div class="radio">
-                    <label for="radios3-0">
-                        <input type="radio" name="radios3" id="radios3-0" value="true" checked="checked">
-                        Oui
-                    </label>
-                </div>
-                <div class="radio">
-                    <label for="radios3-1">
-                        <input type="radio" name="radios3" id="radios3-1" value="false">
-                        Non
-                    </label>
-                </div>
-            </div>
-        </div>
-
-        <!-- Multiple Radios -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="radios4">Dernier traitement ?</label>
-            <div class="col-md-4">
-                <div class="radio">
-                    <label for="radios4-0">
-                        <input type="radio" name="radios4" id="radios4-0" value="true" checked="checked">
-                        Oui
-                    </label>
-                </div>
-                <div class="radio">
-                    <label for="radios4-1">
-                        <input type="radio" name="radios4" id="radios4-1" value="false">
-                        Non
-                    </label>
-                </div>
-            </div>
-        </div>
-
-    </fieldset>
-</form>
