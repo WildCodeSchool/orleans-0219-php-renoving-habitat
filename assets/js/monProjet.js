@@ -13,6 +13,8 @@ $(document).ready(() => {
         document.querySelector('#formRavalement'),
         document.querySelector('#formChauffage'),
         document.querySelector('#formTerrassement'),
+        document.querySelector('#formTravauxInterieur'),
+        document.querySelector('#formSalleDeBain'),
     ]
 
 

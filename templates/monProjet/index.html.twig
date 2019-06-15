@@ -49,8 +49,36 @@
             {% include 'monProjet/forms/formRavalement.html.twig' %}
             {% include 'monProjet/forms/formChauffage.html.twig' %}
             {% include 'monProjet/forms/formTerrassement.html.twig' %}
+            {% include 'monProjet/forms/formTravauxInterieur.html.twig' %}
+            {% include 'monProjet/forms/formSalleDeBain.html.twig' %}
+        </div>
+        <div class="form-group mt-5">
+            <h2 class="text-center mb-4 mt-3">Informations personelles</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="firstname">Prénom :</label>
+                    <input type="text" class="form-control" id="firstnameForm">
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname">Nom :</label>
+                    <input type="text" class="form-control" id="lastnameForm">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email">Email :</label>
+                    <input type="email" class="form-control" id="emailForm">
+                </div>
+                <div class="col-md-6">
+                    <label for="address">Adresse :</label>
+                    <input type="text" class="form-control" id="addressForm">
+                </div>
+            </div>
+            <label for="FormControlTextarea">Message</label>
+            <textarea class="form-control" id="FormControlTextarea" rows="7"></textarea>
         </div>
     </div>
+
 
 {% endblock %}
 {% block javascripts %}
