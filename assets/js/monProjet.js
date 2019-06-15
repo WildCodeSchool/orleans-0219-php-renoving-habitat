@@ -1,9 +1,18 @@
 $(document).ready(() => {
 
+    // uncheck all checkbox on page load
+    let checkboxes = document.getElementsByTagName('input');
+    for(var i = 0; i <checkboxes.length; i++){
+        if(checkboxes[i].type == 'checkbox'){
+            checkboxes[i].checked = false;
+        }
+    }
+
     let forms = [
         document.querySelector('#formCouverture'),
+        document.querySelector('#formRavalement'),
         document.querySelector('#formChauffage'),
-        document.querySelector('#formClim')
+        document.querySelector('#formTerrassement'),
     ]
 
 
