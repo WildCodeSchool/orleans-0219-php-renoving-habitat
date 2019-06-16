@@ -77,8 +77,6 @@ footer {
 
     width: 0;
     height: 2.6em;
-    //margin-bottom: 2em;
-
 
     border-top: 2.5em solid transparent;
     border-left: 1.9em solid $secondary-color;
@@ -113,16 +111,6 @@ footer {
     border-top: 2.5em solid transparent;
     border-left: 1.563em solid $brand-color;
   }
-
-
-  /*li:hover {
-    background-color: $brand-color;
-    border-radius: 2px;
-    transition: background-color 0.2s ease-in-out;
-    a {
-      color: $secondary-color;
-    }
-  }*/
 
   @media (max-width: 768px) {
     .footer_right_list,
