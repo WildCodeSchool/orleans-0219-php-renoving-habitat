@@ -7,7 +7,7 @@
 
 
 .maped_house_image{
-    margin-top: 5em;
+    //margin-top: 5em;
     display: block;
     width: 80%;
 }
@@ -84,28 +84,151 @@
 .light_gray {
   background-color: $secondary-color;
 }
+.zone {
+  h2 {
+    font-size: 2.5em;
+    background-image: linear-gradient($brand-color, $primary-color);
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+}
 
 .gooddeal {
   background-color: $brand-color;
 }
 
-.green_container {
-  background-color: #d9eec4;
-  width: 80%;
-  margin: 0 auto;
-  border-bottom-left-radius: 80px 80px;
-  border-bottom-right-radius: 80px 80px;
-}
-
 .gooddeal_container {
   width: 80%;
   margin: 0 auto;
+  h2 {
+    font-size: 2.5em;
+    background-image: linear-gradient($brand-color, $primary-color);
+    color: $darker-secondary-color;
+    text-align: center;
+  }
 }
 
-.h2_box {
-  width: 400px;
-  background-color: #009933;
-  border-radius: 30px;
-  margin: 0 auto;
+.presentation {
+  text-align: center;
+  .jumbotron {
+    background: url("/assets/homepage_image/bg2.png") fixed;
+    //background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: top;
+  }
+
+  h1 {
+    color: $brand-color;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  .intro {
+    text-align: left;
+    h2 {
+      background-image: linear-gradient($brand-color, $primary-color);
+      color: $darker-secondary-color;
+      text-align: center;
+    }
+
+  }
 }
 
+.house {
+  h2 {
+    font-size: 2.5em;
+    background-image: linear-gradient($brand-color, $primary-color);
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+}
+
+.partenaires {
+  h2 {
+    font-size: 2.5em;
+    background-image: linear-gradient($brand-color, $primary-color);
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+  .logoPartenaires {
+    body {
+      background-color: #100e17;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .card-container {
+      position: absolute;
+      height: 35em;
+      width: 600px;
+      top: 60px;
+      left: calc(50% - 300px);
+      display: flex;
+    }
+
+    .card {
+      display: inline-block;
+      height: 35em;
+      width: 16em;
+      background-color: $secondary-color;
+      border-radius: 10px;
+      box-shadow: -1rem 0 4rem $darker-secondary-color;
+      margin-left: 10em;
+      transition: 0.4s ease-out;
+      position: relative;
+    }
+
+    .card:not(:first-child) {
+      margin-left: -50px;
+    }
+
+    .card:hover {
+      transform: translateY(-20px);
+      transition: 0.4s ease-out;
+      box-shadow: -1rem 0 1rem $darker-secondary-color;
+    }
+
+    .card:hover ~ .card {
+      position: relative;
+      left: 50px;
+      transition: 0.4s ease-out;
+    }
+
+    .logo {
+      height: 5.5em;
+      img {
+        max-height: max-content;
+      }
+    }
+    .title {
+      font-weight: 300;
+      color: $brand-color;
+      left: 20px;
+      top: 15px;
+    }
+
+    .card:hover .filledbar {
+      width: 120px;
+      transition: 0.4s ease-out;
+    }
+
+    .card:hover .stroke {
+      stroke-dashoffset: 100;
+      transition: 0.6s ease-out;
+    }
+  }
+}
+
+.avantApres {
+  h2 {
+    font-size: 2.5em;
+    background-image: linear-gradient($brand-color, $primary-color);
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
