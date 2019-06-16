@@ -28,13 +28,13 @@ class RecruitmentController extends AbstractController
             $message = (new \Swift_Message('Nouvelle demande de recruitment !'))
                 ->setFrom($this->getParameter('mailer_from'))
                 ->setTo($this->getParameter('mailer_from'))
-                ->setBody('Nouvelle demande de recruitment !
-                 Nom:' . $data['lastname'] . ' ' . 'Prénom:' . $data['firstname']
-                    . ' ' . 'Métier:' . $data['occupation'] . ' ' . 'Votre CV:' . ' ' . $data['cv']);
+                ->setBody($this->renderView('recruitment/email.html.twig', ['data' => $data]));
             $mailer->send($message);
 
-            $this->addFlash('success-message',
-                'Votre message a bien été envoyé. Nous vous contacterons bientot, merci.');
+            $this->addFlash(
+                'success-message',
+                'Votre message a bien été envoyé. Nous vous contacterons bientot, merci.'
+            );
             return $this->redirectToRoute('recruitment');
         }
 
