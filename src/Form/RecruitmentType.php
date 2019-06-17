@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class RecruitmentType extends AbstractType
 {
@@ -37,7 +38,7 @@ class RecruitmentType extends AbstractType
             ]
             ])
             ->add('message', TextareaType::class)
-           ->add('cv', FileType::class, ['label'=>'télécharger votre cv'])
+           ->add('cvFile', VichImageType::class, ['label'=>'télécharger votre cv'])
         ;
     }
 }
