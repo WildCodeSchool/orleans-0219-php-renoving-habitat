@@ -19,6 +19,13 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('monprojet', './assets/js/monProjet.js')
+    .addEntry('tooltipster', './node_modules/tooltipster/dist/js/tooltipster.bundle.js')
+    .addEntry('maph', './node_modules/maphilight/jquery.maphilight.js')
+    .addEntry('mappedImage', './assets/js/mappedImage.js')
+    .addEntry('mapresizer', './assets/js/mapResizer.js')
+    .addEntry('juxtapose', './node_modules/juxtaposejs/build/js/juxtapose.js')
+    .addEntry('beforeAfterSlider', './assets/js/beforeAfterSlider.js')
+    .addEntry('map', './assets/js/map.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
@@ -59,10 +66,13 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     .autoProvidejQuery()
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
-;
 
 module.exports = Encore.getWebpackConfig();
