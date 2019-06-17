@@ -1,0 +1,111 @@
+
+#maped_house_container {
+	width: 100%;
+	display: flex;
+  	justify-content: center;
+}
+
+
+.maped_house_image{
+    margin-top: 5em;
+    display: block;
+    width: 80%;
+}
+
+#img-tooltip {
+  	position: absolute;
+}
+
+#slider {
+    width: 800px !important;
+    margin: 0 auto;
+}
+
+
+#sliderContainer {
+  width: 50%;
+  height: auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_button_beforeAfter {
+  max-height: 50px;
+}
+
+.beforeAfterContainer {
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image_counter{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jx-knightlab {
+  visibility: hidden;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+  padding: 15px;
+}
+
+.arrow:hover {
+  border-width: 0 20px 20px 0;
+}
+
+.right {
+  transform: rotate(-45deg);
+  margin-left: 50px;
+}
+
+.right:hover {
+  transform: rotate(-45deg);
+  margin-left: 45px;
+}
+
+.left {
+  transform: rotate(135deg);
+  margin-right: 50px;
+}
+
+.left:hover {
+  margin-right: 45px;
+}
+
+.light_gray {
+  background-color: $secondary-color;
+}
+
+.gooddeal {
+  background-color: $brand-color;
+}
+
+.green_container {
+  background-color: #d9eec4;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom-left-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+}
+
+.gooddeal_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.h2_box {
+  width: 400px;
+  background-color: #009933;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+

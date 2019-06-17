@@ -18,6 +18,13 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+    .addEntry('tooltipster', './node_modules/tooltipster/dist/js/tooltipster.bundle.js')
+    .addEntry('maph', './node_modules/maphilight/jquery.maphilight.js')
+    .addEntry('mappedImage', './assets/js/mappedImage.js')
+    .addEntry('mapresizer', './assets/js/mapResizer.js')
+    .addEntry('juxtapose', './node_modules/juxtaposejs/build/js/juxtapose.js')
+    .addEntry('beforeAfterSlider', './assets/js/beforeAfterSlider.js')
+    .addEntry('map', './assets/js/map.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
@@ -57,11 +64,11 @@ Encore
     //.enableIntegrityHashes()
 
     // uncomment if you're having problems with a jQuery plugin
-    // .autoProvidejQuery()
+    .autoProvidejQuery()
+
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
-;
 
 module.exports = Encore.getWebpackConfig();
