@@ -1,40 +1,3 @@
-/*!
- * Serialize all form data into a query string
- * (c) 2018 Chris Ferdinandi, MIT License, https://gomakethings.com
- * @param  {Node}   form The form to serialize
- * @return {String}      The serialized form data
- */
-var serialize = function (form) {
-
-    // Setup our serialized data
-    var serialized = [];
-
-    // Loop through each field in the form
-    for (var i = 0; i < form.elements.length; i++) {
-
-        var field = form.elements[i];
-
-        // Don't serialize fields without a name, submits, buttons, file and reset inputs, and disabled fields
-        if (!field.name || field.disabled || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button') continue;
-
-        // If a multi-select, get all selections
-        if (field.type === 'select-multiple') {
-            for (var n = 0; n < field.options.length; n++) {
-                if (!field.options[n].selected) continue;
-                serialized.push(encodeURIComponent(field.name) + "=" + encodeURIComponent(field.options[n].value));
-            }
-        }
-
-        // Convert field data to a query string
-        else if ((field.type !== 'checkbox' && field.type !== 'radio') || field.checked) {
-            serialized.push(encodeURIComponent(field.name) + "=" + encodeURIComponent(field.value));
-        }
-    }
-
-    return serialized.join('&');
-
-};
-
 
 
 $(document).ready(() => {
@@ -92,8 +55,34 @@ $(document).ready(() => {
     }
 
     document.getElementById('sendAllForms').addEventListener('click', ()=>{
-        let firstname = document.getElementById('firstnameForm').value;
-        let lastname = document.getElementById('lastnameForm').value;
-        console.log(firstname, lastname);
+
+        let persInfo = {};
+
+        let persInfoForms = document.getElementsByClassName('info_pers_form');
+
+        persInfoForms.forEach((e) => {
+            persInfo[e.children[0].innerText] = e.children[1].value;
+        });
+        console.log(persInfo);
+
+        forms.forEach((v)=>{
+            if (v.style.display === 'block') {
+                let formInputs = document.querySelectorAll('#'+ v.id +' .list-group-item');
+                let formInfo = {};
+                formInputs.forEach((e)=>{
+
+                    if (e.children[0].nodeName !== 'DIV') {
+                        formInfo[e.innerText] = e.children[0].children[0].checked
+                    } else { //dealing with radio
+                        let choices = Array.from(e.children[0].children);
+                        let chosen = choices.filter(el => el.children[0].children[0].checked === true);
+                        let key = e.innerText.split('?').shift() + ' ?';
+                        formInfo[key] = chosen[0].innerText;
+                    }
+                })
+                persInfo[v.id.split(/(?=[A-Z])/).pop()] = formInfo;
+            }
+        })
+        console.log(persInfo)
     })
 })
