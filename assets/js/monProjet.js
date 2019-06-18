@@ -61,7 +61,9 @@ $(document).ready(() => {
         let persInfoForms = document.getElementsByClassName('info_pers_form');
 
         persInfoForms.forEach((e) => {
-            infos.personal[e.children[0].innerText] = e.children[1].value;
+            let key = e.children[0].innerText.replace(" ", "")
+                                             .replace(":", "");
+            infos.personal[key] = e.children[1].value;
         });
 
         forms.forEach((v) => {
@@ -70,11 +72,11 @@ $(document).ready(() => {
                 let formInfo = {};
                 formInputs.forEach((e) => {
                     if (e.children[0].nodeName !== 'DIV') { //dealing with checkbox
-                        formInfo[e.innerText] = e.children[0].children[0].checked
+                        formInfo[e.innerText.replace("?", "").trim()] = e.children[0].children[0].checked
                     } else { //dealing with radio
                         let choices = Array.from(e.children[0].children);
                         let chosen = choices.filter(el => el.children[0].children[0].checked === true);
-                        let key = e.innerText.split('?').shift() + ' ?';
+                        let key = e.innerText.split('?').shift().trim();
                         formInfo[key] = chosen[0].innerText;
                     }
                 })
@@ -82,5 +84,18 @@ $(document).ready(() => {
             }
         })
         console.log(infos)
+        someAjax(infos)
+
+    }
+
+    function someAjax(infos) {
+        $.ajax({
+            url: '../php/sendEmailMonProjet.php',
+            data: infos,
+            type: 'POST',
+            success: function(result) {
+                console.log(result);
+            }
+        })
     }
 })
