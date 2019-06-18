@@ -27,7 +27,6 @@ class RecruitmentController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-
             $cv = $cvUpload->getCv();
 
             $message = (new \Swift_Message('Nouvelle demande de recruitment !'))
