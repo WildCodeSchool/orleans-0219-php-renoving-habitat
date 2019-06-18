@@ -2,7 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\CvUpload;
+use App\Form\CvUploadType;
 use App\Form\RecruitmentType;
+use Swift_Attachment;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,16 +22,20 @@ class RecruitmentController extends AbstractController
      */
     public function show(Request $request, \Swift_Mailer $mailer): Response
     {
-        $form = $this->createForm(RecruitmentType::class);
+        $cvUpload = new CvUpload();
+        $form = $this->createForm(CvUploadType::class, $cvUpload);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $data = $form->getData();
+
+            $cv = $cvUpload->getCv();
 
             $message = (new \Swift_Message('Nouvelle demande de recruitment !'))
                 ->setFrom($this->getParameter('mailer_from'))
                 ->setTo($this->getParameter('mailer_from'))
-                ->setBody($this->renderView('recruitment/email.html.twig', ['data' => $data]));
+                ->setBody($this->renderView('recruitment/email.html.twig', ['data' => $cvUpload]))
+                ->attach(Swift_Attachment::fromPath($cv->getPathname()))
+            ;
             $mailer->send($message);
 
             $this->addFlash(
