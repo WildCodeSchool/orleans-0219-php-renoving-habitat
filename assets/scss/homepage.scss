@@ -23,7 +23,7 @@
 
 
 #sliderContainer {
-  width: 50%;
+  width: 80%;
   height: auto;
   display:flex;
   align-items: center;
@@ -87,22 +87,7 @@
 .zone {
   h2 {
     font-size: 2.5em;
-    background-image: linear-gradient($brand-color, $primary-color);
-    color: $darker-secondary-color;
-    text-align: center;
-  }
-}
 
-.gooddeal {
-  background-color: $brand-color;
-}
-
-.gooddeal_container {
-  width: 80%;
-  margin: 0 auto;
-  h2 {
-    font-size: 2.5em;
-    background-image: linear-gradient($brand-color, $primary-color);
     color: $darker-secondary-color;
     text-align: center;
   }
@@ -112,7 +97,7 @@
   text-align: center;
   .jumbotron {
     background: url("/assets/homepage_image/bg2.png") fixed;
-    //background-size: 100% 100%;
+    height: 25em;
     background-repeat: no-repeat;
     object-fit: fill;
     background-position: top;
@@ -124,31 +109,34 @@
   h2 {
     font-size: 2.5em;
   }
-  .intro {
-    text-align: left;
-    h2 {
-      background-image: linear-gradient($brand-color, $primary-color);
-      color: $darker-secondary-color;
-      text-align: center;
-    }
+}
+.intro {
+  text-align: left;
+  background-color: $brand-color;
+  h2 {
 
+    color: $secondary-color;
+    text-align: center;
   }
+  img {
+    border-radius: 0 100px 0 100px;
+  }
+
 }
 
 .house {
   h2 {
     font-size: 2.5em;
-    background-image: linear-gradient($brand-color, $primary-color);
     color: $darker-secondary-color;
     text-align: center;
   }
 }
 
 .partenaires {
+  background-color: $brand-color;
   h2 {
     font-size: 2.5em;
-    background-image: linear-gradient($brand-color, $primary-color);
-    color: $darker-secondary-color;
+    color: $secondary-color;
     text-align: center;
   }
   .logoPartenaires {
@@ -219,11 +207,57 @@
   }
 }
 
+.bonPlans {
+  align-content: center;
+  background: url("/assets/images/mini_gift_house.png");
+  //height: 25em;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: right;
+  p {
+    text-align: center;
+    vertical-align: center;
+  }
+  .gooddeal {
+    h2 {
+      font-size: 2.5em;
+      color: $darker-secondary-color;
+      text-align: center;
+    }
+
+  }
+  .box {
+    margin-top: 3em;
+    display: ruby-text;
+  }
+  .postit {
+    h3 {
+      font-size: 2em;
+      color: $brand-color;
+    }
+    img {
+      margin-top: -1em;
+    }
+    text-align: center;
+    color: $darker-secondary-color;
+    width: 20em;
+    height: 20em;
+    background-color: #ffffa5;
+    padding: 1em;
+    //padding-top: 2em;
+    font-family: "Lucida Handwriting", cursive;
+    box-shadow: 2px 4px 6px $darker-secondary-color;
+    transform: rotate(-3deg);
+  }
+
+}
+
 .avantApres {
+  background-color: $brand-color;
   h2 {
     font-size: 2.5em;
-    background-image: linear-gradient($brand-color, $primary-color);
-    color: $darker-secondary-color;
+    color: $secondary-color;
     text-align: center;
   }
 }
