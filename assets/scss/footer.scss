@@ -6,7 +6,7 @@ footer {
 
   width: 100%;
   margin-top: 3em;
-  background-color: $secondary-color;
+  background-color: $light-brand-color;
   box-shadow: -2px -7px 29px -5px rgba(199,197,199,1);
 
   ul {
@@ -62,7 +62,7 @@ footer {
     cursor: pointer;
     user-select: none;
 
-    background: $secondary-color;
+    background: transparent;
 
     text-align: left;
     line-height: 1.5em;
@@ -79,7 +79,7 @@ footer {
     height: 2.6em;
 
     border-top: 2.5em solid transparent;
-    border-left: 1.9em solid $secondary-color;
+    border-left: 1.9em solid transparent;
   }
   li::after {
     content: '';
@@ -92,7 +92,7 @@ footer {
     width: 0;
     height: 2.6em;
 
-    border-top: 2.5em solid $secondary-color;
+    border-top: 2.5em solid transparent;
     border-left: 1.9em solid transparent;
   }
 

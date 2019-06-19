@@ -1,4 +1,5 @@
 
+
 #maped_house_container {
 	width: 100%;
 	display: flex;
@@ -7,7 +8,6 @@
 
 
 .maped_house_image{
-    //margin-top: 5em;
     display: block;
     width: 80%;
 }
@@ -24,7 +24,7 @@
 
 #sliderContainer {
   width: 80%;
-  height: auto;
+  height: 30em;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +87,6 @@
 .zone {
   h2 {
     font-size: 2.5em;
-
     color: $darker-secondary-color;
     text-align: center;
   }
@@ -106,7 +105,6 @@
     background-repeat: no-repeat;
     margin-bottom: 0;
     background-position: right top;
-    //background-size: cover;
   }
 
   h1 {
@@ -115,14 +113,13 @@
   }
   h2 {
     font-size: 2.5em;
-
   }
 }
 .intro {
   text-align: left;
   background-color: $brand-color;
   h2 {
-
+    font-size: 2.5em;
     color: $secondary-color;
     text-align: center;
   }
@@ -131,14 +128,17 @@
   }
   img {
     border-radius: 0 100px 0 100px;
+    box-shadow: inset -5px -4px 13px -8px rgba(133,130,133,1);
   }
-
 }
 
 .house {
   h2 {
     font-size: 2.5em;
     color: $darker-secondary-color;
+    text-align: center;
+  }
+  p {
     text-align: center;
   }
 }
@@ -157,47 +157,14 @@
   }
   .logoPartenaires {
 
-
-    .card {
-      display: inline-block;
-      height: 34em;
-      width: 16em;
-      background-color: $primary-color;
-      //border-radius: 0 0 100px 100px;
-      box-shadow: -1rem 0 4rem $darker-secondary-color;
-      //margin-left: 10em;
-      transition: 0.4s ease-out;
-      position: relative;
-      border: 2px outset $brand-color;
-    }
-
-    .card:not(:first-child) {
-      margin-left: -50px;
-    }
-
-    .card:hover {
-      transform: translateY(-20px);
-      transition: 0.4s ease-out;
-      box-shadow: -1rem 0 1rem $darker-secondary-color;
-    }
-
-    .card:hover ~ .card {
-      position: relative;
-      left: 50px;
-      transition: 0.4s ease-out;
-    }
-
     .logo {
-      height: 5.5em;
+      height: 5em;
+      line-height: 5em;
+      display: inline-block;
       img {
         max-height: max-content;
+        vertical-align: middle;
       }
-    }
-    .title {
-      font-weight: 300;
-      color: $brand-color;
-      left: 5em;
-      top: 5em;
     }
   }
 }
@@ -205,7 +172,6 @@
 .bonPlans {
   align-content: center;
   background: url("/assets/images/mini_gift_house.png");
-  //height: 25em;
   background-color: $secondary-color;
   background-repeat: no-repeat;
   object-fit: fill;
@@ -240,19 +206,24 @@
     height: 20em;
     background-color: #ffffa5;
     padding: 1em;
-    //padding-top: 2em;
-    font-family: "Lucida Handwriting", cursive;
+    font-family: 'Patrick Hand', cursive;
     box-shadow: 2px 4px 6px $darker-secondary-color;
     transform: rotate(-3deg);
+    p {
+      font-size: 1.5em;
+    }
   }
 
 }
 
 .avantApres {
-  background-color: $brand-color;
+  background-color: $light-brand-color;
   h2 {
     font-size: 2.5em;
-    color: $secondary-color;
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+  p {
     text-align: center;
   }
 }
