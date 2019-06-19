@@ -75,8 +75,11 @@ class CvUpload
     /**
      * @Assert\NotBlank(message="Please, upload your CV as a PDF file.")
      * @Assert\File(
-     *    mimeTypes={ "application/pdf", "application/msword",
-     *    "application/vnd.oasis.opendocument.text", "image/jpeg", "image/png" })
+     *     mimeTypes = { "application/pdf", "application/msword",
+     *    "application/vnd.oasis.opendocument.text", "image/jpeg", "image/png" },
+     *     mimeTypesMessage = "Votre format de piece jointe n'est pas un format valide.
+     *     Veuillez utiliser un format PDF, WORD, ODT, JPEG, ou PNG."
+     * )
      */
     private $cv;
 
