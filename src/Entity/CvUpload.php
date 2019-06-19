@@ -7,20 +7,65 @@ use Symfony\Component\Validator\Constraints as Assert;
 class CvUpload
 {
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=1, max=100)
+     */
     private $lastname;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=1, max=100)
+     */
     private $firstname;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *   pattern="/[0-9]{10}/"
+     * )
+     */
     private $telephone;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Email(
+     *     message = "Votre email '{{ value }}' n'est pas une adresse valide.")
+     */
     private $email;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=1, max=4)
+     */
     private $streetNumber;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=1, max=100)
+     */
     private $streetName;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=1, max=100)
+     */
     private $city;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *   pattern="/[0-9]{5}/"
+     * )
+     */
     private $postCode;
 
     private $occupation;
@@ -29,10 +74,17 @@ class CvUpload
 
     /**
      * @Assert\NotBlank(message="Please, upload your CV as a PDF file.")
-     * @Assert\File(mimeTypes={ "application/pdf" })
+     * @Assert\File(
+     *    mimeTypes={ "application/pdf", "application/msword",
+     *    "application/vnd.oasis.opendocument.text", "image/jpeg", "image/png" })
      */
     private $cv;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=5, max=1000)
+     */
     private $message;
 
     public function getLastname(): ?string

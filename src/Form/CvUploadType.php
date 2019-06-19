@@ -39,7 +39,7 @@ class CvUploadType extends AbstractType
             ]
             ])
             ->add('message', TextareaType::class)
-            ->add('cv', FileType::class, ['label' => 'télécharger votre cv']);
+            ->add('cv', FileType::class);
     }
 
 
