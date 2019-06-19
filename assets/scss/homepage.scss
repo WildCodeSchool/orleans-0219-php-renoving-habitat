@@ -94,21 +94,28 @@
 }
 
 .presentation {
-  text-align: center;
+  text-align: left;
+  margin-top: 4.9em;
+  .mainTitle {
+    margin-top: 2em;
+  }
   .jumbotron {
-    background: url("/assets/homepage_image/bg2.png") fixed;
-    height: 25em;
+    background-image: url("/assets/homepage_image/bg2.png");
+    background-attachment: fixed;
+    height: 23em;
     background-repeat: no-repeat;
-    object-fit: fill;
-    background-position: top;
     margin-bottom: 0;
+    background-position: right top;
+    //background-size: cover;
   }
 
   h1 {
     color: $brand-color;
+    font-variant: small-caps;
   }
   h2 {
     font-size: 2.5em;
+
   }
 }
 .intro {
