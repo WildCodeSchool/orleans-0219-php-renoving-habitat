@@ -6,7 +6,6 @@
   background-color: $primary-color;
   padding-bottom: 0;
   padding-top: 0;
-  font-size: 1em;
   box-shadow: 0 1px 10px $secondary-color;
 
   .navbar-light {
@@ -20,15 +19,18 @@
 
     a {
       color: $darker-secondary-color;
+      padding-bottom: 0.4em;
+      font-size: 1.2em;
+      padding-top: 0.43em;
     }
 
     position: relative;
     display: block;
     float: left;
-    margin-right: 1.563em;
+    margin-right: 3em;
 
     height: 100%;
-    width: 15em;
+    width: 13em;
 
     cursor: pointer;
     user-select: none;
@@ -36,20 +38,20 @@
     background: $secondary-color;
 
     text-align: center;
-    line-height: 1.5em;
+    line-height: 2.5em;
   }
   li::before {
     content: '';
     position: absolute;
     display: block;
 
-    right: -1.5em;
+    right: -2.5em;
 
     width: 0;
     height: 0;
 
-    border-top: 2.5em solid transparent;
-    border-left: 1.563em solid $secondary-color;
+    border-top: 3.5em solid transparent;
+    border-left: 2.563em solid $secondary-color;
   }
   li::after {
     content: '';
@@ -57,13 +59,13 @@
     display: block;
 
     top: 0;
-    left: -1.5em;
+    left: -2.5em;
 
     width: 0;
     height: 0;
 
-    border-top: 2.5em solid $secondary-color;
-    border-left: 1.563em solid transparent;
+    border-top: 3.5em solid $secondary-color;
+    border-left: 2.563em solid transparent;
   }
 
   /* Hover */
@@ -74,16 +76,16 @@
 
   }
   li:hover::after {
-    border-top: 2.5em solid $brand-color;
-    border-right: 1.563em solid transparent;
+    border-top: 3.5em solid $brand-color;
+    border-right: 2.563em solid transparent;
   }
   li:hover::before {
-    border-top: 2.5em solid transparent;
-    border-left: 1.563em solid $brand-color;
+    border-top: 3.5em solid transparent;
+    border-left: 2.563em solid $brand-color;
   }
 
   .dropdown-menu {
-    width: 16.5em;
+    width: 15.6em;
     .dropdown-item {
       color: $darker-secondary-color;
     }
