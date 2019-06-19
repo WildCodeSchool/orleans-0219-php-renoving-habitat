@@ -101,6 +101,7 @@
     background-repeat: no-repeat;
     object-fit: fill;
     background-position: top;
+    margin-bottom: 0;
   }
 
   h1 {
@@ -117,6 +118,9 @@
 
     color: $secondary-color;
     text-align: center;
+  }
+  p {
+    color: $secondary-color;
   }
   img {
     border-radius: 0 100px 0 100px;
@@ -139,31 +143,25 @@
     color: $secondary-color;
     text-align: center;
   }
+  .title {
+    p {
+      color: $secondary-color;
+    }
+  }
   .logoPartenaires {
-    body {
-      background-color: #100e17;
-      font-family: 'Open Sans', sans-serif;
-    }
 
-    .card-container {
-      position: absolute;
-      height: 35em;
-      width: 600px;
-      top: 60px;
-      left: calc(50% - 300px);
-      display: flex;
-    }
 
     .card {
       display: inline-block;
-      height: 35em;
+      height: 34em;
       width: 16em;
-      background-color: $secondary-color;
-      border-radius: 10px;
+      background-color: $primary-color;
+      //border-radius: 0 0 100px 100px;
       box-shadow: -1rem 0 4rem $darker-secondary-color;
-      margin-left: 10em;
+      //margin-left: 10em;
       transition: 0.4s ease-out;
       position: relative;
+      border: 2px outset $brand-color;
     }
 
     .card:not(:first-child) {
@@ -191,18 +189,8 @@
     .title {
       font-weight: 300;
       color: $brand-color;
-      left: 20px;
-      top: 15px;
-    }
-
-    .card:hover .filledbar {
-      width: 120px;
-      transition: 0.4s ease-out;
-    }
-
-    .card:hover .stroke {
-      stroke-dashoffset: 100;
-      transition: 0.6s ease-out;
+      left: 5em;
+      top: 5em;
     }
   }
 }
