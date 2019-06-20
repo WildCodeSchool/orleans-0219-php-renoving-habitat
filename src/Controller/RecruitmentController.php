@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\CvUpload;
 use App\Form\CvUploadType;
-use App\Form\RecruitmentType;
 use Swift_Attachment;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -34,6 +33,7 @@ class RecruitmentController extends AbstractController
                 ->setTo($this->getParameter('mailer_from'))
                 ->setBody($this->renderView('recruitment/email.html.twig', ['data' => $cvUpload]))
                 ->attach(Swift_Attachment::fromPath($cv->getPathname()))
+
             ;
             $mailer->send($message);
 
@@ -45,7 +45,7 @@ class RecruitmentController extends AbstractController
         }
 
         return $this->render('recruitment/show.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 }
