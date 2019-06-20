@@ -1,5 +1,6 @@
-$(document).ready(() => {
+const Swal = require('sweetalert2')
 
+$(document).ready(() => {
     // uncheck all checkbox on page load
     let checkboxes = document.getElementsByTagName('input');
     for (var i = 0; i < checkboxes.length; i++) {
@@ -25,7 +26,6 @@ $(document).ready(() => {
             controlForm(elem, index)
         });
     });
-
 
     function showElement(index) {
         elementsArray.forEach(function (elem, i) {
@@ -83,9 +83,21 @@ $(document).ready(() => {
                 infos[v.id.split(/(?=[A-Z])/).pop()] = formInfo;
             }
         })
-
-        sendAjax(infos)
-
+        let errorsNb = 0;
+        Object.keys(infos.personal).forEach((v) => {
+            if(infos.personal[v] === ''){
+                Swal.fire({
+                    title: 'Erreur',
+                    text: 'Veuillez renseigner le champ ' + v,
+                    type: 'error',
+                    confirmButtonText: 'Ok'
+                })
+               errorsNb++;
+            }
+        })
+        if(errorsNb === 0){
+            sendAjax(infos)
+        }
     }
 
     function sendAjax(infos) {
