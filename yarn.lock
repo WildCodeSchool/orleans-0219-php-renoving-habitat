@@ -3652,7 +3652,8 @@ jquery-tooltipster@^3.3.0:
   dependencies:
     jquery ">=1.7.0"
 
-jquery@>=1.7.0, jquery@^3.4.1:
+jquery@^3.0.0, jquery@^3.4.1:
+
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
   integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
@@ -3814,6 +3815,11 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
+leaflet@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.5.1.tgz#9afb9d963d66c870066b1342e7a06f92840f46bf"
+  integrity sha512-ekM9KAeG99tYisNBg0IzEywAlp0hYI5XRipsqRXyRTeuU8jcuntilpp+eFf5gaE0xubc9RuSNIVtByEKwqFV0w==
+
 load-json-file@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-1.1.0.tgz#956905708d58b4bab4c2261b04f59f31c99374c0"
@@ -3938,6 +3944,13 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+maphilight@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/maphilight/-/maphilight-1.4.0.tgz#a9319dd351644d02385c8556228956d67a8cf849"
+  integrity sha512-7iYXdlT9x0dAqkdEq2IPHGrHF9YBTbjNZB8SQUWqZAqVxZUdMqYHTbowCPMOVIDnC78afFIwIHFG7ZQoD0faqQ==
+  dependencies:
+    jquery "^3.0.0"
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -6306,6 +6319,11 @@ toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
+
+tooltipster@^4.2.6:
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/tooltipster/-/tooltipster-4.2.6.tgz#fbf7a3f5b40bd83e81574e28d9667cf82667bc79"
+  integrity sha1-+/ej9bQL2D6BV04o2WZ8+CZnvHk=
 
 tough-cookie@~2.4.3:
   version "2.4.3"
