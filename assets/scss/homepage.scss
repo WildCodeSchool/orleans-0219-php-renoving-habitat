@@ -1,14 +1,15 @@
+
 #maped_house_container {
 	width: 100%;
 	display: flex;
   	justify-content: center;
 }
 
-.maped_house_image {
+
+.maped_house_image{
+    margin-top: 5em;
     display: block;
-  max-width: 700px;
-  max-height: 500px;
-    margin: 0 auto;
+    width: 80%;
 }
 
 #img-tooltip {
@@ -16,8 +17,8 @@
 }
 
 #slider {
-  width: 800px !important;
-  margin: 0 auto;
+    width: 800px !important;
+    margin: 0 auto;
 }
 
 
@@ -80,14 +81,31 @@
   margin-right: 45px;
 }
 
-.light_gray{
-  background-color: #c9c9c9;
+.light_gray {
+  background-color: $secondary-color;
 }
 
-.beforeAfterCounter > div {
+.gooddeal {
+  background-color: $brand-color;
+}
 
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 2px 1px #000;
+.green_container {
+  background-color: #d9eec4;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom-left-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+}
+
+.gooddeal_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.h2_box {
+  width: 400px;
+  background-color: #009933;
+  border-radius: 30px;
+  margin: 0 auto;
 }
 

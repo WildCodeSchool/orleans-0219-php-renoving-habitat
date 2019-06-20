@@ -1,50 +1,52 @@
 {% extends "base.html.twig" %}
+
 {% block body %}
-<footer class="pt-5">
-    <div class="container-fluid m-0 p-0">
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <div class="footer_left_list float-left">
-                    <ul class="p-0">
-                        <li class="pb-2">
-                            <a href="#" class="footer_links">A propos de nous</a>
-                        </li>
-                        <li class="pb-2">
-                            <a href="#" class="footer_links">Je rénov'</a>
-                        </li>
-                        <li class="pb-2">
-                            <a href="#" class="footer_links">Mon projet en ligne</a>
-                        </li>
-                        <li class="pb-2">
-                            <a href="#" class="footer_links">Nos réalisations</a>
-                        </li>
-                    </ul>
+
+    <footer class="py-5 px-3">
+        <div class="mp-0">
+            <div class="row d-flex flex-wrap justify-content-around">
+                <div class="col-md">
+                    <div class="first footer_left_list">
+                        <ul class="p-0">
+                            <li class="pb-2">
+                                <a href="#" class="footer_links">A propos de nous</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="footer_links">Je rénov'</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="footer_links"><b>Mon projet en ligne</b></a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="footer_links">Nos réalisations</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-4 text-center">
-                <img class="renovlogo pb-4" src="assets/footer_image/renovlogo.png" alt="logo">
-            </div>
+                <div class="second align-self-center col-md">
+                    <img class="renovlogo" src="assets/images/logo_no_back.png" alt="logo">
+                </div>
 
-            <div class="col-4">
-                <div class="footer_right_list float-right">
-                    <ul class="p-0">
-                        <li class="pb-2">
-                            <a href="#" class="footer_links">A propos de nous</a>
-                        </li>
-                        <li class="pb-2">
-                            <a href="#" class="footer_links">Je rénov'</a>
-                        </li>
-                        <li class="pb-2">
-                            <a href="#" class="footer_links">Mon projet en ligne</a>
-                        </li>
-                        <li class="pb-2">
-                            <a href="#" class="footer_links">Nos réalisations</a>
-                        </li>
-                    </ul>
+                <div class="col-md">
+                    <div class="third footer_right_list">
+                        <ul class="p-0">
+                            <li class="pb-2">
+                                <a href="#" class="footer_links">NOUS RECRUTONS</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="footer_links">Conditions Générales de Vente</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="footer_links">renoving3a@gmail.com</a>
+                            </li>
+                            <li class="pb-2">
+                                <a href="#" class="footer_links">06 61 66 14 01</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 {% endblock %}

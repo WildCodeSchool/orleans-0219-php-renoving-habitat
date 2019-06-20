@@ -96,7 +96,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var homeIcon = L.icon({
-    iconUrl: './assets/homepage_image/leaf-home.png',
+    iconUrl: './assets/homepage_image/leaf_home.png',
     iconSize:     [25, 35], // size of the icon
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     shadowAnchor: [4, 62],  // the same for the shadow
