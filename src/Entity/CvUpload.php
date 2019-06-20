@@ -193,8 +193,7 @@ class CvUpload
 
     public function setOccupation(string $occupation): self
     {
-        $this->occupation = $occupation;    color: black !important;
-    position: absolute;
+        $this->occupation = $occupation;
 
         return $this;
     }
