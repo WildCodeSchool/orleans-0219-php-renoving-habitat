@@ -106,7 +106,12 @@ $(document).ready(() => {
             data: infos,
             type: 'POST',
             success: function(result) {
-
+                Swal.fire({
+                    title: 'Nice !',
+                    text: 'ça passe sur dev :^)',
+                    type: 'success',
+                    confirmButtonText: 'Ok'
+                })
             }
         })
     }
