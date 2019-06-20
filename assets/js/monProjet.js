@@ -83,18 +83,18 @@ $(document).ready(() => {
                 infos[v.id.split(/(?=[A-Z])/).pop()] = formInfo;
             }
         })
-        console.log(infos)
-        someAjax(infos)
+
+        sendAjax(infos)
 
     }
 
-    function someAjax(infos) {
+    function sendAjax(infos) {
         $.ajax({
-            url: '../php/sendEmailMonProjet.php',
+            url: '/projet/sendEmail',
             data: infos,
             type: 'POST',
             success: function(result) {
-                console.log(result);
+
             }
         })
     }

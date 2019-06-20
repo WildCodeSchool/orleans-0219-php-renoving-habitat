@@ -1,0 +1,44 @@
+{% for key, arr in data %}
+
+    {% if key == 'personal' %}
+
+        Informations personnelles :
+    {% endif %}
+    {% if key == 'Couverture' %}
+
+        Couverture :
+    {% endif %}
+    {% if key == 'Ravalement' %}
+
+        Ravalement :
+    {% endif %}
+    {% if key == 'Chauffage' %}
+
+        Chauffage :
+    {% endif %}
+    {% if key == 'Terrassement' %}
+
+        Terrassement :
+    {% endif %}
+    {% if key == 'Interieur' %}
+
+        Travaux Intérieur :
+    {% endif %}
+    {% if key == 'Bain' %}
+
+        Salle de bain :
+    {% endif %}
+
+    {% for index, val in arr %}
+
+        {% if 'Fuite' in index %}
+            Fuite d'eau : {{ (val == 'true') ? 'Oui' : 'Non' }}
+        {% elseif 'Douche' in index %}
+            Douche à l'italienne : {{ (val == 'true') ? 'Oui' : 'Non' }}
+        {% else %}
+           {{ index }} : {{ (val == 'true') ? 'Oui' : 'Non' }}
+        {% endif %}
+
+    {% endfor %}
+
+{% endfor %}
