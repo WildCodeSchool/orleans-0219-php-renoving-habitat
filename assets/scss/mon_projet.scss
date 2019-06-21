@@ -1,8 +1,8 @@
- .form_projet {
+ @import 'vars';
+
+.form_projet {
    display: none;
  }
-
-
 
  /* The switch - the box around the slider */
  .switch {
@@ -24,7 +24,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background-color: #ccc;
+   background-color: $light-grey;
    -webkit-transition: .2s;
    transition: .2s;
  }
@@ -41,27 +41,8 @@
    transition: .2s;
  }
 
- input.default:checked + .slider {
-   background-color: #444;
- }
  input.primary:checked + .slider {
-   background-color: #2196F3;
- }
- input.success:checked + .slider {
-   background-color: #8bc34a;
- }
- input.info:checked + .slider {
-   background-color: #3de0f5;
- }
- input.warning:checked + .slider {
-   background-color: #FFC107;
- }
- input.danger:checked + .slider {
-   background-color: #f44336;
- }
-
- input:focus + .slider {
-   box-shadow: 0 0 1px #2196F3;
+   background-color: $brand-color;
  }
 
  input:checked + .slider:before {
@@ -69,7 +50,6 @@
    -ms-transform: translateX(26px);
    transform: translateX(26px);
  }
-
 
  /*Radio Toggle*/
 
@@ -90,7 +70,7 @@
 
  input[type="radio"]:checked + .label-text:before{
    content: "\f192";
-   color: #428bca;
+   color: $brand-color;
    transform: scale(1.3);
    animation: effect 250ms ease-in;
  }
