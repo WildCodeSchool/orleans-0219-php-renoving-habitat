@@ -66,7 +66,7 @@ $(document).ready(() => {
             infos.personal[key] = e.children[1].value;
         });
 
-        forms.forEach((v) => { //
+        forms.forEach((v) => {
             if (v.style.display === 'block') {
                 let formInputs = document.querySelectorAll('#' + v.id + ' .list-group-item');
                 let formInfo = {};
