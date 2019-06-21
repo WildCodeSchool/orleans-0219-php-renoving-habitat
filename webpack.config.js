@@ -18,13 +18,13 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    .addEntry('monprojet', './assets/js/monProjet.js')
+    .addEntry('monprojet', './assets/js/mon_projet.js')
     .addEntry('tooltipster', './node_modules/tooltipster/dist/js/tooltipster.bundle.js')
     .addEntry('maph', './node_modules/maphilight/jquery.maphilight.js')
-    .addEntry('mappedImage', './assets/js/mappedImage.js')
-    .addEntry('mapresizer', './assets/js/mapResizer.js')
+    .addEntry('mappedImage', './assets/js/mapped_image.js')
+    .addEntry('mapresizer', './assets/js/map_resizer.js')
     .addEntry('juxtapose', './node_modules/juxtaposejs/build/js/juxtapose.js')
-    .addEntry('beforeAfterSlider', './assets/js/beforeAfterSlider.js')
+    .addEntry('beforeAfterSlider', './assets/js/before_after_slider.js')
     .addEntry('map', './assets/js/map.js')
     //.addEntry('page2', './assets/js/page2.js')
 

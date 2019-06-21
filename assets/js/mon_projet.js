@@ -16,8 +16,7 @@ $(document).ready(() => {
         document.querySelector('#formTerrassement'),
         document.querySelector('#formTravauxInterieur'),
         document.querySelector('#formSalleDeBain'),
-    ]
-
+    ];
 
     let elementsArray = document.getElementsByClassName("form-check-input");
 
