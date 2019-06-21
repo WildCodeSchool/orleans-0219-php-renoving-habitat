@@ -21,7 +21,7 @@ class MonProjetController extends AbstractController
      * @Route("/projet", name="projet")*
      */
 
-    public function index(Request $request) :Response
+    public function index() :Response
     {
         return $this->render('monProjet/index.html.twig');
     }

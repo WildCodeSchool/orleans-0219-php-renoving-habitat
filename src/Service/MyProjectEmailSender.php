@@ -23,8 +23,8 @@ class MyProjectEmailSender
     public function sendEmail($content)
     {
         $message = (new \Swift_Message('Nouvelle demande de devis'))
-            ->setFrom('putain2ban@gmail.com')
-            ->setTo('putain2ban@gmail.com')
+            ->setFrom('')
+            ->setTo('')
             ->setBody($this->templating->render('monProjet/email/email.html.twig', ['data' => $content]));
 
         $this->mailer->send($message);
