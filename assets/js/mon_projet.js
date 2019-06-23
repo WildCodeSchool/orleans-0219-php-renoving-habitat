@@ -85,26 +85,41 @@ $(document).ready(() => {
 
         let errorsNb = 0;
         let emailRE =  /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
+        let emptyField = '';
 
         Object.keys(infos.personal).forEach((v) => {
             if(infos.personal[v] === ''){
-                Swal.fire({
-                    title: 'Erreur',
-                    text: 'Veuillez renseigner le champ ' + v,
-                    type: 'error',
-                    confirmButtonText: 'Ok'
-                })
-               errorsNb++;
-            }else if(!emailRE.test(infos.personal.Email)){
-                Swal.fire({
-                    title: 'Erreur',
-                    text: 'Email incorrect',
-                    type: 'error',
-                    confirmButtonText: 'Ok'
-                })
+                emptyField = v;
                 errorsNb++;
             }
         })
+        if(errorsNb === 1){
+            Swal.fire({
+                title: 'Erreur',
+                text: 'Veuillez renseigner le champ ' + emptyField.toLowerCase(),
+                type: 'error',
+                confirmButtonText: 'Ok',
+                confirmButtonColor: '#4c934e',
+            })
+        }else if(errorsNb > 1) {
+            Swal.fire({
+                title: 'Erreur',
+                text: 'Veuillez renseigner les champs',
+                type: 'error',
+                confirmButtonText: 'Ok',
+                confirmButtonColor: '#4c934e',
+            })
+        }
+        if(errorsNb === 0 && !emailRE.test(infos.personal.Email)){
+            Swal.fire({
+                title: 'Erreur',
+                text: 'Email incorrect',
+                type: 'error',
+                confirmButtonText: 'Ok',
+                confirmButtonColor: '#4c934e',
+            })
+            errorsNb++;
+        }
         if (errorsNb === 0) {
             sendAjax(infos)
         }
@@ -120,7 +135,8 @@ $(document).ready(() => {
                     title: 'Nice !',
                     text: 'ça passe sur dev :^)',
                     type: 'success',
-                    confirmButtonText: 'Ok'
+                    confirmButtonText: 'Ok',
+                    confirmButtonColor: '#4c934e',
                 })
             }
         })
