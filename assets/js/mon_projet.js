@@ -26,6 +26,14 @@ $(document).ready(() => {
         });
     });
 
+    function controlForm(elem, index) {
+        if (elem.checked) {
+            showElement(index)
+        } else {
+            hideElement(index);
+        }
+    }
+
     function showElement(index) {
         elementsArray.forEach(function (elem, i) {
             if (index === i) {
@@ -40,14 +48,6 @@ $(document).ready(() => {
                 forms[i].style.display = 'none';
             }
         });
-    }
-
-    function controlForm(elem, index) {
-        if (elem.checked) {
-            showElement(index)
-        } else {
-            hideElement(index);
-        }
     }
 
     document.getElementById('sendAllForms').addEventListener('click', () => {
@@ -82,7 +82,10 @@ $(document).ready(() => {
                 infos[v.id.split(/(?=[A-Z])/).pop()] = formInfo;
             }
         })
+
         let errorsNb = 0;
+        let emailRE =  /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
+
         Object.keys(infos.personal).forEach((v) => {
             if(infos.personal[v] === ''){
                 Swal.fire({
@@ -92,9 +95,17 @@ $(document).ready(() => {
                     confirmButtonText: 'Ok'
                 })
                errorsNb++;
+            }else if(!emailRE.test(infos.personal.Email)){
+                Swal.fire({
+                    title: 'Erreur',
+                    text: 'Email incorrect',
+                    type: 'error',
+                    confirmButtonText: 'Ok'
+                })
+                errorsNb++;
             }
         })
-        if(errorsNb === 0){
+        if (errorsNb === 0) {
             sendAjax(infos)
         }
     }
@@ -104,7 +115,7 @@ $(document).ready(() => {
             url: '/projet/sendEmail',
             data: infos,
             type: 'POST',
-            success: function(result) {
+            success: function() {
                 Swal.fire({
                     title: 'Nice !',
                     text: 'ça passe sur dev :^)',
