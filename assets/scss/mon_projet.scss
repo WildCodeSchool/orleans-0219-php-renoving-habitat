@@ -192,7 +192,7 @@ input[type="radio"]{
  }
 
  .main_categ_projet_container{
-   margin-top: 100px;
+   margin-top: 140px;
  }
 
 .form-control:focus {
@@ -202,4 +202,30 @@ input[type="radio"]{
 
  .swal2-styled .swal2-confirm {
    background-color: $brand-color !important;
+ }
+
+ .h1_title_container{
+   width: 75%;
+   background-color: $brand-color;
+   transform: skewX(25deg);
+   padding-top: 16px;
+   padding-bottom: 14px;
+ }
+
+ .h2_title_container{
+   width: 60%;
+   background-color: $brand-color;
+   transform: skewX(25deg);
+   padding-top: 12px;
+   padding-bottom: 10px;
+ }
+
+ .h1_title_container > h1 {
+   color: white;
+   transform: skewX(-25deg);
+ }
+
+ .h2_title_container > h2 {
+   color: white;
+   transform: skewX(-25deg);
  }
