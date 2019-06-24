@@ -10,14 +10,14 @@ class CvUpload
     /**
      * @var string|null
      * @Assert\NotBlank()
-     * @Assert\Length(min=1, max=100)
+     * @Assert\Length(min=2, max=100)
      */
     private $lastname;
 
     /**
      * @var string|null
      * @Assert\NotBlank()
-     * @Assert\Length(min=1, max=100)
+     * @Assert\Length(min=2, max=100)
      */
     private $firstname;
 
@@ -68,8 +68,18 @@ class CvUpload
      */
     private $postCode;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=2, max=100)
+     */
     private $occupation;
 
+    /**
+     * @var string|null
+     * @Assert\NotBlank()
+     * @Assert\Length(min=2, max=100)
+     */
     private $area;
 
     /**
