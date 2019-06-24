@@ -24,8 +24,13 @@
 .masthead {
   height: 50vh;
   min-height: 250px;
-  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-image: url('../../public/assets/images/jumb_real.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.main_categories_row {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
