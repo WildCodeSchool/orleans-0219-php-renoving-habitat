@@ -1,0 +1,31 @@
+.nos_real_title_container {
+  margin: 0 auto;
+  width: 25%;
+  padding: 10px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: skew(25deg);
+}
+
+.nos_real_main_title {
+  transform: skew(-25deg);
+  text-align: center;
+}
+
+.realisation_main_text {
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  font-size: 120%;
+  font-style: italic;
+}
+
+.masthead {
+  height: 50vh;
+  min-height: 250px;
+  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
