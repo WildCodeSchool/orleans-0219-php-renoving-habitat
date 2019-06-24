@@ -27,6 +27,38 @@
   font-size: 150%;
 }
 
+
+
+
+.h1_title_container{
+  width: 50%;
+  background-color: $brand-color;
+  transform: skewX(25deg);
+  padding-top: 16px;
+  padding-bottom: 14px;
+}
+
+.h2_title_container{
+  width: 40%;
+  background-color: $brand-color;
+  transform: skewX(25deg);
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.h1_title_container > h1 {
+  color: $white;
+  transform: skewX(-25deg);
+}
+
+.h2_title_container > h2 {
+  color: $white;
+  transform: skewX(-25deg);
+}
+
+
+
+
 .realisation_main_text {
   padding-top: 50px;
   margin: 0 auto;
@@ -90,4 +122,8 @@
 .client_id {
   margin-top: 10px;
   float: right;
+}
+
+.modal_link {
+  cursor: pointer;
 }
