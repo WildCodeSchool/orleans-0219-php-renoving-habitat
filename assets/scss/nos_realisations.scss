@@ -7,9 +7,24 @@
   transform: skew(25deg);
 }
 
+.nos_real_subtitle_container {
+  margin: 0 auto;
+  width: 15%;
+  padding: 10px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: skew(25deg);
+}
+
 .nos_real_main_title {
   transform: skew(-25deg);
   text-align: center;
+}
+
+.nos_real_second_title {
+  transform: skew(-25deg);
+  text-align: center;
+  font-size: 150%;
 }
 
 .realisation_main_text {
@@ -54,4 +69,25 @@
     transform: translate(-50%, -50%);
     color: $white;
     font-size: 280%;
+}
+
+.client_container {
+    margin-top: 75px;
+}
+
+.cust_review_container {
+  padding-top: 60px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.client_react {
+  text-align: center;
+  font-size: 130%;
+  font-style: italic;
+}
+
+.client_id {
+  margin-top: 10px;
+  float: right;
 }
