@@ -9,6 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @Route("/recruitment")
@@ -32,8 +33,7 @@ class RecruitmentController extends AbstractController
                 ->setFrom($this->getParameter('mailer_from'))
                 ->setTo($this->getParameter('mailer_from'))
                 ->setBody($this->renderView('recruitment/email.html.twig', ['data' => $cvUpload]))
-                ->attach(Swift_Attachment::fromPath($cv->getPathname()))
-
+                ->attach(Swift_Attachment::fromPath($cv->getPathname())->setFilename('cv.'.$cv->guessExtension()))
             ;
             $mailer->send($message);
 
