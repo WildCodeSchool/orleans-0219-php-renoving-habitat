@@ -23,7 +23,6 @@ class MyProjectController extends AbstractController
         );
 
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             var_dump($form->getData());
             die;

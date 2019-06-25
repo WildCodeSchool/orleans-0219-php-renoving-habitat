@@ -22,7 +22,9 @@ class RoofingType extends AbstractType
                     '- de 5 ans' => null,
                 ],
                 'expanded' => true,
-                'required' => null
+                'required' => null,
+                'label' => false,
+                'placeholder' => false
             ]);
         ;
     }

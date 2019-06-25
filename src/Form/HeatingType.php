@@ -23,7 +23,9 @@ class HeatingType extends AbstractType
                     'Fioul' => null,
                 ],
                 'expanded' => true,
-                'required' => null
+                'required' => null,
+                'label' => false,
+                'placeholder' => false
             ])
         ;
     }

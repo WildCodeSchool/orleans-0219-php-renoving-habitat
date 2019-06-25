@@ -20,24 +20,31 @@ class MyProjectType extends AbstractType
     {
         $builder->add('roofing', RoofingType::class, [
             'required' => false,
+            'label' => false,
             ])
             ->add('heating', HeatingType::class, [
             'required' => false,
+                'label' => false,
             ])
             ->add('facade', FacadeType::class, [
                 'required' => false,
+                'label' => false,
             ])
             ->add('housework', HouseWorkType::class, [
                 'required' => false,
+                'label' => false,
             ])
             ->add('bathroom', BathroomType::class, [
                 'required' => false,
+                'label' => false,
             ])
             ->add('earthwork', EarthWorkType::class, [
                 'required' => false,
+                'label' => false,
             ])
             ->add('personal', MyProjectPersonalType::class, [
                 'required' => true,
+                'label' => false,
             ]);
     }
 }

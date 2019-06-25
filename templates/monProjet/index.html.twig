@@ -111,7 +111,7 @@
     </div>
     <div class="container">
 
-        <form>
+        {{ form_start(form) }}
             <div class="row form_container">
                 <div class="col-md-6 form_projet" id="formCouverture">
                     <div class="card mt-4">
@@ -363,7 +363,7 @@
 
                             <li class="list-group-item">
                                 Douche à l'italienne ?
-                                <label class="switch ">
+                                <label class="switch">
                                     {{ form_widget(form.bathroom.italianShower, { 'attr': {'class': 'primary'} }) }}
                                     <span class="slider"></span>
                                 </label>
@@ -427,7 +427,7 @@
                     <button type="submit" class="sendButton"><p>Envoyer</p></button>
                 </div>
             </div>
-        </form>
+        {{ form_end(form) }}
     </div>
 
 {% endblock %}

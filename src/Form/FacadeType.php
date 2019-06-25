@@ -22,7 +22,9 @@ class FacadeType extends AbstractType
                     '- de 10 ans' => null,
                 ],
                 'expanded' => true,
-                'required' => null
+                'required' => null,
+                'label' => false,
+                'placeholder' => false
             ])
             ->add('cracksSize', ChoiceType::class, [
                 'choices'  => [
@@ -30,7 +32,9 @@ class FacadeType extends AbstractType
                     '- de 5 cm' => null,
                 ],
                 'expanded' => true,
-                'required' => null
+                'required' => null,
+                'label' => false,
+                'placeholder' => false
             ]);
 
         ;
