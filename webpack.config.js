@@ -25,6 +25,7 @@ Encore
     .addEntry('juxtapose', './node_modules/juxtaposejs/build/js/juxtapose.js')
     .addEntry('beforeAfterSlider', './assets/js/beforeAfterSlider.js')
     .addEntry('map', './assets/js/map.js')
+    .addEntry('fix_upload', './assets/js/fix_upload.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
