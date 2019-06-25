@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block title %}Recrutement{% endblock %}
+
+{% block body %}
+    <div class="text-center">
+        <h2>Mes informations</h2>
+    </div>
+
+    {% for message in app.flashes('success-message') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    <div class="container">
+        <div class="form-group">
+            {{ form_start(form) }}
+            <div>
+                <h3>Coordonnées</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.lastname, {'label': 'Nom'}) }}
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.firstname, {'label': 'Prénom'}) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.telephone, {'label': 'Téléphone'}) }}
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.email, {'label': 'Email'}) }}
+                </div>
+            </div>
+            <div>
+                <h3>Adresse</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.streetNumber, {'label': 'Numéro'}) }}
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.streetName, {'label': 'Rue'}) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.city, {'label': 'Ville'}) }}
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.postCode, {'label': 'Code postal'}) }}
+                </div>
+            </div>
+            <div>
+                <h3>Informations métier</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.occupation, {'label': 'Sélectionnez votre métier'}) }}
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.area, {'label': 'Sélectionnez votre disponibilité géographique'}) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    {{ form_row(form.cv, {'label': 'Joindre votre CV'}) }}
+                </div>
+                <div class="col-sm-6">
+                    {{ form_row(form.message, {'label': 'Votre message'}) }}
+                </div>
+            </div>
+            <button class="btn btn-primary btn-admin">Envoyer</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('fixUpload') }}
+{% endblock %}
