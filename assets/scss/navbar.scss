@@ -6,7 +6,7 @@
   background-color: $primary-color;
   padding-bottom: 0;
   padding-top: 0;
-  box-shadow: 0 1px 10px $secondary-color;
+  box-shadow: 0 1px 10px $shadow;
 
   .navbar-light {
     color: $darker-secondary-color;
@@ -50,7 +50,7 @@
     width: 0;
     height: 0;
 
-    border-top: 3.5em solid transparent;
+    border-top: 3.5em solid $transparent;
     border-left: 2.563em solid $secondary-color;
   }
   li::after {
@@ -65,7 +65,7 @@
     height: 0;
 
     border-top: 3.5em solid $secondary-color;
-    border-left: 2.563em solid transparent;
+    border-left: 2.563em solid $transparent;
   }
 
   /* Hover */
@@ -77,10 +77,10 @@
   }
   li:hover::after {
     border-top: 3.5em solid $brand-color;
-    border-right: 2.563em solid transparent;
+    border-right: 2.563em solid $transparent;
   }
   li:hover::before {
-    border-top: 3.5em solid transparent;
+    border-top: 3.5em solid $transparent;
     border-left: 2.563em solid $brand-color;
   }
 

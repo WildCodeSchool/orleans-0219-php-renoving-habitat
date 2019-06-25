@@ -1,11 +1,9 @@
 
-
 #maped_house_container {
 	width: 100%;
 	display: flex;
   	justify-content: center;
 }
-
 
 .maped_house_image{
     display: block;
@@ -23,8 +21,7 @@
 
 
 #sliderContainer {
-  width: 80%;
-  height: 30em;
+  width: 100%;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -34,14 +31,8 @@
   max-height: 50px;
 }
 
-.beforeAfterContainer {
+.before-after-container {
   width: 100%;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#image_counter{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +43,7 @@
 }
 
 .arrow {
-  border: solid black;
+  border: solid $dark-color;
   border-width: 0 15px 15px 0;
   display: inline-block;
   padding: 15px;
@@ -94,14 +85,14 @@
 
 .presentation {
   text-align: left;
-  margin-top: 4.9em;
+  margin-top: 4.55em;
   .mainTitle {
     margin-top: 2em;
   }
   .jumbotron {
-    background-image: url("/assets/homepage_image/bg2.png");
+    background-image: url("../images/homepage/bg2.png");
     background-attachment: fixed;
-    height: 23em;
+    height: 45vh;
     background-repeat: no-repeat;
     margin-bottom: 0;
     background-position: right top;
@@ -127,8 +118,9 @@
     color: $secondary-color;
   }
   img {
+    position: relative;
     border-radius: 0 100px 0 100px;
-    box-shadow: inset -5px -4px 13px -8px rgba(133,130,133,1);
+    box-shadow: inset -5px -4px 13px -8px $shadow;
   }
 }
 
@@ -155,7 +147,7 @@
       color: $secondary-color;
     }
   }
-  .logoPartenaires {
+  .logo-partenaires {
 
     .logo {
       height: 5em;
@@ -169,16 +161,16 @@
   }
 }
 
-.bonPlans {
+.bon-plans {
   align-content: center;
-  background: url("/assets/images/mini_gift_house.png");
+  background: url("../images/main/mini_gift_house.png");
   background-color: $secondary-color;
   background-repeat: no-repeat;
   object-fit: fill;
   background-position: right;
   p {
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
   }
   .gooddeal {
     h2 {
@@ -204,9 +196,9 @@
     color: $darker-secondary-color;
     width: 20em;
     height: 20em;
-    background-color: #ffffa5;
+    background-color: $postit;
     padding: 1em;
-    font-family: 'Patrick Hand', cursive;
+    font-family: $font-hand-writing;
     box-shadow: 2px 4px 6px $darker-secondary-color;
     transform: rotate(-3deg);
     p {
@@ -216,7 +208,7 @@
 
 }
 
-.avantApres {
+.avant-apres {
   background-color: $light-brand-color;
   h2 {
     font-size: 2.5em;

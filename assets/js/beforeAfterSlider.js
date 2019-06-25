@@ -1,13 +1,13 @@
 let beforeArray =
     [
-        '/assets/homepage_image/imgbf1_1.jpeg',
-        '/assets/homepage_image/imgbf2_1.png',
+        require('../images/homepage/imgbf1_1.jpeg'),
+        require('../images/homepage/imgbf2_1.png'),
     ];
 
 let afterArray =
     [
-        '/assets/homepage_image/imgbf1_2.jpeg',
-        '/assets/homepage_image/imgbf2_2.jpeg',
+        require('../images/homepage/imgbf1_2.jpeg'),
+        require('../images/homepage/imgbf2_2.jpeg'),
     ];
 
 let photoArrayIndex = 0;

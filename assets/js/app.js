@@ -12,7 +12,9 @@ require('../scss/navbar.scss');
 require('../scss/footer.scss');
 require('bootstrap');
 require('leaflet');
+require('@fortawesome/fontawesome-free/css/all.min.css');
+
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+//console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
