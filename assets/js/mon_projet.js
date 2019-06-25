@@ -50,7 +50,7 @@ $(document).ready(() => {
         });
     }
 
-    document.getElementById('sendAllForms').addEventListener('click', () => {
+    /*document.getElementById('sendAllForms').addEventListener('click', () => {
         getFormData()
     })
 
@@ -140,5 +140,5 @@ $(document).ready(() => {
                 })
             }
         })
-    }
+    }*/
 })

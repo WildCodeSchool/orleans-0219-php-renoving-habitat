@@ -9,7 +9,9 @@
                 <li class="list-group-item">
                     Changement total
                     <label class="switch ">
-                        <input type="checkbox" class="primary">
+                        {{ form_start(form) }}
+                        {{ form_row(form.public, { 'attr': {'class': 'primary'} }) }}
+                        {{ form_end(form) }}
                         <span class="slider"></span>
                     </label>
                 </li>
@@ -50,8 +52,6 @@
                         </div>
                     </div>
                 </li>
-
-
             </ul>
         </div>
     </form>

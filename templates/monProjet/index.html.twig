@@ -7,7 +7,8 @@
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
-                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/tuile.jpg" alt="toiture">
+                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/tuile.jpg"
+                                 alt="toiture">
                         </li>
                         <li class="checkbox">
                             <label class="form-check-label pt-3 pb-2" for="inlineCheckbox1">
@@ -23,7 +24,8 @@
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
-                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/ravalement.jpg" alt="ravalement">
+                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/ravalement.jpg"
+                                 alt="ravalement">
                         </li>
                         <li class="checkbox">
                             <label class="form-check-label pt-3 pb-2" for="inlineCheckbox2">
@@ -39,7 +41,8 @@
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
-                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/chauffage.jpg" alt="chauffage">
+                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/chauffage.jpg"
+                                 alt="chauffage">
                         </li>
                         <li class="checkbox">
                             <label class="form-check-label pt-3 pb-2" for="inlineCheckbox3">
@@ -57,7 +60,8 @@
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
-                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/terrassement.jpg" alt="terrassement">
+                            <img class="mon_projet_checkbox_image rounded"
+                                 src="assets/mon_projet_image/terrassement.jpg" alt="terrassement">
                         </li>
                         <li class="checkbox">
                             <label class="form-check-label pt-3 pb-2" for="inlineCheckbox4">
@@ -73,7 +77,8 @@
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
-                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/travaux_interieur.jpg" alt="Travaux intérieur">
+                            <img class="mon_projet_checkbox_image rounded"
+                                 src="assets/mon_projet_image/travaux_interieur.jpg" alt="Travaux intérieur">
                         </li>
                         <li class="checkbox">
                             <label class="form-check-label pt-3 pb-2" for="inlineCheckbox5">
@@ -89,7 +94,8 @@
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
-                            <img class="mon_projet_checkbox_image rounded" src="assets/mon_projet_image/salle_de_bain.jpg" alt="Salle de bain">
+                            <img class="mon_projet_checkbox_image rounded"
+                                 src="assets/mon_projet_image/salle_de_bain.jpg" alt="Salle de bain">
                         </li>
                         <li class="checkbox">
                             <label class="form-check-label pt-3 pb-2" for="inlineCheckbox6">
@@ -104,45 +110,323 @@
         </div>
     </div>
     <div class="container">
-        <div class="row form_container">
-            {% include 'monProjet/forms/formCouverture.html.twig' %}
-            {% include 'monProjet/forms/formRavalement.html.twig' %}
-            {% include 'monProjet/forms/formChauffage.html.twig' %}
-            {% include 'monProjet/forms/formTerrassement.html.twig' %}
-            {% include 'monProjet/forms/formTravauxInterieur.html.twig' %}
-            {% include 'monProjet/forms/formSalleDeBain.html.twig' %}
-        </div>
+
         <form>
-        <div class="form-group mt-5" id="my-form">
-            <div class="mx-auto h2_title_container mb-5"><h2 class="text-center">Informations personnelles</h2></div>
-            <div class="row">
-                <div class="col-md-6 info_pers_form mt-2">
-                    <label for="firstname">Prénom :</label>
-                    <input type="text" class="form-control" id="firstnameForm">
+            <div class="row form_container">
+                <div class="col-md-6 form_projet" id="formCouverture">
+                    <div class="card mt-4">
+                        <!-- Default panel contents -->
+                        <div class="card-header form_title">Couverture</div>
+
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item">
+                                Tuiles cassées ?
+                                <label class="switch">
+                                    {{ form_widget(form.roofing.roofTiles, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Fuite d'eau ?
+                                <label class="switch">
+                                    {{ form_widget(form.roofing.waterLeak, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Présence de mousse / algue / lichen / champignon ?
+                                <label class="switch">
+                                    {{ form_widget(form.roofing.mosse, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Dernier traitement ?
+                                <div class="radio_container float-right">
+                                    <div class="form-check mt-1">
+                                        <label>
+                                            {{ form_widget(form.roofing.lastTreatment[0]) }}
+                                            <span class="label-text">+ de 5 ans</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label>
+                                            {{ form_widget(form.roofing.lastTreatment[1]) }}
+                                            <span class="label-text">- de 5 ans</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-6 info_pers_form mt-2">
-                    <label for="lastname">Nom :</label>
-                    <input type="text" class="form-control" id="lastnameForm">
+                <div class="col-md-6 form_projet" id="formRavalement">
+                    <div class="card mt-4">
+                        <!-- Default panel contents -->
+                        <div class="card-header form_title">Ravalement de façade</div>
+
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item">
+                                Salissure ?
+                                <label class="switch ">
+                                    {{ form_widget(form.facade.smear, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Décollement ?
+                                <label class="switch">
+                                    {{ form_widget(form.facade.peelingOff, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Remonté capillaire au niveau du sol ?
+                                <label class="switch">
+                                    {{ form_widget(form.facade.humidification, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Fissure présente depuis ?
+                                <div class="radio_container float-right">
+                                    <div class="form-check mt-1">
+                                        <label>
+                                            {{ form_widget(form.facade.cracksFrom[0]) }}
+                                            <span class="label-text">+ de 10 ans</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label>
+                                            {{ form_widget(form.facade.cracksFrom[1]) }}
+                                            <span class="label-text">- de 10 ans</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                Taille des fissures (horizontal / vertical) ?
+                                <div class="radio_container float-right">
+                                    <div class="form-check mt-1">
+                                        <label>
+                                            {{ form_widget(form.facade.cracksSize[0]) }}
+                                            <span class="label-text">+ de 1 cm</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label>
+                                            {{ form_widget(form.facade.cracksSize[1]) }}
+                                            <span class="label-text">- de 1 cms</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 form_projet" id="formChauffage">
+                    <div class="card mt-4">
+                        <!-- Default panel contents -->
+                        <div class="card-header form_title">Chauffage maison</div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                Changement Total
+                                <label class="switch">
+                                    {{ form_widget(form.heating.totalReplacement, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                            <li class="list-group-item">
+                                Entretient
+                                <label class="switch">
+                                    {{ form_widget(form.heating.maintain, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Réparation
+                                <label class="switch">
+                                    {{ form_widget(form.heating.reparation, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Type de chauffage ?
+                                <div class="radio_container float-right">
+                                    <div class="form-check mt-1">
+                                        <label>
+                                            {{ form_widget(form.heating.heatingType[0]) }}
+                                            <span class="label-text">Electrique</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label>
+                                            {{ form_widget(form.heating.heatingType[1]) }}
+                                            <span class="label-text">Gaz</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label>
+                                            {{ form_widget(form.heating.heatingType[2]) }}
+                                            <span class="label-text">Fioul</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 form_projet" id="formTerrassement">
+                    <div class="card mt-4">
+                        <!-- Default panel contents -->
+                        <div class="card-header form_title">Terrassement</div>
+
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item">
+                                Béton désactivé ?
+                                <label class="switch ">
+                                    {{ form_widget(form.earthwork.disabledConcrete, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Dalle de béton ?
+                                <label class="switch">
+                                    {{ form_widget(form.earthwork.concreteSlab, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Carrelage ?
+                                <label class="switch">
+                                    {{ form_widget(form.earthwork.floorTiles, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 form_projet" id="formTravauxInterieur">
+                    <div class="card mt-4">
+                        <!-- Default panel contents -->
+                        <div class="card-header form_title">Travaux intérieurs</div>
+
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item">
+                                Rénovation de pièces ?
+                                <label class="switch ">
+                                    {{ form_widget(form.housework.renovation, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Tâches noires ?
+                                <label class="switch">
+                                    {{ form_widget(form.housework.blackSpots, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Décollement de papier peint ?
+                                <label class="switch">
+                                    {{ form_widget(form.housework.paperPeelingOff, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 form_projet" id="formSalleDeBain">
+                    <div class="card mt-4">
+                        <!-- Default panel contents -->
+                        <div class="card-header form_title">Salle de bain</div>
+
+                        <ul class="list-group list-group-flush">
+
+                            <li class="list-group-item">
+                                Douche à l'italienne ?
+                                <label class="switch ">
+                                    {{ form_widget(form.bathroom.italianShower, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Cabine de douche ?
+                                <label class="switch">
+                                    {{ form_widget(form.bathroom.showerCabin, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Faïence ?
+                                <label class="switch">
+                                    {{ form_widget(form.bathroom.earthenware, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+
+                            <li class="list-group-item">
+                                Carrelage ?
+                                <label class="switch">
+                                    {{ form_widget(form.bathroom.floorTiles, { 'attr': {'class': 'primary'} }) }}
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 info_pers_form mt-2">
-                    <label for="email">Email :</label>
-                    <input type="text" class="form-control" id="emailForm">
+            <div class="form-group mt-5" id="my-form">
+                <div class="mx-auto h2_title_container mb-5"><h2 class="text-center">Informations personnelles</h2>
                 </div>
-                <div class="col-md-6 info_pers_form mt-2">
-                    <label for="address">Adresse :</label>
-                    <input type="text" class="form-control" id="addressForm">
+                <div class="row">
+                    <div class="col-md-6 info_pers_form mt-2">
+                        <label for="firstname">Prénom :</label>
+                        {{ form_widget(form.personal.firstname, { 'attr': {'class': 'form-control'} }) }}
+                    </div>
+                    <div class="col-md-6 info_pers_form mt-2">
+                        <label for="lastname">Nom :</label>
+                        {{ form_widget(form.personal.lastname, { 'attr': {'class': 'form-control'} }) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 info_pers_form mt-2">
+                        <label for="email">Email :</label>
+                        {{ form_widget(form.personal.email, { 'attr': {'class': 'form-control'} }) }}
+                    </div>
+                    <div class="col-md-6 info_pers_form mt-2">
+                        <label for="address">Adresse :</label>
+                        {{ form_widget(form.personal.address, { 'attr': {'class': 'form-control'} }) }}
+                    </div>
+                </div>
+                <div class="info_pers_form mt-2">
+                    <label for="FormControlTextarea">Message :</label>
+                    {{ form_widget(form.personal.message, { 'attr': {'class': 'form-control', 'row': '7'} }) }}
+                </div>
+                <div class="w-100 text-center">
+                    <button type="submit" class="sendButton"><p>Envoyer</p></button>
                 </div>
             </div>
-            <div class="info_pers_form mt-2">
-                <label for="FormControlTextarea">Message :</label>
-                <textarea class="form-control" id="FormControlTextarea" rows="7"></textarea>
-            </div>
-            <div class="w-100 text-center">
-                <button type="button" id="sendAllForms" class="sendButton"><p>Envoyer</p></button>
-            </div>
-        </div>
         </form>
     </div>
 

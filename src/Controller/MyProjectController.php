@@ -3,21 +3,33 @@
 namespace App\Controller;
 
 use App\Service\MyProjectEmailSender;
+use App\Form\MyProjectType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 
-class MonProjetController extends AbstractController
+class MyProjectController extends AbstractController
 {
 
     /**
      * @Route("/projet", name="projet")*
      */
 
-    public function index() :Response
+    public function index(Request $request) :Response
     {
-        return $this->render('monProjet/index.html.twig');
+        $form = $this->createForm(
+            MyProjectType::class
+        );
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            var_dump($form->getData());
+            die;
+        }
+
+        return $this->render('monProjet/index.html.twig', ['form' => $form->createView()]);
     }
 
     /**
