@@ -18,8 +18,8 @@ class RoofingType extends AbstractType
             ->add('mosse')
             ->add('lastTreatment', ChoiceType::class, [
                 'choices'  => [
-                    '+ de 5 ans' => null,
-                    '- de 5 ans' => null,
+                    '+ de 5 ans' => '+ de 5 ans',
+                    '- de 5 ans' => '- de 5 ans',
                 ],
                 'expanded' => true,
                 'required' => null,

@@ -26,6 +26,7 @@ class MyProjectController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $info = $form->getData();
+            var_dump($info);
 
             $emailSender = new MyProjectEmailSender($mailer, $templating);
             $emailSender->sendEmail($info);

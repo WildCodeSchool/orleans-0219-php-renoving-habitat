@@ -18,8 +18,8 @@ class FacadeType extends AbstractType
             ->add('humidification')
             ->add('cracksFrom', ChoiceType::class, [
                 'choices'  => [
-                    '+ de 10 ans' => null,
-                    '- de 10 ans' => null,
+                    '+ de 10 ans' => '+ de 10 ans',
+                    '- de 10 ans' => '- de 10 ans',
                 ],
                 'expanded' => true,
                 'required' => null,
@@ -28,8 +28,8 @@ class FacadeType extends AbstractType
             ])
             ->add('cracksSize', ChoiceType::class, [
                 'choices'  => [
-                    '+ de 1 cm' => null,
-                    '- de 5 cm' => null,
+                    '+ de 1 cm' => '+ de 1 cm',
+                    '- de 5 cm' => '- de 5 cm',
                 ],
                 'expanded' => true,
                 'required' => null,

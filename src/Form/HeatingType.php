@@ -18,9 +18,9 @@ class HeatingType extends AbstractType
             ->add('reparation')
             ->add('heatingType', ChoiceType::class, [
                 'choices'  => [
-                    'Electrique' => null,
-                    'Gaz' => null,
-                    'Fioul' => null,
+                    'Electrique' => 'Electrique',
+                    'Gaz' => 'Gaz',
+                    'Fioul' => 'Fioul',
                 ],
                 'expanded' => true,
                 'required' => null,
