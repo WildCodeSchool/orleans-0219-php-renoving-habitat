@@ -109,8 +109,13 @@
             </div>
         </div>
     </div>
+    {# display any flash message #}
     <div class="container">
-
+        {% for message in app.flashes('notice') %}
+            <div class="alert alert-success w-60 py-4 mx-auto" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
         {{ form_start(form) }}
             <div class="row form_container">
                 <div class="col-md-6 form_projet" id="formCouverture">

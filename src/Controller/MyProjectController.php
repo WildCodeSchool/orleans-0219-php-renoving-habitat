@@ -16,31 +16,26 @@ class MyProjectController extends AbstractController
      * @Route("/projet", name="projet")*
      */
 
-    public function index(Request $request) :Response
+    public function index(Request $request, \Swift_Mailer $mailer, \Twig\Environment $templating) :Response
     {
         $form = $this->createForm(
             MyProjectType::class
         );
 
         $form->handleRequest($request);
+
         if ($form->isSubmitted() && $form->isValid()) {
-            var_dump($form->getData());
-            die;
+            $info = $form->getData();
+
+            $emailSender = new MyProjectEmailSender($mailer, $templating);
+            $emailSender->sendEmail($info);
+
+            $this->addFlash(
+                'notice',
+                'Votre demande de devis a été envoyé, nous vous recontacterons bientôt!'
+            );
         }
 
         return $this->render('monProjet/index.html.twig', ['form' => $form->createView()]);
-    }
-
-    /**
-     * @Route("/projet/sendEmail", name="emailSend")
-     */
-
-    public function sendEmail(\Swift_Mailer $mailer, \Twig\Environment $templating) :Response
-    {
-        $info = $_POST;
-        $emailSender = new MyProjectEmailSender($mailer, $templating);
-        $emailSender->sendEmail($info);
-
-        return $this->render('monProjet/index.html.twig');
     }
 }
