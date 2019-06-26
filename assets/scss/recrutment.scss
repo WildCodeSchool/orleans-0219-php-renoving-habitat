@@ -1,0 +1,60 @@
+.recrutons {
+  .jumbotron {
+    background-image: url("/assets/images/macon.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: contain;
+    height: 50vh;
+    // background-color: rgba(255, 255, 255, 0.5);
+  }
+  .titles {
+    font-variant: small-caps;
+    text-align: right;
+
+  }
+  h1 {
+    color: $darker-secondary-color;
+  }
+  h2 {
+    color: $brand-color;
+    font-size: 5em;
+  }
+}
+
+
+.recruitment {
+  background-color: $brand-color;
+  .intro {
+  }
+  .circle {
+   // margin: 36px;
+    display:flex;
+    //padding: 16px;
+    text-align: center;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    background-color:transparent;
+    line-height: 50px;
+  }
+  .row_circle{
+    //margin-top: 10px;
+   // background-color: $brand-color;
+    //border-top: 2px solid black;
+    //border-bottom:2px solid black;
+    //padding: 2em;
+  }
+  .img_circle{
+    object-fit: cover;
+    margin: auto;
+    width: -moz-available;
+  }
+  .text_circle{
+    color: white;
+  }
+
+}
