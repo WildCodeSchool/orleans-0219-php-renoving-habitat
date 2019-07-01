@@ -5,6 +5,10 @@ Encore
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
     .setPublicPath('/build')
+
+    .copyFiles({
+        from: './assets',
+    })
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
@@ -26,6 +30,7 @@ Encore
     .addEntry('juxtapose', './node_modules/juxtaposejs/build/js/juxtapose.js')
     .addEntry('beforeAfterSlider', './assets/js/before_after_slider.js')
     .addEntry('map', './assets/js/map.js')
+    .addEntry('fix_upload', './assets/js/fix_upload.js')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
@@ -65,7 +70,7 @@ Encore
     //.enableIntegrityHashes()
 
     // uncomment if you're having problems with a jQuery plugin
-    .autoProvidejQuery()
+    .autoProvidejQuery();
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
