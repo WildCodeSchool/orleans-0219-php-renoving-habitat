@@ -5,6 +5,10 @@ Encore
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
     .setPublicPath('/build')
+
+    .copyFiles({
+        from: './assets',
+    })
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
@@ -65,7 +69,7 @@ Encore
     //.enableIntegrityHashes()
 
     // uncomment if you're having problems with a jQuery plugin
-    .autoProvidejQuery()
+    .autoProvidejQuery();
 
 
     // uncomment if you use API Platform Admin (composer req api-admin)
