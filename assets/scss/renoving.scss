@@ -1,8 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
 
-#background_img{
+#background_cov{
 
   background-image:url("/assets/images/coverage.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+}
+
+#background_carp{
+  background-image:url("/assets/images/carpentry.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -24,7 +34,7 @@
   color:white;
   font-size:1em;
   height: 4em;
-  font-variant: small-caps;
+  text-transform: uppercase;
 
 
 }
@@ -80,13 +90,19 @@
 
 
 }
-.bg_img_card{
+.bg_card_cov{
   background-image: url("/assets/images/background_card.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding: 3em;
 
 
+}
+#bg_card_carp{
+  background-image: url("/assets/images/bg_card_carp.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3em;
 }
 .button {
   -webkit-transition-duration: 0.4s; /* Safari */
