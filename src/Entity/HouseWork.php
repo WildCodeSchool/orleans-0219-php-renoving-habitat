@@ -4,31 +4,15 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\HouseWorkRepository")
- */
 class HouseWork
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+
     private $id;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $renovation;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $blackSpots;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $paperPeelingOff;
 
     public function getId(): ?int

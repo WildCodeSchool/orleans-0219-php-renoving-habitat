@@ -4,36 +4,17 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\HeatingRepository")
- */
 class Heating
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+
     private $id;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $totalReplacement;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $maintain;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $reparation;
 
-    /**
-     * @ORM\Column(type="string", length=20, nullable=true)
-     */
     private $heatingType;
 
     public function getId(): ?int

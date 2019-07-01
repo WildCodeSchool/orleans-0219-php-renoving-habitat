@@ -4,36 +4,17 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\BathroomRepository")
- */
 class Bathroom
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+
     private $id;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $italianShower;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $showerCabin;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $earthenware;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $floorTiles;
 
     public function getId(): ?int

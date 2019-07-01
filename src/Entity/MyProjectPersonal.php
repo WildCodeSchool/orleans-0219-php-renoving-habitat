@@ -4,41 +4,19 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\MyProjectPersonalRepository")
- */
 class MyProjectPersonal
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $firstName;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $lastName;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $email;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $address;
 
-    /**
-     * @ORM\Column(type="text")
-     */
     private $message;
 
     public function getId(): ?int

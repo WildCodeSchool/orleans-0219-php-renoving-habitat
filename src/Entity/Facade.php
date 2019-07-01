@@ -4,41 +4,19 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass="App\Repository\FacadeRepository")
- */
 class Facade
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+
     private $id;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $smear;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $peelingOff;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
     private $humidification;
 
-    /**
-     * @ORM\Column(type="string", length=20, nullable=true)
-     */
     private $cracksFrom;
 
-    /**
-     * @ORM\Column(type="string", length=20, nullable=true)
-     */
     private $cracksSize;
 
     public function getId(): ?int
