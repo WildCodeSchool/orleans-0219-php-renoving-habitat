@@ -34,9 +34,7 @@
   .intro {
   }
   .circle {
-   // margin: 36px;
     display:flex;
-    //padding: 16px;
     text-align: center;
     width: 10em;
     height: 10em;
@@ -47,11 +45,6 @@
     line-height: 50px;
   }
   .row_circle{
-    //margin-top: 10px;
-   // background-color: $brand-color;
-    //border-top: 2px solid black;
-    //border-bottom:2px solid black;
-    //padding: 2em;
   }
   .img_circle{
     object-fit: cover;
@@ -61,5 +54,4 @@
   .text_circle{
     color: white;
   }
-
 }
