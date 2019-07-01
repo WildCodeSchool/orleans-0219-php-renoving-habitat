@@ -1,5 +1,3 @@
-const Swal = require('sweetalert2')
-
 $(document).ready(() => {
     // uncheck all checkbox on page load
     let checkboxes = document.getElementsByTagName('input');
