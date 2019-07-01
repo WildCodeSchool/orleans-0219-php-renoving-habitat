@@ -2,23 +2,14 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 class HouseWork
 {
-
-    private $id;
 
     private $renovation;
 
     private $blackSpots;
 
     private $paperPeelingOff;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getRenovation(): ?bool
     {

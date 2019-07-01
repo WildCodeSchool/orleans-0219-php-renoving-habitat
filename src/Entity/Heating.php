@@ -2,12 +2,8 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 class Heating
 {
-
-    private $id;
 
     private $totalReplacement;
 
@@ -16,11 +12,6 @@ class Heating
     private $reparation;
 
     private $heatingType;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getTotalReplacement(): ?bool
     {

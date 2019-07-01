@@ -32,7 +32,7 @@ class MyProjectController extends AbstractController
 
             $this->addFlash(
                 'notice',
-                'Votre demande de devis a été envoyé, nous vous recontacterons bientôt!'
+                'Votre demande de devis a été envoyée, nous vous recontacterons bientôt!'
             );
         }
 

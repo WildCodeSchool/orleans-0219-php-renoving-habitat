@@ -2,23 +2,14 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 class EarthWork
 {
-
-    private $id;
 
     private $disabledConcrete;
 
     private $concreteSlab;
 
     private $floorTiles;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getDisabledConcrete(): ?bool
     {

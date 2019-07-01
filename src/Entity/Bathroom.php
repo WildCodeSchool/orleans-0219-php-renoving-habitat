@@ -2,12 +2,8 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 class Bathroom
 {
-
-    private $id;
 
     private $italianShower;
 
@@ -16,11 +12,6 @@ class Bathroom
     private $earthenware;
 
     private $floorTiles;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getItalianShower(): ?bool
     {

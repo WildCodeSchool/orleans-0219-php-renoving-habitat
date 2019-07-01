@@ -2,12 +2,8 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 class Facade
 {
-
-    private $id;
 
     private $smear;
 
@@ -18,11 +14,6 @@ class Facade
     private $cracksFrom;
 
     private $cracksSize;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getSmear(): ?bool
     {
