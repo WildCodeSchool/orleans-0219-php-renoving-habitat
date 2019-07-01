@@ -89,7 +89,7 @@ class GoodDealController extends AbstractController
             ]);
         }
 
-        return $this->render('good_deal/edit.html.twig', [
+        return $this->render('admin/good_deal.html.twig', [
             'good_deal' => $goodDeal,
             'form' => $form->createView(),
         ]);
