@@ -24,10 +24,12 @@
   color:white;
   font-size:1em;
   height: 4em;
+  font-variant: small-caps;
 
 
 }
 .paragraph{
+  margin-top: 2em;
   margin-bottom:2em;
   background-color: white;
   padding: 1em;
@@ -45,7 +47,7 @@
     height: 2px;
     background-color: $brand-color;
     width: 18em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     margin-top: -3em;
   }
 
@@ -118,8 +120,6 @@
 .row_circle{
   margin-top: 0;
   background-color: $brand-color;
-
-
   padding: 2em;
 }
 .img_circle{
