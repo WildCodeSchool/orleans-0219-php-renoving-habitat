@@ -5,86 +5,86 @@ namespace App\Entity;
 class MainWorkCategories
 {
 
-    private $Couverture;
+    private $roofing;
 
-    private $Isolation;
+    private $isolation;
 
-    private $Interieur;
+    private $interior;
 
-    private $Ravalement;
+    private $facade;
 
-    private $Menuiserie;
+    private $carpentry;
 
-    private $Terrassement;
+    private $earthwork;
 
-    public function getCouverture(): ?bool
+    public function getRoofing(): ?bool
     {
-        return $this->Couverture;
+        return $this->roofing;
     }
 
-    public function setCouverture(?bool $Couverture): self
+    public function setRoofing(?bool $roofing): self
     {
-        $this->Couverture = $Couverture;
+        $this->roofing = $roofing;
 
         return $this;
     }
 
     public function getIsolation(): ?bool
     {
-        return $this->Isolation;
+        return $this->isolation;
     }
 
-    public function setIsolation(?bool $Isolation): self
+    public function setIsolation(?bool $isolation): self
     {
-        $this->Isolation = $Isolation;
+        $this->isolation = $isolation;
 
         return $this;
     }
 
-    public function getInterieur(): ?bool
+    public function getInterior(): ?bool
     {
-        return $this->Interieur;
+        return $this->interior;
     }
 
-    public function setInterieur(?bool $Interieur): self
+    public function setInterior(?bool $interior): self
     {
-        $this->Interieur = $Interieur;
+        $this->interior = $interior;
 
         return $this;
     }
 
-    public function getRavalement(): ?bool
+    public function getFacade(): ?bool
     {
-        return $this->Ravalement;
+        return $this->facade;
     }
 
-    public function setRavalement(?bool $Ravalement): self
+    public function setFacade(?bool $facade): self
     {
-        $this->Ravalement = $Ravalement;
+        $this->facade = $facade;
 
         return $this;
     }
 
-    public function getMenuiserie(): ?bool
+    public function getCarpentry(): ?bool
     {
-        return $this->Menuiserie;
+        return $this->carpentry;
     }
 
-    public function setMenuiserie(?bool $Menuiserie): self
+    public function setCarpentry(?bool $carpentry): self
     {
-        $this->Menuiserie = $Menuiserie;
+        $this->carpentry = $carpentry;
 
         return $this;
     }
 
-    public function getTerrassement(): ?bool
+    public function getEarthwork(): ?bool
     {
-        return $this->Terrassement;
+        return $this->earthwork;
     }
 
-    public function setTerrassement(?bool $Terrassement): self
+    public function setEarthwork(?bool $earthwork): self
     {
-        $this->Terrassement = $Terrassement;
+        $this->earthwork = $earthwork;
 
         return $this;
     }
