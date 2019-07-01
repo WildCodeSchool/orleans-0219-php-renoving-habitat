@@ -7,8 +7,6 @@ use Doctrine\ORM\Mapping as ORM;
 class MyProjectPersonal
 {
 
-    private $id;
-
     private $firstName;
 
     private $lastName;
@@ -18,11 +16,6 @@ class MyProjectPersonal
     private $address;
 
     private $message;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getFirstName(): ?string
     {

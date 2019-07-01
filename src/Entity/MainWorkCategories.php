@@ -7,8 +7,6 @@ use Doctrine\ORM\Mapping as ORM;
 class MainWorkCategories
 {
 
-    private $id;
-
     private $Couverture;
 
     private $Isolation;
@@ -20,11 +18,6 @@ class MainWorkCategories
     private $Menuiserie;
 
     private $Terrassement;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getCouverture(): ?bool
     {
