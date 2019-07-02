@@ -4,8 +4,10 @@
 @import "mon_projet";
 @import '~font-awesome/scss/font-awesome.scss';
 @import "homepage";
+@import "recrutment";
 @import "CGVU";
 @import "~tooltipster/dist/css/tooltipster.bundle";
+@import "homepage.scss";
 @import "~juxtaposejs/build/css/juxtapose";
 @import "~leaflet/dist/leaflet.css";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
@@ -24,4 +26,3 @@ a {
 .custom-file-label::after{
      content: "Parcourir";
  }
-
