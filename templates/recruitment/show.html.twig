@@ -1,86 +1,167 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout_visitor.html.twig' %}
 {% form_theme form 'bootstrap_4_layout.html.twig' %}
 
-{% block title %}Recrutement{% endblock %}
+{% block title %}Nous Recrutons{% endblock %}
 
 {% block body %}
-    <div class="text-center">
-        <h2>Mes informations</h2>
-    </div>
 
-    {% for message in app.flashes('success-message') %}
-        <div class="alert alert-success">
-            {{ message }}
+    <section class="recrutons pt-5">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="titles container">
+                <h1 class="display-4 text-lg-right">Renoving Habitat</h1>
+                <h2>Recrute !</h2>
+            </div>
         </div>
-    {% endfor %}
+    </section>
 
-    <div class="container">
-        <div class="form-group">
-            {{ form_start(form) }}
-            <div>
-                <h3>Coordonnées</h3>
+    <section class="recruitment container-fluid">
+        <div class="panel justify-content-center pt-3">
+            <h5 class="col-md-12 text-center">Vous souhaitez travailler dans un domaine en forte croissance
+                ?</h5>
+    </section>
+
+    <section class="container cards-recruitment pt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card-deck pt-5">
+                    <div class="card m-3">
+                        <img class="card-img-top" src="/assets/images/poseur.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Poseurs menuiserie et ravalement</h5>
+                            <p class="card-text"> Entreprise familiale, nous recherchons des collaborateurs pouvant
+                                s’inscrire dans la continuité de notre développement.</p>
+                            <p class="card-text">Afin de renforcer nos équipes de pose, nous recherchons des poseurs de
+                                menuiseries avec
+                                expérience confirmée ainsi que des spécialistes du ravalement.</p>
+                            <p class="card-text">
+                                Sur des chantiers en rénovation vous assurerez la
+                                pose de nos produits selon les règles de l’art et dans le respect des consignes (lecture
+                                de plans, de fiches d’intervention, respect des règles d’étanchéité et
+                                d’installation).</p>
+                            <p class="card-text">Vous veillerez à respecter la propreté des habitations à rénover. Vous
+                                serez amenés à
+                                effectuer certains travaux de réglages ou de SAV. </p>
+                            <p class="card-text">CDI<br>
+                                Possibilité d'évolution</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="card-text">PROFIL RECHERCHÉ : Permis B, dynamique, autonome,
+                                sérieux, soigné. Vous avez le souci du détail, et voulez contenter nos
+                                clients. Vous êtes une personne digne de confiance, motivée, et aimant travailler en
+                                équipe, rejoignez-nous !
+                                Cette embauche s'adresse à des personnes hommes ou femmes, avec ou sans diplômes.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card m-3">
+                        <img class="card-img-top" src="/assets/images/technico.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Technico-commerciaux et prospecteurs</h5>
+                            <p class="card-text">Le monde de la vente vous intéresse ?<br>
+                                Vous aimez le contact ?<br>
+                                Vous souhaitez travailler dans un domaine en forte croissance ?</p>
+                            <p class="card-text">Spécialisé dans le B to C de produits et services destinés à
+                                l’amélioration de l'habitat.
+                                Dans le cadre de notre développement du 77,78, 41, 91 et 92 nous recherchons de nouveaux
+                                technico-commerciaux et prospecteurs.</p>
+                            <p class="card-text">Votre mission sera de démarcher les propriétaires de maisons
+                                individuelles de plus de 10 ans.
+                                Nous vous proposons :</p>
+                            <p class="card-text">CDI<br>
+                                Formation complète<br>
+                                Possibilité d'évolution<br>
+                                Statut salarié comprenant : fixe/pourcentage/primes/challenge/frais.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="card-text">
+                                PROFIL RECHERCHÉ : Permis B, dynamique, rigoureux, animé d’un fort esprit d’équipe et le
+                                goût du challenge, ambitieux, travailleur, sérieux et motivé, rejoignez-nous !
+                                Cette embauche s'adresse à des personnes hommes ou femmes, avec ou sans diplômes.
+                            </small>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    {{ form_row(form.lastname, {'label': 'Nom'}) }}
-                </div>
-                <div class="col-sm-6">
-                    {{ form_row(form.firstname, {'label': 'Prénom'}) }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    {{ form_row(form.telephone, {'label': 'Téléphone'}) }}
-                </div>
-                <div class="col-sm-6">
-                    {{ form_row(form.email, {'label': 'Email'}) }}
-                </div>
-            </div>
-            <div>
-                <h3>Adresse</h3>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    {{ form_row(form.streetNumber, {'label': 'Numéro'}) }}
-                </div>
-                <div class="col-sm-6">
-                    {{ form_row(form.streetName, {'label': 'Rue'}) }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    {{ form_row(form.city, {'label': 'Ville'}) }}
-                </div>
-                <div class="col-sm-6">
-                    {{ form_row(form.postCode, {'label': 'Code postal'}) }}
-                </div>
-            </div>
-            <div>
-                <h3>Informations métier</h3>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    {{ form_row(form.occupation, {'label': 'Sélectionnez votre métier'}) }}
-                </div>
-                <div class="col-sm-6">
-                    {{ form_row(form.area, {'label': 'Sélectionnez votre disponibilité géographique'}) }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    {{ form_row(form.cv, {'label': 'Joindre votre CV'}) }}
-                </div>
-                <div class="col-sm-6">
-                    {{ form_row(form.message, {'label': 'Votre message'}) }}
-                </div>
-            </div>
-            <button class="btn btn-primary btn-admin">Envoyer</button>
-            {{ form_end(form) }}
         </div>
-    </div>
+    </section>
+
+    <section class="form-recruitment">
+        <div class="text-center p-5">
+            <h2>Mes informations</h2>
+        </div>
+        {% for message in app.flashes('success-message') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <div class="container">
+            <div class="form-group">
+                {{ form_start(form) }}
+                <div>
+                    <h3>Coordonnées</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.lastname, {'label': 'Nom'}) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.firstname, {'label': 'Prénom'}) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.telephone, {'label': 'Téléphone'}) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.email, {'label': 'Email'}) }}
+                    </div>
+                </div>
+                <div>
+                    <h3>Adresse</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.streetNumber, {'label': 'Numéro'}) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.streetName, {'label': 'Rue'}) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.city, {'label': 'Ville'}) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.postCode, {'label': 'Code postal'}) }}
+                    </div>
+                </div>
+                <div>
+                    <h3>Informations métier</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.occupation, {'label': 'Sélectionnez votre métier'}) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.area, {'label': 'Sélectionnez votre disponibilité géographique'}) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{ form_row(form.cv, {'label': 'Joindre votre CV'}) }}
+                    </div>
+                    <div class="col-sm-6">
+                        {{ form_row(form.message, {'label': 'Votre message'}) }}
+                    </div>
+                </div>
+                <button class="btn btn-success btn-admin">Envoyer</button>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </section>
 
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
-    {{ encore_entry_script_tags('fixUpload') }}
+    {{ encore_entry_script_tags('fix_upload') }}
 {% endblock %}
