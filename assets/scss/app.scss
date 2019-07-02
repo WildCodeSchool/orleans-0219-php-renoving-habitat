@@ -1,10 +1,14 @@
 @import "vars";
 @import "home_map";
 @import "~bootstrap/scss/bootstrap";
+@import "mon_projet";
+@import '~font-awesome/scss/font-awesome.scss';
 @import "homepage";
 @import "entreprise";
+@import "recrutment";
 @import "CGVU";
 @import "~tooltipster/dist/css/tooltipster.bundle";
+@import "homepage.scss";
 @import "~juxtaposejs/build/css/juxtapose";
 @import "~leaflet/dist/leaflet.css";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
