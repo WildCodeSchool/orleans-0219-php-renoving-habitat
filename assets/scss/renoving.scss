@@ -20,6 +20,15 @@
   width: 100%;
   margin: 0;
 }
+#background_rav{
+  background-image:url("/assets/images/wall.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+}
 
 .first_title{
   margin-right: 3em;
@@ -100,6 +109,12 @@
 }
 #bg_card_carp{
   background-image: url("/assets/images/bg_card_carp.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3em;
+}
+#bg_card_rav{
+  background-image: url("/assets/images/bg_wall.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding: 3em;
