@@ -87,6 +87,10 @@
 }
 
 .qualifications {
+  .box {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .quality {
     display: flex;
     flex-wrap: wrap;
@@ -102,14 +106,16 @@
         font-size: 1.1em;
       }
       width: 20em;
-      margin: 1em;
     }
   }
 
   .conclusion {
     text-align: left;
-    color: $brand-color;
+    background-color: $brand-color;
+    color: $secondary-color;
     font-size: 1.5em;
+    margin-top: 2em;
+    font-style: oblique;
   }
 }
 
@@ -124,18 +130,29 @@
   h3 {
     text-align: left;
     font-size: 1.5em;
+  }
+  p {
+    text-align: left;
     padding-bottom: 1.5em;
+    span {
+      color: $brand-color;
+      font-weight: bold;
+    }
   }
 
   ul {
-    list-style-type: circle;
+    list-style: none;
     padding-left: 0;
     li {
-      display: inline;
+      text-align: left;
       font-size: 1.05em;
-
-      i {
-        color: $brand-color;
+      img {
+        height: 3em;
+        width: 3em;
+        .big {
+          height: 1.5em;
+          width: 1.5em;
+        }
       }
     }
   }
