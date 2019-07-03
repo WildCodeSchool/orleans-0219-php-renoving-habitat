@@ -2,8 +2,8 @@
   margin: 0 auto;
   width: 25%;
   padding: 10px;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid $dark-color;
+  border-bottom: 2px solid $dark-color;
   transform: skew(25deg);
 }
 
@@ -11,8 +11,8 @@
   margin: 0 auto;
   width: 15%;
   padding: 10px;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 1px solid $dark-color;
+  border-bottom: 1px solid $dark-color;
   transform: skew(25deg);
 }
 
@@ -53,9 +53,6 @@
   transform: skewX(-25deg);
 }
 
-
-
-
 .realisation_main_text {
   padding-top: 50px;
   margin: 0 auto;
@@ -92,12 +89,12 @@
 }
 
 .mosaique_title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $white;
-    font-size: 280%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+  font-size: 280%;
 }
 
 .client_container {
