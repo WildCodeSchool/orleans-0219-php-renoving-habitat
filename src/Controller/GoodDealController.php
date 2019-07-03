@@ -9,9 +9,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/good/deal")
+ * @IsGranted("ROLE_ADMIN")
  */
 class GoodDealController extends AbstractController
 {
@@ -20,13 +22,9 @@ class GoodDealController extends AbstractController
      */
     public function index(GoodDealRepository $goodDealRepository): Response
     {
-        if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
-            return $this->render('good_deal/index.html.twig', [
-                'good_deals' => $goodDealRepository->findAll(),
-            ]);
-        } else {
-            return $this->redirectToRoute('app_login');
-        }
+        return $this->render('good_deal/index.html.twig', [
+            'good_deals' => $goodDealRepository->findAll(),
+        ]);
     }
 
     /**
@@ -38,7 +36,7 @@ class GoodDealController extends AbstractController
         $form = $this->createForm(GoodDeal1Type::class, $goodDeal);
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid() && $this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($goodDeal);
             $entityManager->flush();
@@ -46,14 +44,10 @@ class GoodDealController extends AbstractController
             return $this->redirectToRoute('good_deal_index');
         }
 
-        if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
-            return $this->render('good_deal/new.html.twig', [
-                'good_deal' => $goodDeal,
-                'form' => $form->createView(),
-            ]);
-        } else {
-            return $this->redirectToRoute('app_login');
-        }
+        return $this->render('good_deal/new.html.twig', [
+            'good_deal' => $goodDeal,
+            'form' => $form->createView(),
+        ]);
     }
 
     /**
@@ -61,13 +55,10 @@ class GoodDealController extends AbstractController
      */
     public function show(GoodDeal $goodDeal): Response
     {
-        if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
-            return $this->render('good_deal/show.html.twig', [
-                'good_deal' => $goodDeal,
-            ]);
-        } else {
-            return $this->redirectToRoute('app_login');
-        }
+
+        return $this->render('good_deal/show.html.twig', [
+            'good_deal' => $goodDeal,
+        ]);
     }
 
     /**
@@ -78,7 +69,7 @@ class GoodDealController extends AbstractController
         $form = $this->createForm(GoodDeal1Type::class, $goodDeal);
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid() && $this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('good_deal_index', [
@@ -86,14 +77,11 @@ class GoodDealController extends AbstractController
             ]);
         }
 
-        if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
-            return $this->render('good_deal/edit.html.twig', [
-                'good_deal' => $goodDeal,
-                'form' => $form->createView(),
-            ]);
-        } else {
-            return $this->redirectToRoute('app_login');
-        }
+
+        return $this->render('good_deal/edit.html.twig', [
+            'good_deal' => $goodDeal,
+            'form' => $form->createView(),
+        ]);
     }
 
     /**
@@ -106,10 +94,7 @@ class GoodDealController extends AbstractController
             $entityManager->remove($goodDeal);
             $entityManager->flush();
         }
-        if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
-            return $this->redirectToRoute('good_deal_index');
-        } else {
-            return $this->redirectToRoute('app_login');
-        }
+
+        return $this->redirectToRoute('good_deal_index');
     }
 }

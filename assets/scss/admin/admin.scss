@@ -1,0 +1,24 @@
+@import '../_vars';
+
+.admin_categ_wrapper {
+  width: 400px;
+  height: 400px;
+  background-color: $brand-color;
+}
+
+.admin_categ_item {
+  font-size: 1000%;
+  color: $white;
+}
+
+.admin_categ_container {
+  margin-top: 100px;
+}
+
+.admin_categ_text {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 140%;
+  color: $white;
+}

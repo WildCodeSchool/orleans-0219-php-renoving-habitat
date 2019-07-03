@@ -5,21 +5,22 @@
 {% endblock header %}
 {% block body %}
     <h1>admin page</h1>
-    <div class="conatiner">
-        <div class="row">
+    <div class="container mx-auto admin_categ_container">
+        <div class="row mx-auto">
             <div class="col-6">
-                <div class="admin_categ_wrapper">
-
+                <div class="admin_categ_wrapper text-center">
+                    <i class="fas fa-euro-sign admin_categ_item my-5"></i>
+                    <p class="mt-4 admin_categ_text">Modifier les bons plans</p>
                 </div>
             </div>
             <div class="col-6">
-                <div class="admin_categ_wrapper">
-
+                <div class="admin_categ_wrapper text-center">
+                    <i class="far fa-comment-alt admin_categ_item my-5"></i>
+                    <p class="mt-4 admin_categ_text">Modifier les commentaires clients</p>
                 </div>
             </div>
         </div>
     </div>
-    <i class="far fa-comment-alt mt-5 p-5"></i>
 {% endblock body %}
 {% block footer %}
 {% endblock footer %}
