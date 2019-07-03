@@ -8,6 +8,14 @@
   margin: 1.66%;
   overflow: hidden;
   background-color: $brand-color;
+  border-radius: 25px;
+}
+
+.admin_categ_content {
+  position:absolute;
+  height:80%; /* = 100% - 2*10% padding */
+  width:90%; /* = 100% - 2*5% padding */
+  padding: 10% 5%;
 }
 
 .admin_categ_item {
@@ -24,11 +32,4 @@
   margin-right: auto;
   font-size: 140%;
   color: $white;
-}
-
-.admin_categ_content {
-  position:absolute;
-  height:80%; /* = 100% - 2*10% padding */
-  width:90%; /* = 100% - 2*5% padding */
-  padding: 10% 5%;
 }
