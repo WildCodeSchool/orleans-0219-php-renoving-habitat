@@ -58,8 +58,8 @@ class SecurityController extends AbstractController
                 UrlGeneratorInterface::ABSOLUTE_URL
             );
             $message = (new \Swift_Message('Récupération de votre mot de passe'))
-                ->setFrom('putain2ban@gmail.com')
-                ->setTo('putain2ban@gmail.com')
+                ->setFrom($this->getParameter('mailer_from'))
+                ->setTo($user->getEmail())
                 ->setBody(
                     "Cliquer sur le lien pour réinitialiser votre mot de passe " . $url,
                     'text/html'
