@@ -68,7 +68,7 @@
 
 .guaranty{
   background-color: $brand-color;
-  color:white;
+  color:$variable;
   font-size:1em;
   height: 4em;
   text-transform: uppercase;
@@ -78,14 +78,14 @@
 .paragraph{
   margin-top: 2em;
   margin-bottom:2em;
-  background-color: white;
+  background-color: $variable;
   padding: 1em;
-  color: black;
+  color: $dark-color;
   font-size: larger;
 }
 
 .second_title {
-  color: black;
+  color: $dark-color;
   margin-bottom: 2em;
   margin-top: 2em;
 }
@@ -100,7 +100,7 @@
 
 
 .third_title{
-  color: black;
+  color: $dark-color;
   margin-bottom:2em;
   margin-top: 2em;
 }
@@ -174,11 +174,11 @@
   border:none;
   border-radius: 100px;
   background-color: $brand-color;
-  color:white;
+  color:$variable;
 }
 
 .button:hover {
-  background-color:white;
+  background-color:$variable;
   color:$brand-color;
 }
 
@@ -190,9 +190,9 @@
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid $variabe;
   position: relative;
-  background-color:transparent;
+  background-color:$transparent;
   line-height: 50px;
 }
 .row_circle{
@@ -207,7 +207,7 @@
 }
 .text_circle{
   font-size: larger;
-  color: white;
+  color: $variable;
 }
 .section_circle{
   margin:0;
@@ -216,17 +216,3 @@
 * {
   box-sizing: border-box;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
