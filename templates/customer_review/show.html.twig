@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CustomerReview{% endblock %}
+
+{% block body %}
+    <h1>CustomerReview</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ customer_review.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('customer_review_index') }}">back to list</a>
+
+    <a href="{{ path('customer_review_edit', {'id': customer_review.id}) }}">edit</a>
+
+    {{ include('customer_review/_delete_form.html.twig') }}
+{% endblock %}
