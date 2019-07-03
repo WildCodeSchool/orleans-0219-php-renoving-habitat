@@ -1,32 +1,37 @@
 {% extends 'base.html.twig' %}
-{% form_theme form 'bootstrap_4_layout.html.twig' %}
 
-{% block title %}Administration des bons plans{% endblock %}
+{% block title %}GoodDeal index{% endblock %}
 
 {% block body %}
+    <h1>GoodDeal index</h1>
 
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card text-center">
-                <h3>Bon plan actuel</h3>
-                <div class="card-body">
-                    {% for good_deal in good_deals %}
-                    <h4 class="card-title">{{ good_deal.title }}</h4>
-                    <p class="card-text">{{ good_deal.description }}</p>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card text-center">
-                <h3>Modifier le bon plan</h3>
-                <div class="card-body">
-                    {{ include('good_deal/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
-                </div>
-            </div>
-        </div>
-    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for good_deal in good_deals %}
+            <tr>
+                <td>{{ good_deal.id }}</td>
+                <td>{{ good_deal.title }}</td>
+                <td>{{ good_deal.description }}</td>
+                <td>
+                    <a href="{{ path('good_deal_show', {'id': good_deal.id}) }}">show</a>
+                    <a href="{{ path('good_deal_edit', {'id': good_deal.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 
+    <a href="{{ path('good_deal_new') }}">Create new</a>
 {% endblock %}
-
-

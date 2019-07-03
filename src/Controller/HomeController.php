@@ -27,7 +27,6 @@ class HomeController extends AbstractController
         $good_deals = $this-> getDoctrine()
             ->getRepository(GoodDeal::class)
             ->findAll();
-
         return $this->render('home/index.html.twig', [
             'good_deals' => $good_deals,
         ]);
