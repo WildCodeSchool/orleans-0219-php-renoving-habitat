@@ -16,15 +16,14 @@
 
     <section class="recruitment container-fluid">
         <div class="panel justify-content-center pt-3">
-            <h3 class="col-md-12 text-center">Vous souhaitez travailler dans un domaine en forte croissance
-                ?</h3>
+            <h3 class="col-md-12 text-center">Vous souhaitez travailler dans un domaine en forte croissance ?</h3>
     </section>
 
     <section class="container cards-recruitment pt-4">
 
         <div class="row">
-            <div class="col text-center">
-                <h2>Rejoignez-nous !</h2>
+            <div class="col text-center mb-3 mt-3">
+                <h4>Vous êtes spécialiste du ravalement, poseur ou technico-commercial ?  <b>Rejoignez-nous !</b></h4>
             </div>
         </div>
 
@@ -32,7 +31,7 @@
             <div class="col">
                 <div class="card-deck pt-1">
                     <div class="card m-3">
-                        <img class="card-img-top" src="/assets/images/poseur.png" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('build/images/recrutment/poseur.png') }}" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Poseurs menuiserie et ravalement</h5>
                             <p class="card-text"> Entreprise familiale, nous recherchons des collaborateurs pouvant
@@ -61,7 +60,7 @@
                         </div>
                     </div>
                     <div class="card m-3">
-                        <img class="card-img-top" src="/assets/images/technico.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('build/images/recrutment/technico.jpg') }}" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Technico-commerciaux et prospecteurs</h5>
                             <p class="card-text">Le monde de la vente vous intéresse ?<br>
@@ -92,12 +91,17 @@
         </div>
     </section>
 
+    <section class="recruitment container-fluid">
+        <div class="panel justify-content-center mt-5">
+            <h3 class="col-md-12 text-center">Candidatez en ligne en remplissant ce formulaire</h3>
+    </section>
+
     <section class="form-recruitment">
         <div class="text-center p-5">
             <h2>Mes informations</h2>
         </div>
         {% for message in app.flashes('success-message') %}
-            <div class="alert alert-success">
+            <div class="alert alert-success text-center">
                 {{ message }}
             </div>
         {% endfor %}
