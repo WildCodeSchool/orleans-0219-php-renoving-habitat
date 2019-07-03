@@ -85,6 +85,7 @@ class GoodDealController extends AbstractController
                 'id' => $goodDeal->getId(),
             ]);
         }
+
         if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
             return $this->render('good_deal/edit.html.twig', [
                 'good_deal' => $goodDeal,

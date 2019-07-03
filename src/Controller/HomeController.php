@@ -24,11 +24,12 @@ class HomeController extends AbstractController
 
     public function index(): Response
     {
-        $good_deals = $this-> getDoctrine()
+        $good_deal = $this-> getDoctrine()
             ->getRepository(GoodDeal::class)
             ->findAll();
+
         return $this->render('home/index.html.twig', [
-            'good_deals' => $good_deals,
+            'good_deal' => $good_deal,
         ]);
     }
 }
