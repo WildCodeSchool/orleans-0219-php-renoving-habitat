@@ -29,6 +29,33 @@
   width: 100%;
   margin: 0;
 }
+#background_ter{
+  background-image:url("/assets/images/terrassement.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+}
+#background_iso{
+  background-image:url("/assets/images/isolation.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+}
+#background_int{
+  background-image:url("/assets/images/indoor.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+}
 
 .first_title{
   margin-right: 3em;
@@ -119,6 +146,25 @@
   background-attachment: fixed;
   padding: 3em;
 }
+#bg_card_ter{
+  background-image: url("/assets/images/bg_terrassement.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3em;
+}
+#bg_card_iso{
+  background-image: url("/assets/images/bg_iso.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3em;
+}
+#bg_card_indoor{
+  background-image: url("/assets/images/bg_indoor.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3em;
+}
+
 .button {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
