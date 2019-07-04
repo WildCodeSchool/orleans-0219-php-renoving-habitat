@@ -12,7 +12,7 @@ class CarpentryController extends AbstractController
 {
 
     /**
-     * @Route("/je_renov/carpentry", name="carpentry_index")
+     * @Route("/je-renove/menuiserie", name="carpentry_index")
      * @return Response
      */
 

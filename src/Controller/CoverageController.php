@@ -12,7 +12,7 @@ class CoverageController extends AbstractController
 {
 
     /**
-     * @Route("/je_renov/coverage", name="coverage_index")
+     * @Route("/je-renove/couverture", name="coverage_index")
      * @return Response
      */
 

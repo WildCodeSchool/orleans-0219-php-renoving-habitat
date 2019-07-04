@@ -12,7 +12,7 @@ class EarthworkController extends AbstractController
 {
 
     /**
-     * @Route("/je_renov/earthwork", name="earthwork_index")
+     * @Route("/je-renove/terrassement", name="earthwork_index")
      * @return Response
      */
 

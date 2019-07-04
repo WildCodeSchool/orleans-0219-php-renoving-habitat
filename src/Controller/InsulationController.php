@@ -12,7 +12,7 @@ class InsulationController extends AbstractController
 {
 
     /**
-     * @Route("/je_renov/insulation", name="insulation_index")
+     * @Route("/je-renove/isolation", name="insulation_index")
      * @return Response
      */
 

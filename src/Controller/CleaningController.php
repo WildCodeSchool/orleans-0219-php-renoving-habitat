@@ -11,7 +11,7 @@ class CleaningController extends AbstractController
 {
 
     /**
-     * @Route("/je_renov/cleaning", name="cleaning_index")
+     * @Route("/je-renove/ravalement", name="cleaning_index")
      * @return Response
      */
 
