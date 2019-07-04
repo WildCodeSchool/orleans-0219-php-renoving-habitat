@@ -1,0 +1,35 @@
+.recrutons {
+  .jumbotron {
+    background-image: url("../images/recrutment/macon.png");
+    background-size: cover;
+  }
+  .titles {
+    font-variant: small-caps;
+    text-align: right;
+  }
+  h1 {
+    color: $darker-secondary-color;
+    font-size: 5vw;
+  }
+  h2 {
+    color: $brand-color;
+    font-size: 5vw;
+  }
+}
+.panel{
+  text-align: center;
+  background-color: $brand-color;
+  color: $secondary-color;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-style: oblique;
+}
+.h5{
+  font-size: 2.5em;
+}
+.recruitment {
+  background-color: $brand-color;
+}
+.custom-file-label::after{
+  content: "Parcourir" !important;
+}

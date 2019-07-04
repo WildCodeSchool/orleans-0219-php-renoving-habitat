@@ -23,17 +23,22 @@
             <h2 class="pb-3 display-4 justify-content-center">Qui sommes-nous ?</h2>
             <div class="row pb-3 mx-5 px-5">
                 <div class="col-md-4">
-                    <img src="{{ asset('build/images/main/working_man.png') }}" height="220" width="270" alt="working-man">
+                    <img src="{{ asset('build/images/main/working_man.png') }}" height="220" width="270"
+                         alt="working-man">
                 </div>
                 <div class="pt-3 col-md-8">
 
-                    <p>Depuis 2015, RENOVING HABITAT innove dans la rénovation énergétique avec des produits toujours plus
+                    <p>Depuis 2015, RENOVING HABITAT innove dans la rénovation énergétique avec des produits toujours
+                        plus
                         garants de l’environnement et efficace pour les économies d’énergies.
-                        <br> Offrant une gamme toujours plus large aujourd’hui RENOVING HABITAT propose un service complet
+                        <br> Offrant une gamme toujours plus large aujourd’hui RENOVING HABITAT propose un service
+                        complet
                         de A à Z
-                        Fourniture pose financement clé en main Fort de son expérience dans le domaine de la renovation de
+                        Fourniture pose financement clé en main Fort de son expérience dans le domaine de la renovation
+                        de
                         l’habitat. </p>
-                    <p class="pt-2"> « Renoving habitat s’efforce d’être à la pointe de l’isolation en étant en réseaux avec
+                    <p class="pt-2"> « Renoving habitat s’efforce d’être à la pointe de l’isolation en étant en réseaux
+                        avec
                         des entreprises des pays nordiques pour proposer des solutions innovantes à ces clients. »
                     </p>
                 </div>
@@ -41,35 +46,82 @@
 
         </section>
 
-        <section class="house">
-            <div class="pt-5 mx-5 px-5">
+        <section class="pt-5 broken-house">
+
+            <div class="mx-5 px-5 pb-5">
                 <h2 class="py-3 display-4">Que faisons-nous ?</h2>
-                <p class="mx-5"><i class="fas fa-arrow-circle-right"></i> Cliquez sur la partie qui vous interesse pour en savoir plus... </p>
             </div>
 
-            <div id="maped_house_container">
-
-                <img usemap="#image-map" class="maped_house_image mx-auto map" id="house_image"
-                     src="{{ asset('build/images/homepage/house_homepage_ph2.jpg') }}">
-                <map name="image-map">
-                    <area class="maped_area tooltip" title="Couverture" categ="couverture" target="" alt="Couverture"
-                          title="Couverture" href="" coords="515,309,70" shape="circle">
-                    <area class="maped_area tooltip" title="Terrassement" categ="terrassement" target=""
-                          alt="Terrassement" title="Terrassement" href="" coords="895,1136,95" shape="circle">
-                    <area class="maped_area tooltip" title="Isolation" categ="isolation" target="" alt="Isolation"
-                          title="Isolation" href="" coords="1168,257,94" shape="circle">
-                    <area class="maped_area tooltip" title="Intérieur" categ="interieur" target="" alt="Intérieur"
-                          title="Intérieur" href="" coords="1220,911,83" shape="circle">
-                    <area class="maped_area tooltip" title="Ravalement" categ="ravalement" target="" alt="Ravalement"
-                          title="Ravalement" href="" coords="160,816,111" shape="circle">
-                </map>
+            <div class="structure container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_couverture.png') }}"
+                                 class="image float-right" alt="couverture">
+                            <span class="overlay">
+                                <span class="category">Couverture</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_isolation.png') }}" class="image float-left"
+                                 alt="isolation">
+                            <span class="overlay">
+                                <span class="category">Isolation</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_ravalement.png') }}"
+                                 class="image float-right" alt="ravalement">
+                            <span class="overlay">
+                                <span class="category">Ravalement</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_menuiserie.png') }}"
+                                 class="image float-left" alt="menuiserie">
+                            <span class="overlay">
+                                <span class="category">Menuiserie</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_terrassement.png') }}"
+                                 class="image float-right" alt="terrassement">
+                            <span class="overlay">
+                                <span class="category">Terrassement</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_interieur.png') }}" class="image float-left"
+                                 alt="interieur">
+                            <span class="overlay">
+                                <span class="category">Intérieur</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </section>
 
         <section class="avant-apres p-5 mt-5" id="beforeAfter">
             <div class="mb-5 px-5">
                 <h2 class="display-4">Nos travaux</h2>
-                <p><i class="fas fa-check-circle"></i> Tous nos produits répondent aux certifications environnementales et énergétiques récentes.</p>
+                <p><i class="fas fa-check-circle"></i> Tous nos produits répondent aux certifications environnementales
+                    et énergétiques récentes.</p>
             </div>
             <div class="pb-5 pt-5">
                 <div class="before-after-container">
@@ -92,16 +144,19 @@
                     <h2 class="py-3 display-4">Bon plan du moment</h2>
                 </div>
 
-                        <div class="box">
+                <div class="box">
                     <div class="card-body postit flex-column">
-                        <img src="{{ asset('build/images/main/pin.png') }}" class="mb-3" width="35em" height="50em" alt="pin">
+                        <img src="{{ asset('build/images/main/pin.png') }}" class="mb-3" width="35em" height="50em"
+                             alt="pin">
                         <h3 class="pb-2 card-title">20% sur la menuiserie</h3>
-                        <p class="card-text"> Pour cette fin d’année TVA OFFERTES pour tout travaux d’isolation thermique et nettoyage toiture 9.99€/m² </p>
+                        <p class="card-text"> Pour cette fin d’année TVA OFFERTES pour tout travaux d’isolation
+                            thermique et nettoyage toiture 9.99€/m² </p>
                     </div>
-                        </div>
-                    <div>
-                        <p class="px-3">Appeller nous au <b>06 61 66 14 01</b> pour organiser un RDV avec l'un de nos conseillers.</p>
-                    </div>
+                </div>
+                <div>
+                    <p class="px-3">Appeller nous au <b>06 61 66 14 01</b> pour organiser un RDV avec l'un de nos
+                        conseillers.</p>
+                </div>
             </div>
         </section>
 
@@ -114,27 +169,35 @@
             <div class="mx-3 my-5 logo-partenaires justify-content-center card-deck">
                 <div class="card">
                     <div class="logo">
-                        <a href="" class="stretched-link"><img src="{{ asset('build/images/partenaires/sto.png') }}" width="99%" alt="sto-logo"></a>
+                        <a href="" class="stretched-link"><img src="{{ asset('build/images/partenaires/sto.png') }}"
+                                                               width="99%" alt="sto-logo"></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="logo">
-                        <a href="" class="stretched-link"><img src="{{ asset('build/images/partenaires/rockwool.gif') }}" width="99%" alt="rockwool-logo"></a>
+                        <a href="" class="stretched-link"><img
+                                    src="{{ asset('build/images/partenaires/rockwool.gif') }}" width="99%"
+                                    alt="rockwool-logo"></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="logo">
-                        <a href="" class="stretched-link"><img src="{{ asset('build/images/partenaires/gerondeau.jpg') }}" width="99%" height="99%" alt="gerondeau-logo"></a>
+                        <a href="" class="stretched-link"><img
+                                    src="{{ asset('build/images/partenaires/gerondeau.jpg') }}" width="99%" height="99%"
+                                    alt="gerondeau-logo"></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="logo">
-                        <a href="" class="stretched-link"><img src="{{ asset('build/images/partenaires/barrisol.png') }}" width="99%" alt="barrisol-logo"></a>
+                        <a href="" class="stretched-link"><img
+                                    src="{{ asset('build/images/partenaires/barrisol.png') }}" width="99%"
+                                    alt="barrisol-logo"></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="logo">
-                        <a href="" class="stretched-link"><img src="{{ asset('build/images/partenaires/weber.jpg') }}" width="99%" alt="weber-logo"></a>
+                        <a href="" class="stretched-link"><img src="{{ asset('build/images/partenaires/weber.jpg') }}"
+                                                               width="99%" alt="weber-logo"></a>
                     </div>
                 </div>
             </div>

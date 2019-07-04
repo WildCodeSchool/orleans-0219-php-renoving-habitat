@@ -9,7 +9,7 @@
                     <div class="first footer_left_list">
                         <ul class="p-0">
                             <li class="p-2">
-                                <a href="#" class="footer_links stretched-link">A propos de nous</a>
+                                <a href="{{ path('entreprise') }}" class="footer_links stretched-link">A propos de nous</a>
                             </li>
                             <li class="p-2">
                                 <a href="#" class="footer_links stretched-link">Je rénov'</a>
@@ -25,17 +25,17 @@
                 </div>
 
                 <div class="second align-self-center col-md">
-                    <a class="logo" href="/"><img src="{{ asset('build/images/main/logo_no_back.png') }}" alt="RenovingHabitat"></a>
+                    <a class="logo" href="{{ path('index') }}"><img src="{{ asset('build/images/main/logo_no_back.png') }}" alt="RenovingHabitat"></a>
                 </div>
 
                 <div class="col-md">
                     <div class="third footer_right_list">
                         <ul class="p-0">
                             <li class="p-2">
-                                <a href="#" class="footer_links stretched-link"><span>nous recrutons</span></a>
+                                <a href="{{ path('recruitment') }}" class="footer_links stretched-link"><span>nous recrutons</span></a>
                             </li>
-                            <li class="pb-2">
-                                <a href="{{ path('cgvu') }} class="footer_links">Conditions Générales de Vente</a>
+                            <li class="p-2">
+                                <a href="{{ path('cgvu') }}" class="footer_links stretched-link">Conditions Générales de Vente</a>
                             </li>
                             <li class="p-2">
                                 <a href="#" class="footer_links stretched-link">renoving3a@gmail.com</a>
