@@ -1,57 +1,35 @@
 .recrutons {
   .jumbotron {
-    background-image: url("/assets/images/macon.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin-bottom: 0;
-    background-position: top;
-    background-size: contain;
-    height: 50vh;
+    background-image: url("../images/recrutment/macon.png");
+    background-size: cover;
   }
   .titles {
     font-variant: small-caps;
     text-align: right;
-
   }
   h1 {
     color: $darker-secondary-color;
+    font-size: 5vw;
   }
   h2 {
     color: $brand-color;
-    font-size: 5em;
+    font-size: 5vw;
   }
 }
 .panel{
+  text-align: center;
   background-color: $brand-color;
-  color:white;
-  font-size:1em;
-  height: 3em;
-  font-variant: small-caps;
+  color: $secondary-color;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-style: oblique;
 }
-
+.h5{
+  font-size: 2.5em;
+}
 .recruitment {
   background-color: $brand-color;
-  .intro {
-  }
-  .circle {
-    display:flex;
-    text-align: center;
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    border: 2px solid white;
-    position: relative;
-    background-color:transparent;
-    line-height: 50px;
-  }
-  .row_circle{
-  }
-  .img_circle{
-    object-fit: cover;
-    margin: auto;
-    width: -moz-available;
-  }
-  .text_circle{
-    color: white;
-  }
+}
+.custom-file-label::after{
+  content: "Parcourir" !important;
 }

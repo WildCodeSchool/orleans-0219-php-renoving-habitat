@@ -41,29 +41,75 @@
 
         </section>
 
-        <section class="house">
-            <div class="pt-5 mx-5 px-5">
+        <section class="pt-5 broken-house">
+
+            <div class="mx-5 px-5 pb-5">
                 <h2 class="py-3 display-4">Que faisons-nous ?</h2>
-                <p class="mx-5"><i class="fas fa-arrow-circle-right"></i> Cliquez sur la partie qui vous interesse pour
-                    en savoir plus... </p>
             </div>
 
-            <div id="maped_house_container">
-                <img usemap="#image-map" class="maped_house_image mx-auto map" id="house_image"
-                     src="{{ asset('build/images/homepage/house_homepage_ph2.jpg') }}">
-                <map name="image-map">
-                    <area class="maped_area tooltip" title="Couverture" categ="couverture" target="" alt="Couverture"
-                          title="Couverture" href="" coords="515,309,70" shape="circle">
-                    <area class="maped_area tooltip" title="Terrassement" categ="terrassement" target=""
-                          alt="Terrassement" title="Terrassement" href="" coords="895,1136,95" shape="circle">
-                    <area class="maped_area tooltip" title="Isolation" categ="isolation" target="" alt="Isolation"
-                          title="Isolation" href="" coords="1168,257,94" shape="circle">
-                    <area class="maped_area tooltip" title="Intérieur" categ="interieur" target="" alt="Intérieur"
-                          title="Intérieur" href="" coords="1220,911,83" shape="circle">
-                    <area class="maped_area tooltip" title="Ravalement" categ="ravalement" target="" alt="Ravalement"
-                          title="Ravalement" href="" coords="160,816,111" shape="circle">
-                </map>
+            <div class="structure container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_couverture.png') }}"
+                                 class="image float-right" alt="couverture">
+                            <span class="overlay">
+                                <span class="category">Couverture</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_isolation.png') }}" class="image float-left"
+                                 alt="isolation">
+                            <span class="overlay">
+                                <span class="category">Isolation</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_ravalement.png') }}"
+                                 class="image float-right" alt="ravalement">
+                            <span class="overlay">
+                                <span class="category">Ravalement</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_menuiserie.png') }}"
+                                 class="image float-left" alt="menuiserie">
+                            <span class="overlay">
+                                <span class="category">Menuiserie</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_terrassement.png') }}"
+                                 class="image float-right" alt="terrassement">
+                            <span class="overlay">
+                                <span class="category">Terrassement</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="" class="pic">
+                            <img src="{{ asset('build/images/homepage/house_interieur.png') }}" class="image float-left"
+                                 alt="interieur">
+                            <span class="overlay">
+                                <span class="category">Intérieur</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </section>
 
         <section class="avant-apres p-5 mt-5" id="beforeAfter">
