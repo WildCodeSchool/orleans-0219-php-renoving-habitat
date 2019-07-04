@@ -143,12 +143,10 @@
                     <div class="card-body postit flex-column">
                         <img src="{{ asset('build/images/main/pin.png') }}" class="mb-3" width="35em" height="50em"
                              alt="pin">
-                        {% for i in 0..3 %}
-                            {%  if good_deal[i] is defined %}
-                                <h3 class="pb-2 card-title">{{ good_deal[i].title }}</h3>
-                                <p class="card-text">{{ good_deal[i].description }}</p>
+                            {%  if good_deal[0] is defined %}
+                                <h3 class="pb-2 card-title">{{ good_deal[0].title }}</h3>
+                                <p class="card-text">{{ good_deal[0].description }}</p>
                             {% endif %}
-                        {% endfor %}
                     </div>
                 </div>
                 <div>
