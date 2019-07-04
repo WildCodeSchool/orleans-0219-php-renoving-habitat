@@ -16,7 +16,7 @@ class ForgottenPasswordType extends AbstractType
             ->add('username', TextType::class, [
                 'label' => false,
                 'attr' => [
-                    'placeholder' => 'Pseudo',
+                    'placeholder' => 'Nom',
                 ],
                 'constraints' => [new NotBlank(['message'=>'Veuillez compléter ce champs'])]
             ]);
