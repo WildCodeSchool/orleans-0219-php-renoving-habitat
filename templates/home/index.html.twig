@@ -52,10 +52,11 @@
                 <h2 class="py-3 display-4">Que faisons-nous ?</h2>
             </div>
 
+
             <div class="structure container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <a href="" class="pic">
+                        <a href="{{ path('coverage_index') }}" class="pic">
                             <img src="{{ asset('build/images/homepage/house_couverture.png') }}"
                                  class="image float-right" alt="couverture">
                             <span class="overlay">
@@ -64,7 +65,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6">
-                        <a href="" class="pic">
+                        <a href="{{ path('insulation_index') }}" class="pic">
                             <img src="{{ asset('build/images/homepage/house_isolation.png') }}" class="image float-left"
                                  alt="isolation">
                             <span class="overlay">
@@ -75,16 +76,16 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <a href="" class="pic">
+                        <a href="{{ path('indoor_index') }}" class="pic">
                             <img src="{{ asset('build/images/homepage/house_int.png') }}"
-                                 class="image float-right" alt="interieur">
+                                 class="image float-right" alt="ravalement">
                             <span class="overlay">
                                 <span class="category">Intérieur</span>
                             </span>
                         </a>
                     </div>
                     <div class="col-sm-6">
-                        <a href="" class="pic">
+                        <a href="{{ path('carpentry_index') }}" class="pic">
                             <img src="{{ asset('build/images/homepage/house_menuiserie.png') }}"
                                  class="image float-left" alt="menuiserie">
                             <span class="overlay">
@@ -95,7 +96,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <a href="" class="pic">
+                        <a href="{{ path('earthwork_index') }}" class="pic">
                             <img src="{{ asset('build/images/homepage/house_terrassement.png') }}"
                                  class="image float-right" alt="terrassement">
                             <span class="overlay">
@@ -104,15 +105,17 @@
                         </a>
                     </div>
                     <div class="col-sm-6">
-                        <a href="" class="pic">
+                        <a href="{{ path('cleaning_index') }}" class="pic">
                             <img src="{{ asset('build/images/homepage/house_rav.png') }}" class="image float-left"
-                                 alt="ravalement">
+                                 alt="interieur">
+
                             <span class="overlay">
                                 <span class="category">Ravalement</span>
                             </span>
                         </a>
                     </div>
                 </div>
+
             </div>
 
         </section>
