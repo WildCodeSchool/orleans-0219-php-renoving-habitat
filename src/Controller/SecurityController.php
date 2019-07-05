@@ -53,8 +53,7 @@ class SecurityController extends AbstractController
 
             $url = $this->generateUrl(
                 'app_reset_password',
-                ['token' => $token,
-                ],
+                ['token' => $token ],
                 UrlGeneratorInterface::ABSOLUTE_URL
             );
             $message = (new \Swift_Message('Récupération de votre mot de passe'))
@@ -96,8 +95,9 @@ class SecurityController extends AbstractController
             $entityManager->flush();
             $this->addFlash('updated-password', 'Mot de passe mis à jour');
             return $this->redirectToRoute('app_login');
-        } else {
-            return $this->render('security/reset_password.html.twig', ['form' => $form->createView()]);
         }
+
+        return $this->render('security/reset_password.html.twig', ['form' => $form->createView()]);
+
     }
 }
