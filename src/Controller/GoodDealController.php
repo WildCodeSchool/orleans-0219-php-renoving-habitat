@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\GoodDeal;
-use App\Form\GoodDeal1Type;
+use App\Form\GoodDealType;
 use App\Repository\GoodDealRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -33,7 +33,7 @@ class GoodDealController extends AbstractController
     public function new(Request $request): Response
     {
         $goodDeal = new GoodDeal();
-        $form = $this->createForm(GoodDeal1Type::class, $goodDeal);
+        $form = $this->createForm(GoodDealType::class, $goodDeal);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -66,7 +66,7 @@ class GoodDealController extends AbstractController
      */
     public function edit(Request $request, GoodDeal $goodDeal): Response
     {
-        $form = $this->createForm(GoodDeal1Type::class, $goodDeal);
+        $form = $this->createForm(GoodDealType::class, $goodDeal);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
