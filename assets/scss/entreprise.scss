@@ -1,0 +1,152 @@
+.intro-entreprise {
+  text-align: left;
+  margin-top: 4.55em;
+
+  .page-name {
+    margin-top: 2em;
+  }
+
+  .jumbotron {
+    background-image: url("../images/main/construction-men.png");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: contain;
+  }
+
+  h1 {
+    color: $brand-color;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 3.5em;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    text-shadow: 2px 3px 2px $shadow;
+  }
+}
+
+.advise {
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+
+    div {
+      p {
+        padding: 1em;
+        font-size: 1.1em;
+        i {
+          color: $primary-color;
+          font-size: 2.5em;
+          justify-content: center;
+          padding-bottom: 1em;
+        }
+      }
+      color: $secondary-color;
+      width: 20em;
+      height: 20em;
+      margin: 1em;
+      text-align: left;
+      border-radius: 3px;
+      background-color: $brand-color;
+    }
+  }
+}
+
+.with-us {
+  margin-top: 5em;
+  background-color: $light-brand-color;
+  .why-renoving {
+    ul {
+      list-style: none;
+      li {
+        display: inline;
+        font-size: 1.2em;
+        font-variant: small-caps;
+        i {
+          color: $brand-color;
+          font-size: 1.5em;
+        }
+      }
+    }
+    p {
+      text-align: left;
+    }
+    .colored-text {
+      padding-top: 1.5em;
+      color: $brand-color;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.qualifications {
+  .box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .quality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    div{
+      display: block;
+      text-align: center;
+      img {
+        max-height: 8.3em;
+      }
+      p {
+        padding-top: 3em;
+        font-size: 1.1em;
+      }
+      width: 20em;
+    }
+  }
+
+  .conclusion {
+    text-align: left;
+    background-color: $brand-color;
+    color: $secondary-color;
+    font-size: 1.5em;
+    margin-top: 2em;
+    font-style: oblique;
+  }
+}
+
+.help {
+  background-repeat: no-repeat;
+  background-position: right;
+  h3 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+  p {
+    text-align: left;
+    padding-bottom: 1.5em;
+    span {
+      color: $brand-color;
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      text-align: left;
+      font-size: 1.05em;
+      img {
+        height: 3em;
+        width: 3em;
+        .big {
+          height: 1.5em;
+          width: 1.5em;
+        }
+      }
+    }
+  }
+}

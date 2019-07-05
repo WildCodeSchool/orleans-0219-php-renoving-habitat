@@ -1,13 +1,10 @@
-
 #maped_house_container {
 	width: 100%;
 	display: flex;
   	justify-content: center;
 }
 
-
 .maped_house_image{
-    margin-top: 5em;
     display: block;
     width: 80%;
 }
@@ -21,10 +18,8 @@
     margin: 0 auto;
 }
 
-
 #sliderContainer {
-  width: 50%;
-  height: auto;
+  width: 100%;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -34,14 +29,8 @@
   max-height: 50px;
 }
 
-.beforeAfterContainer {
+.before-after-container {
   width: 100%;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#image_counter{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +41,7 @@
 }
 
 .arrow {
-  border: solid black;
+  border: solid $dark-color;
   border-width: 0 15px 15px 0;
   display: inline-block;
   padding: 15px;
@@ -84,9 +73,153 @@
 .light_gray {
   background-color: $secondary-color;
 }
+.zone {
+  h2 {
+    font-size: 2.5em;
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+}
 
-.gooddeal {
+.presentation {
+  text-align: left;
+  margin-top: 4.55em;
+  .mainTitle {
+    margin-top: 2em;
+  }
+  .jumbotron {
+    background-image: url("../images/homepage/bg2.png");
+    height: 47vh;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: right top;
+  }
+
+  h1 {
+    color: $brand-color;
+    font-variant: small-caps;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+}
+.intro {
+  text-align: left;
   background-color: $brand-color;
+  h2 {
+    font-size: 2.5em;
+    color: $secondary-color;
+    text-align: center;
+  }
+  p {
+    color: $secondary-color;
+  }
+  img {
+    position: relative;
+    border-radius: 0 100px 0 100px;
+    box-shadow: inset -5px -4px 13px -8px $shadow;
+  }
+}
+
+.house {
+  h2 {
+    font-size: 2.5em;
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.partenaires {
+  background-color: $brand-color;
+  h2 {
+    font-size: 2.5em;
+    color: $secondary-color;
+    text-align: center;
+  }
+  .title {
+    p {
+      color: $secondary-color;
+    }
+  }
+  .logo-partenaires {
+
+    .logo {
+      height: 5em;
+      line-height: 5em;
+      display: inline-block;
+      img {
+        max-height: max-content;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.bon-plans {
+  align-content: center;
+  background: url("../images/main/mini_gift_house.png");
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: right;
+  p {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .gooddeal {
+    h2 {
+      font-size: 2.5em;
+      color: $darker-secondary-color;
+      text-align: center;
+    }
+
+  }
+  .box {
+    margin-top: 3em;
+    display: ruby-text;
+  }
+  .postit {
+    h3 {
+      font-size: 2em;
+      color: $brand-color;
+    }
+    img {
+      margin-top: -1em;
+    }
+    text-align: center;
+    color: $darker-secondary-color;
+    width: 20em;
+    height: 20em;
+    background-color: $postit;
+    padding: 1em;
+    font-family: $font-hand-writing;
+    box-shadow: 2px 4px 6px $darker-secondary-color;
+    transform: rotate(-3deg);
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.avant-apres {
+  background-color: $light-brand-color;
+  h2 {
+    font-size: 2.5em;
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .green_container {
@@ -109,3 +242,65 @@
   margin: 0 auto;
 }
 
+.form_title {
+  font-size: 120%;
+}
+
+.broken-house {
+  h2 {
+    font-size: 2.5em;
+    color: $darker-secondary-color;
+    text-align: center;
+  }
+  .structure {
+    .pic:hover .image {
+      opacity: 0.65;
+    }
+    .pic:hover .overlay {
+      opacity: 1;
+    }
+    .pic {
+      .category {
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-radius: 2px;
+        text-decoration: none;
+        background-color: $brand-color;
+        color: $primary-color;
+      }
+    }
+    .overlay {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .category {
+      font-size: 1.5em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      vertical-align: middle;
+    }
+    .image {
+      opacity: 1;
+      margin-bottom: 1em;
+      border: 2px solid $brand-color;
+      width: 20em;
+      height: 10em;
+      display: block;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+  }
+}
+
+.logo_partner {
+  max-height: 4.8em !important;
+}

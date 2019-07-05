@@ -8,11 +8,12 @@
 // any CSS you require will output into a single css file (app.css in this case)
 const $ = require('jquery');
 require('../scss/app.scss');
-require('../scss/navabar.scss');
 require('../scss/footer.scss');
 require('bootstrap');
 require('leaflet');
+require('@fortawesome/fontawesome-free/css/all.min.css');
+
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+//console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
