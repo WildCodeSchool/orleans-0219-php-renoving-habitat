@@ -79,39 +79,20 @@
                 <h2 class="text-center">Avis Clients</h2>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="cust_review_container">
-                        <p class="client_react">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum convallis ornare. Sed magna ante,
-                            tristique sit amet congue id, placerat at lectus."
-                        </p>
-                        <p class="client_id">
-                            Jean-Pierre, 91
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="cust_review_container">
-                        <p class="client_react">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum convallis ornare. Sed magna ante,
-                            tristique sit amet congue id."
-                        </p>
-                        <p class="client_id">
-                            Jean-Pierre, 91
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="cust_review_container">
-                        <p class="client_react">
-                            "Lorem ipsum dolor sit amet Sed magna ante,
-                            tristique sit amet congue id, placerat at lectus. Maecenas semper molestie risus."
-                        </p>
-                        <p class="client_id">
-                            Jean-Pierre, 91
-                        </p>
-                    </div>
-                </div>
+                {% for i in 0..3 %}
+                    {% if customer_review[i] is defined %}
+                        <div class="col-sm-4">
+                            <div class="cust_review_container">
+                                <p class="client_react">
+                                    {{ customer_review[i].review }}
+                                </p>
+                                <p class="client_id">
+                                    {{ customer_review[i].firstname }} {{ customer_review[i].lastname }}
+                                </p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>

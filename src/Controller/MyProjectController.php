@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
+use App\Entity\MyProjectPersonal;
 
 class MyProjectController extends AbstractController
 {
@@ -26,8 +27,9 @@ class MyProjectController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $info = $form->getData();
+            $RenovingEmail = $this->getParameter('mailer_from');
 
-            $emailSender = new MyProjectEmailSender($mailer, $templating);
+            $emailSender = new MyProjectEmailSender($mailer, $templating, $RenovingEmail);
             $emailSender->sendEmail($info);
 
             $this->addFlash(

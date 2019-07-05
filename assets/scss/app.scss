@@ -1,4 +1,4 @@
-@import "vars";
+@import "_vars";
 @import "home_map";
 @import "~bootstrap/scss/bootstrap";
 @import "mon_projet";
@@ -14,8 +14,8 @@
 @import "~juxtaposejs/build/css/juxtapose";
 @import "~leaflet/dist/leaflet.css";
 @import "nos_realisations";
+@import "renoving";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Patrick+Hand|Roboto+Condensed&display=swap');
 
 

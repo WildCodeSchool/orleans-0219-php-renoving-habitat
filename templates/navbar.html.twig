@@ -9,19 +9,21 @@
                 <a class="nav-link" href="{{ path('entreprise') }}">Notre entreprise</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Nos réalisations</a>
+                <a class="nav-link" href="{{ path('nos_real') }}">Nos réalisations</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Je renov'
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Couverture</a>
-                    <a class="dropdown-item" href="#">Isolation</a>
-                    <a class="dropdown-item" href="#">Interieur</a>
-                    <a class="dropdown-item" href="#">Ravalement</a>
-                    <a class="dropdown-item" href="#">Menuiserie</a>
-                    <a class="dropdown-item" href="#">Terrassement</a>
+
+                    <a class="dropdown-item" href="{{ path('coverage_index') }}">Couverture</a>
+                    <a class="dropdown-item" href="{{ path('insulation_index') }}">Isolation</a>
+                    <a class="dropdown-item" href="{{ path('indoor_index') }}">Interieur</a>
+                    <a class="dropdown-item" href="{{ path('cleaning_index') }}">Ravalement</a>
+                    <a class="dropdown-item" href="{{ path('carpentry_index') }}">Menuiserie</a>
+                    <a class="dropdown-item" href="{{ path('earthwork_index') }}">Terrassement</a>
+
                 </div>
             </li>
             <li class="nav-item">
