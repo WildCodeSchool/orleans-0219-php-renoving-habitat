@@ -71,15 +71,16 @@
   li:hover {
     background: $brand-color;
     color: $primary-color;
-
   }
   li:hover::after {
     border-top: 3.5em solid $brand-color;
     border-right: 2.563em solid $transparent;
+    z-index: -1;
   }
   li:hover::before {
     border-top: 3.5em solid $transparent;
     border-left: 2.563em solid $brand-color;
+    z-index: -1;
   }
 
   .dropdown-menu {
@@ -115,7 +116,7 @@
       width: 14.5em;
     }
   }
-  @media (max-width: 1200px){
+  @media (max-width: 1200px) {
     .nav-item {
       background-color: $primary-color;
       width: 100%;
