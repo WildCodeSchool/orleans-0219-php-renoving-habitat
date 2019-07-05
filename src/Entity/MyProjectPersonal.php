@@ -9,7 +9,7 @@ class MyProjectPersonal
 
     private $lastName;
 
-    private $email;
+    public $email;
 
     private $address;
 
