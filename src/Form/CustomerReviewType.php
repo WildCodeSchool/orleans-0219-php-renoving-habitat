@@ -2,25 +2,26 @@
 
 namespace App\Form;
 
-use App\Entity\GoodDeal;
+use App\Entity\CustomerReview;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class GoodDealType extends AbstractType
+class CustomerReviewType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('description')
+            ->add('firstname')
+            ->add('lastname')
+            ->add('review')
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => GoodDeal::class,
+            'data_class' => CustomerReview::class,
         ]);
     }
 }

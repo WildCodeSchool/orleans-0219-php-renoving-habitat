@@ -1,13 +1,18 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout_admin.html.twig' %}
 
-{% block title %}Mettre à jour les bons plans{% endblock %}
+{% block title %}Modifier les bons plans{% endblock %}
 
 {% block body %}
-    <h1>Mettre à jour les bons plans.</h1>
+    <div class="container mx-auto">
+        <div class="h1_title_container mx-auto mt-100px mb-5">
+            <h1 class="text-center">Modifier les bons plans</h1>
+        </div>
 
-    {{ include('good_deal/_form.html.twig', {'button_label': 'Update'}) }}
+        {{ include('good_deal/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('good_deal_index') }}">back to list</a>
+        {{ include('good_deal/_delete_form.html.twig') }}
 
-    {{ include('good_deal/_delete_form.html.twig') }}
+        <a href="{{ path('good_deal_index') }}">back to list</a>
+
+    </div>
 {% endblock %}
