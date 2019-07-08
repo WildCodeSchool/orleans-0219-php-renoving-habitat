@@ -8,9 +8,6 @@
 
   .navbar-light {
     color: $darker-secondary-color;
-    :hover {
-      color: $white;
-    }
   }
 
   li {
@@ -20,10 +17,6 @@
       padding-bottom: 0.4em;
       font-size: 1.2em;
       padding-top: 0.43em;
-
-      :hover {
-        color: $white;
-      }
     }
 
     position: relative;
@@ -121,10 +114,16 @@
 
   li:hover {
     background: $brand-color;
-    a {
-      color: $white !important;
-    }
   }
+
+  li:hover > a {
+    color: $white !important;
+  }
+
+  a:hover{
+    color: $white !important;
+  }
+
   li:hover::after {
     border-top: 3.5em solid $brand-color;
     border-right: 2.563em solid $transparent;
@@ -142,7 +141,6 @@
       color: $darker-secondary-color;
     }
     :hover {
-      color: $white;
       background-color: $brand-color;
     }
   }
