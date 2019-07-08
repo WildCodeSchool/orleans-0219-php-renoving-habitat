@@ -51,17 +51,6 @@ class GoodDealController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="good_deal_show", methods={"GET"})
-     */
-    public function show(GoodDeal $goodDeal): Response
-    {
-
-        return $this->render('good_deal/show.html.twig', [
-            'good_deal' => $goodDeal,
-        ]);
-    }
-
-    /**
      * @Route("/{id}/edit", name="good_deal_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, GoodDeal $goodDeal): Response
