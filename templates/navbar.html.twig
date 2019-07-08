@@ -5,13 +5,21 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item {{ app.request.attributes.get('_route') == 'entreprise' ? 'active-link' }}">
                 <a class="nav-link" href="{{ path('entreprise') }}">Notre entreprise</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  {{ app.request.attributes.get('_route') == 'nos_real' ? 'active-link' }}">
                 <a class="nav-link" href="{{ path('nos_real') }}">Nos réalisations</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown nos_real
+                {{
+                app.request.attributes.get('_route') == 'coverage_index' ? 'active-link' :
+                app.request.attributes.get('_route') == 'insulation_index' ? 'active-link' :
+                app.request.attributes.get('_route') == 'indoor_index' ? 'active-link' :
+                app.request.attributes.get('_route') == 'cleaning_index' ? 'active-link' :
+                app.request.attributes.get('_route') == 'carpentry_index' ? 'active-link' :
+                app.request.attributes.get('_route') == 'earthwork_index' ? 'active-link'
+                }}">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Je renov'
                 </a>
@@ -26,7 +34,7 @@
 
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{ app.request.attributes.get('_route') == 'projet' ? 'active-link' }}">
                 <a class="nav-link" href="{{ path('projet') }}"><b>Mon projet en ligne</b></a>
             </li>
         </ul>
