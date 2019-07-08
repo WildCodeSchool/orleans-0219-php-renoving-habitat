@@ -5,7 +5,7 @@
         {{ form_label(form.title, 'Titre') }}
         </div>
         <div>
-        {{ form_widget(form.title, { 'attr': {'class': 'title_input_gooddeal'} }) }}
+        {{ form_widget(form.title, { 'attr': {'class': 'title_input_gooddeal form-control mx-auto'} }) }}
         </div>
     </div>
     <div class="form_edit_text_container my-3">
@@ -13,7 +13,7 @@
             {{ form_label(form.description, 'Description') }}
         </div>
         <div>
-            {{ form_widget(form.description, { 'attr': {'class': '', 'rows': '2'} }) }}
+            {{ form_widget(form.description, { 'attr': {'class': 'form-control mx-auto', 'rows': '2'} }) }}
         </div>
     </div>
     {{ form_end(form) }}
