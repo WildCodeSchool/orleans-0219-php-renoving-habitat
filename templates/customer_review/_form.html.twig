@@ -5,13 +5,13 @@
             {{ form_label(form.firstname, 'Prénom') }}
         </div>
         <div>
-            {{ form_widget(form.firstname, { 'attr': {'class': 'title_input_gooddeal'} }) }}
+            {{ form_widget(form.firstname, { 'attr': {'class': 'title_input_gooddeal form-control mx-auto'} }) }}
         </div>
         <div class="form_edit_label">
             {{ form_label(form.lastname, 'Nom') }}
         </div>
         <div>
-            {{ form_widget(form.lastname, { 'attr': {'class': 'title_input_gooddeal'} }) }}
+            {{ form_widget(form.lastname, { 'attr': {'class': 'title_input_gooddeal form-control mx-auto'} }) }}
         </div>
     </div>
     <div class="form_edit_text_container my-3">
@@ -19,7 +19,7 @@
             {{ form_label(form.review, 'Description') }}
         </div>
         <div>
-            {{ form_widget(form.review, { 'attr': {'class': '', 'rows': '2'} }) }}
+            {{ form_widget(form.review, { 'attr': {'class': 'form-control mx-auto', 'rows': '2'} }) }}
         </div>
     </div>
     {{ form_end(form) }}
