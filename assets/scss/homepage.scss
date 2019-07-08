@@ -1,3 +1,5 @@
+
+
 #maped_house_container {
 	width: 100%;
 	display: flex;
@@ -27,7 +29,7 @@
   justify-content: center;
 }
 #beforeAfter{
-  background-color: darkgrey;
+  background-color: $grey;
 }
 
 .nav_button_beforeAfter {
