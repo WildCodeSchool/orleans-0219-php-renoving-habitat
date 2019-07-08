@@ -74,10 +74,20 @@
   background-color: $secondary-color;
 }
 .zone {
-  h2 {
-    font-size: 2.5em;
-    color: $darker-secondary-color;
-    text-align: center;
+  .bord {
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid $darker-secondary-color;
+    border-bottom: 2px solid $darker-secondary-color;
+    transform: skew(25deg);
+    width: 40%;
+    justify-content: center;
+    h2 {
+      font-size: 2.5em;
+      color: $darker-secondary-color;
+      text-align: center;
+      transform: skew(-25deg);
+    }
   }
 }
 
@@ -107,11 +117,22 @@
 .intro {
   text-align: left;
   background-color: $brand-color;
-  h2 {
-    font-size: 2.5em;
-    color: $secondary-color;
-    text-align: center;
+  .bord {
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
+    transform: skew(25deg);
+    width: 40%;
+    justify-content: center;
+    h2 {
+      font-size: 2.5em;
+      color: $secondary-color;
+      text-align: center;
+      transform: skew(-25deg);
+    }
   }
+
   p {
     color: $secondary-color;
   }
@@ -135,10 +156,20 @@
 
 .partenaires {
   background-color: $brand-color;
-  h2 {
-    font-size: 2.5em;
-    color: $secondary-color;
-    text-align: center;
+  .bord {
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
+    transform: skew(25deg);
+    width: 40%;
+    justify-content: center;
+    h2 {
+      font-size: 2.5em;
+      color: $secondary-color;
+      text-align: center;
+      transform: skew(-25deg);
+    }
   }
   .title {
     p {
@@ -171,10 +202,20 @@
     vertical-align: middle;
   }
   .gooddeal {
-    h2 {
-      font-size: 2.5em;
-      color: $darker-secondary-color;
-      text-align: center;
+    .bord {
+      border-left: none;
+      border-top: none;
+      border-right: 2px solid $darker-secondary-color;
+      border-bottom: 2px solid $darker-secondary-color;
+      transform: skew(25deg);
+      width: 40%;
+      justify-content: center;
+      h2 {
+        font-size: 2.5em;
+        color: $darker-secondary-color;
+        text-align: center;
+        transform: skew(-25deg);
+      }
     }
 
   }
@@ -207,10 +248,20 @@
 
 .avant-apres {
   background-color: $light-brand-color;
-  h2 {
-    font-size: 2.5em;
-    color: $darker-secondary-color;
-    text-align: center;
+  .bord {
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid $darker-secondary-color;
+    border-bottom: 2px solid $darker-secondary-color;
+    transform: skew(25deg);
+    width: 40%;
+    justify-content: center;
+    h2 {
+      font-size: 2.5em;
+      color: $darker-secondary-color;
+      text-align: center;
+      transform: skew(-25deg);
+    }
   }
   p {
     text-align: center;
@@ -247,10 +298,20 @@
 }
 
 .broken-house {
-  h2 {
-    font-size: 2.5em;
-    color: $darker-secondary-color;
-    text-align: center;
+  .bord {
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid $darker-secondary-color;
+    border-bottom: 2px solid $darker-secondary-color;
+    transform: skew(25deg);
+    width: 40%;
+    justify-content: center;
+    h2 {
+      font-size: 2.5em;
+      color: $darker-secondary-color;
+      text-align: center;
+      transform: skew(-25deg);
+    }
   }
   .structure {
     .pic:hover .image {
