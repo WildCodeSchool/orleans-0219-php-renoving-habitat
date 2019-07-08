@@ -93,9 +93,13 @@ var map = L.map('mapid').setView([47.901402, 1.903920], 9);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     zoomControl: true,
+    scrollWheelZoom:false,
     minZoom: 7,
-    maxZoom: 10
+    maxZoom: 10,
 }).addTo(map);
+map.scrollWheelZoom.disable();
+map.on('focus', () => { map.scrollWheelZoom.enable(); });
+map.on('blur', () => { map.scrollWheelZoom.disable(); });
 
 var homeIcon = L.icon({
     iconUrl: require('../images/homepage/leaf_home.png'),
