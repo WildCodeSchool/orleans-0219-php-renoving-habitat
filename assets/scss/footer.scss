@@ -39,7 +39,6 @@ footer {
 
   a{
     font-size: 1.3em;
-
     color: $dark-color;
   }
 
@@ -48,6 +47,12 @@ footer {
     a {
       color: $darker-secondary-color;
       padding-left: 1em;
+    }
+
+    p {
+      padding-left: 1em;
+      font-size: 1.3em;
+      color: $darker-secondary-color;
     }
 
     span {
@@ -101,6 +106,9 @@ footer {
   li:hover {
     background: $brand-color;
     a {
+      color: $secondary-color;
+    }
+    p {
       color: $secondary-color;
     }
 
