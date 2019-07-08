@@ -23,7 +23,7 @@
 
         <div class="row">
             <div class="col text-center mb-3 mt-3">
-                <h4>Vous êtes spécialiste du ravalement, poseur ou technico-commercial ?  <b>Rejoignez-nous !</b></h4>
+                <h4>Vous êtes spécialiste du ravalement, poseur ou technico-commercial ? <b>Rejoignez-nous !</b></h4>
             </div>
         </div>
 
@@ -31,7 +31,8 @@
             <div class="col">
                 <div class="card-deck pt-1">
                     <div class="card m-3">
-                        <img class="card-img-top" src="{{ asset('build/images/recrutment/poseur.png') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('build/images/recrutment/poseur.png') }}"
+                             alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Poseurs menuiserie et ravalement</h5>
                             <p class="card-text"> Entreprise familiale, nous recherchons des collaborateurs pouvant
@@ -60,7 +61,8 @@
                         </div>
                     </div>
                     <div class="card m-3">
-                        <img class="card-img-top" src="{{ asset('build/images/recrutment/technico.jpg') }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('build/images/recrutment/technico.jpg') }}"
+                             alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Technico-commerciaux et prospecteurs</h5>
                             <p class="card-text">Le monde de la vente vous intéresse ?<br>
@@ -100,6 +102,9 @@
         <div class="text-center p-5">
             <h2>Mes informations</h2>
         </div>
+        <div>
+            <p class="text-center requiredField"><span></span> Champs obligatoires</p>
+        </div>
         {% for message in app.flashes('success-message') %}
             <div class="alert alert-success text-center">
                 {{ message }}
@@ -111,58 +116,70 @@
                 <div>
                     <h3>Coordonnées</h3>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        {{ form_row(form.lastname, {'label': 'Nom'}) }}
+                <div class="row pt-3">
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.lastname, 'Nom ' ) }}
+                        {{ form_widget(form.lastname) }}
                     </div>
-                    <div class="col-sm-6">
-                        {{ form_row(form.firstname, {'label': 'Prénom'}) }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        {{ form_row(form.telephone, {'label': 'Téléphone'}) }}
-                    </div>
-                    <div class="col-sm-6">
-                        {{ form_row(form.email, {'label': 'Email'}) }}
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.firstname, 'Prénom ' ) }}
+                        {{ form_widget(form.firstname) }}
                     </div>
                 </div>
-                <div>
+                <div class="row pt-3">
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.telephone, 'Téléphone ' ) }}
+                        {{ form_widget(form.telephone) }}
+                    </div>
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.email, 'Email ' ) }}
+                        {{ form_widget(form.email) }}
+                    </div>
+                </div>
+                <div class="pt-4">
                     <h3>Adresse</h3>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        {{ form_row(form.streetNumber, {'label': 'Numéro'}) }}
+                <div class="row pt-3">
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.streetNumber, 'Numéro ' ) }}
+                        {{ form_widget(form.streetNumber) }}
                     </div>
-                    <div class="col-sm-6">
-                        {{ form_row(form.streetName, {'label': 'Rue'}) }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        {{ form_row(form.city, {'label': 'Ville'}) }}
-                    </div>
-                    <div class="col-sm-6">
-                        {{ form_row(form.postCode, {'label': 'Code postal'}) }}
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.streetName, 'Rue ' ) }}
+                        {{ form_widget(form.streetName) }}
                     </div>
                 </div>
-                <div>
+                <div class="row pt-3">
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.city, 'Ville ' ) }}
+                        {{ form_widget(form.city) }}
+                    </div>
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.postCode, 'Code postal ' ) }}
+                        {{ form_widget(form.postCode) }}
+                    </div>
+                </div>
+                <div class="pt-4">
                     <h3>Informations métier</h3>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        {{ form_row(form.occupation, {'label': 'Sélectionnez votre métier'}) }}
+                <div class="row pt-3">
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.occupation, 'Sélectionnez votre métier ' ) }}
+                        {{ form_widget(form.occupation) }}
                     </div>
-                    <div class="col-sm-6">
-                        {{ form_row(form.area, {'label': 'Sélectionnez votre disponibilité géographique'}) }}
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.area, 'Sélectionnez votre préférence ou disponibilité géographique ' ) }}
+                        {{ form_widget(form.area) }}
                     </div>
                 </div>
-                <div class="row">
+                <div class="row pt-3">
                     <div class="col-sm-6">
-                        {{ form_row(form.cv, {'label': 'Joindre votre CV'}) }}
+                        <div class="requiredField">{{ form_label(form.cv, 'Joindre votre CV ' ) }}</div>
+                        {{ form_widget(form.cv) }}
                     </div>
-                    <div class="col-sm-6">
-                        {{ form_row(form.message, {'label': 'Votre message'}) }}
+                    <div class="col-sm-6 requiredField">
+                        {{ form_label(form.message, 'Votre message ' ) }}
+                        {{ form_widget(form.message) }}
                     </div>
                 </div>
                 <button class="btn btn-success btn-admin">Envoyer</button>

@@ -33,3 +33,8 @@
 .custom-file-label::after{
   content: "Parcourir" !important;
 }
+.requiredField ::after {
+  font-size: 1em;
+  color: $red;
+  content: '*';
+}

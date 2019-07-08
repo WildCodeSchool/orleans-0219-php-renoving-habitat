@@ -18,14 +18,14 @@ class CvUploadType extends AbstractType
     {
 
         $builder
-            ->add('lastname', TextType::class, ['attr' => ['placeholder' => 'Nom']])
-            ->add('firstname', TextType::class, ['attr' => ['placeholder' => 'Prénom']])
-            ->add('telephone', TextType::class, ['attr' => ['placeholder' => 'Téléphone']])
-            ->add('email', TextType::class, ['attr' => ['placeholder' => 'Email']])
-            ->add('streetNumber', TextType::class, ['attr' => ['placeholder' => 'Numéro']])
-            ->add('streetName', TextType::class, ['attr' => ['placeholder' => 'Rue']])
-            ->add('city', TextType::class, ['attr' => ['placeholder' => 'Ville']])
-            ->add('postCode', TextType::class, ['attr' => ['placeholder' => 'Code postal']])
+            ->add('lastname', TextType::class, ['attr' => ['placeholder' => 'Blondeau']])
+            ->add('firstname', TextType::class, ['attr' => ['placeholder' => 'Sylvain']])
+            ->add('telephone', TextType::class, ['attr' => ['placeholder' => '0123456789']])
+            ->add('email', TextType::class, ['attr' => ['placeholder' => 'sylvain@blondeau.fr']])
+            ->add('streetNumber', TextType::class, ['attr' => ['placeholder' => '1']])
+            ->add('streetName', TextType::class, ['attr' => ['placeholder' => 'Avenue du Champ de Mars']])
+            ->add('city', TextType::class, ['attr' => ['placeholder' => 'Orléans']])
+            ->add('postCode', TextType::class, ['attr' => ['placeholder' => '45100']])
             ->add('occupation', ChoiceType::class, ['choices' => [
                 'Poseur menuiserie' => 'Poseur menuiserie',
                 'Poseur ravalement' => 'Poseur ravalement',
@@ -38,7 +38,8 @@ class CvUploadType extends AbstractType
                 'Bourgogne Franche-Comté' => 'Bourgogne Franche-Comté'
             ]
             ])
-            ->add('message', TextareaType::class)
+            ->add('message', TextareaType::class, [
+                'attr' => ['placeholder' => 'Exemple : parlez nous de vous et de vos motivations ...']])
             ->add('cv', FileType::class);
     }
 
