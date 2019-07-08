@@ -99,7 +99,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: $white;
-  font-size: 4.5vw;
+  font-size: calc(1em + 2vw)
 }
 
 .client_container {

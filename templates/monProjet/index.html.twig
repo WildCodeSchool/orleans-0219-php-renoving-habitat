@@ -406,26 +406,26 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 info_pers_form mt-2">
-                        <label for="firstname">Prénom :</label>
+                        <label for="firstname">Prénom : <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.firstname, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                     <div class="col-md-6 info_pers_form mt-2">
-                        <label for="lastname">Nom :</label>
+                        <label for="lastname">Nom :  <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.lastname, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 info_pers_form mt-2">
-                        <label for="email">Email :</label>
+                        <label for="email">Email :  <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.email, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                     <div class="col-md-6 info_pers_form mt-2">
-                        <label for="address">Adresse :</label>
+                        <label for="address">Adresse :  <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.address, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                 </div>
                 <div class="info_pers_form mt-2">
-                    <label for="FormControlTextarea">Message :</label>
+                    <label for="FormControlTextarea">Message : <span class="asterix">*</span></label>
                     {{ form_widget(form.personal.message, { 'attr': {'class': 'form-control', 'rows': '7'} }) }}
                 </div>
                 <div class="w-100 text-center">
