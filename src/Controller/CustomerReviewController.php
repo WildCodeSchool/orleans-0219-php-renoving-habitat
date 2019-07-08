@@ -51,16 +51,6 @@ class CustomerReviewController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="customer_review_show", methods={"GET"})
-     */
-    public function show(CustomerReview $customerReview): Response
-    {
-        return $this->render('customer_review/show.html.twig', [
-            'customer_review' => $customerReview,
-        ]);
-    }
-
-    /**
      * @Route("/{id}/edit", name="customer_review_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, CustomerReview $customerReview): Response
