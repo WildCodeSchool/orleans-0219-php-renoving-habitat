@@ -1,3 +1,5 @@
+
+
 #maped_house_container {
 	width: 100%;
 	display: flex;
@@ -12,7 +14,9 @@
 #img-tooltip {
   	position: absolute;
 }
-
+.sentence_slider{
+  font-size: 1.5em;
+}
 #slider {
     width: 800px !important;
     margin: 0 auto;
@@ -23,6 +27,9 @@
   display:flex;
   align-items: center;
   justify-content: center;
+}
+#beforeAfter{
+  background-color: $grey;
 }
 
 .nav_button_beforeAfter {
