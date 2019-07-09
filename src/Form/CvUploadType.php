@@ -18,10 +18,10 @@ class CvUploadType extends AbstractType
     {
 
         $builder
-            ->add('lastname', TextType::class, ['attr' => ['placeholder' => 'Blondeau']])
-            ->add('firstname', TextType::class, ['attr' => ['placeholder' => 'Sylvain']])
+            ->add('lastname', TextType::class, ['attr' => ['placeholder' => 'Dupond']])
+            ->add('firstname', TextType::class, ['attr' => ['placeholder' => 'Jean']])
             ->add('telephone', TextType::class, ['attr' => ['placeholder' => '0123456789']])
-            ->add('email', TextType::class, ['attr' => ['placeholder' => 'sylvain@blondeau.fr']])
+            ->add('email', TextType::class, ['attr' => ['placeholder' => 'jean@dupond.fr']])
             ->add('streetNumber', TextType::class, ['attr' => ['placeholder' => '1']])
             ->add('streetName', TextType::class, ['attr' => ['placeholder' => 'Avenue du Champ de Mars']])
             ->add('city', TextType::class, ['attr' => ['placeholder' => 'Orléans']])
