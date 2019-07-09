@@ -87,7 +87,7 @@ class CvUpload
     private $area;
 
     /**
-     * @Assert\NotBlank(message="Please, upload your CV as a PDF file.")
+     * @Assert\NotBlank(message="Veuillez joindre votre CV en format PDF, WORD ODT, JPEG, ou PNG.")
      * @Assert\File(
      *     mimeTypes = { "application/pdf", "application/msword",
      *    "application/vnd.oasis.opendocument.text", "image/jpeg", "image/png" },

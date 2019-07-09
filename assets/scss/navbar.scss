@@ -8,9 +8,6 @@
 
   .navbar-light {
     color: $darker-secondary-color;
-    :hover {
-      color: $primary-color;
-    }
   }
 
   li {
@@ -51,6 +48,38 @@
     border-top: 3.5em solid $transparent;
     border-left: 2.563em solid $secondary-color;
   }
+
+  .active-link::before {
+    content: '';
+    position: absolute;
+    display: block;
+
+    right: -2.5em;
+
+    width: 0;
+    height: 0;
+
+    border-top: 3.5em solid $transparent;
+    border-left: 2.563em solid $brand-color;
+  }
+  .active-link {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 3em;
+
+    height: 100%;
+    width: 14.5em;
+
+    cursor: pointer;
+    user-select: none;
+
+    background: $brand-color;
+
+    text-align: center;
+    line-height: 2.5em;
+  }
+
   li::after {
     content: '';
     position: absolute;
@@ -66,12 +95,35 @@
     border-left: 2.563em solid $transparent;
   }
 
+  .active-link::after {
+    content: '';
+    position: absolute;
+    display: block;
+
+    top: 0;
+    left: -2.5em;
+
+    width: 0;
+    height: 0;
+
+    border-top: 3.5em solid $brand-color;
+    border-left: 2.563em solid $transparent;
+  }
+
   /* Hover */
 
   li:hover {
     background: $brand-color;
-    color: $primary-color;
   }
+
+  li:hover > a {
+    color: $white !important;
+  }
+
+  a:hover{
+    color: $white !important;
+  }
+
   li:hover::after {
     border-top: 3.5em solid $brand-color;
     border-right: 2.563em solid $transparent;
@@ -89,7 +141,6 @@
       color: $darker-secondary-color;
     }
     :hover {
-      color: $primary-color;
       background-color: $brand-color;
     }
   }
@@ -100,7 +151,7 @@
     padding: 0;
 
     :hover {
-      background-color: $primary-color;
+      background-color: $white;
     }
 
     span {

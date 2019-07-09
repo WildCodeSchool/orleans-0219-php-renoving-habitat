@@ -47,11 +47,11 @@ function refreshSlider(){
         [
             {
                 src: beforeArray[photoArrayIndex],
-                label: 'avant',
+
             },
             {
                 src: afterArray[photoArrayIndex],
-                label: 'après',
+
             }
         ],
 
