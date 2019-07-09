@@ -11,4 +11,4 @@ following the examples in the file.
 
 MAILER_URL isn't mandatory for the website to work, but the database must be set.
 
-"npm run dev" to build the website, "php bin/console server:run" to serve it.
+"npm run build" to build the website, "php bin/console server:run" to serve it.
