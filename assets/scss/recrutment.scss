@@ -1,3 +1,33 @@
+.intro-recrutement {
+  text-align: left;
+  margin-top: 4.55em;
+
+  .page-name {
+    margin-top: 2em;
+  }
+
+  .jumbotron {
+    background-image: url("../images/recrutment/macon.png");
+    background-attachment: fixed;
+    height: 48vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: contain;
+  }
+
+  h1 {
+    color: $brand-color;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 3.5em;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    text-shadow: 2px 3px 2px $shadow;
+  }
+}
+
+/*
 .recrutons {
 
   .jumbotron {
@@ -16,7 +46,7 @@
     color: $brand-color;
     font-size: 5vw;
   }
-}
+}*/
 .panel{
   text-align: center;
   background-color: $brand-color;
