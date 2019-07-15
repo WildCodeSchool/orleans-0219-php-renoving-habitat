@@ -409,28 +409,31 @@
                     <h2 class="pb-2 display-4">Mes informations</h2>
                 </div>
                 </div>
-                <div class="row">
+        <div>
+            <p class="text-center requiredField"><span></span> Champs obligatoires</p>
+        </div>
+                <div class="row pt-3">
                     <div class="col-md-6 info_pers_form mt-2">
-                        <label for="firstname">Prénom : <span class="asterix">*</span></label>
+                        <label for="firstname">Prénom  <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.firstname, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                     <div class="col-md-6 info_pers_form mt-2">
-                        <label for="lastname">Nom :  <span class="asterix">*</span></label>
+                        <label for="lastname">Nom   <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.lastname, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                 </div>
-                <div class="row">
+                <div class="row pt-3">
                     <div class="col-md-6 info_pers_form mt-2">
-                        <label for="email">Email :  <span class="asterix">*</span></label>
+                        <label for="email">Email   <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.email, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                     <div class="col-md-6 info_pers_form mt-2">
-                        <label for="address">Adresse :  <span class="asterix">*</span></label>
+                        <label for="address">Adresse   <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.address, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                 </div>
-                <div class="info_pers_form mt-2">
-                    <label for="FormControlTextarea">Message : <span class="asterix">*</span></label>
+                <div class="info_pers_form mt-2 pt-3">
+                    <label for="FormControlTextarea">Message  <span class="asterix">*</span></label>
                     {{ form_widget(form.personal.message, { 'attr': {'class': 'form-control', 'rows': '7'} }) }}
                 </div>
                 <div class="w-100 text-center">
