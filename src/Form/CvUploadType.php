@@ -33,6 +33,7 @@ class CvUploadType extends AbstractType
             ]
             ])
             ->add('area', ChoiceType::class, ['choices' => [
+
                 'Centre Val de Loire' => 'Centre Val de Loire',
                 'Ile de France' => 'Ile de France',
                 'Bourgogne Franche-Comté' => 'Bourgogne Franche-Comté'

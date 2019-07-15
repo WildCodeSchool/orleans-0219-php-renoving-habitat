@@ -39,7 +39,7 @@ class RecruitmentController extends AbstractController
 
             $this->addFlash(
                 'success-message',
-                'Votre message a bien été envoyé. Nous vous contacterons bientot, merci.'
+                'Votre message a bien été envoyé. Nous vous contacterons bientôt, merci.'
             );
             return $this->redirectToRoute('recruitment');
         }
