@@ -15,61 +15,78 @@
   }
 }
 
-#background_cov{
+.intro-renoving {
+  text-align: left;
+  margin-top: 4.55em;
 
-  background-image:url("../images/je_renov_images/coverage.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 60vh;
-  width: 100%;
-  margin: 0;
-}
+  .page-name {
+    margin-top: 2em;
+  }
 
-#background_carp{
-  background-image:url("../images/je_renov_images/carpentry.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 60vh;
-  width: 100%;
-  margin: 0;
-}
-#background_rav{
-  background-image:url("../images/je_renov_images/wall.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 60vh;
-  width: 100%;
-  margin: 0;
-}
-#background_ter{
-  background-image:url("../images/je_renov_images/terrassement.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom;
-  height: 60vh;
-  width: 100%;
-  margin: 0;
-}
-#background_iso{
-  background-image:url("../images/je_renov_images/isolation.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 60vh;
-  width: 100%;
-  margin: 0;
-}
-#background_int{
-  background-image:url("../images/je_renov_images/indoor.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 60vh;
-  width: 100%;
-  margin: 0;
+  #background_cov {
+    background-image:url("../images/je_renov_images/coverage.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: cover;
+  }
+  #background_carp {
+    background-image: url("../images/je_renov_images/carpentry.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: cover;
+  }
+  #background_rav {
+    background-image: url("../images/je_renov_images/wall.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: cover;
+  }
+  #background_ter {
+    background-image: url("../images/je_renov_images/terrassement.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: cover;
+  }
+  #background_iso {
+    background-image: url("../images/je_renov_images/isolation.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: cover;
+  }
+  #background_int {
+    background-image: url("../images/je_renov_images/indoor.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: cover;
+  }
+
+  h1 {
+    color: $brand-color;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 3.5em;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    text-shadow: 2px 3px 2px $shadow;
+  }
 }
 
 .first_title{
@@ -166,15 +183,20 @@
   transition-duration: 0.4s;
   height: 3em;
   width: 15em;
-  border:none;
-  border-radius: 100px;
+  border: none;
+  border-radius: 3px;
   background-color: $brand-color;
-  color:$white;
+  color: $white;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.5em;
+  box-shadow: 1px 2px $shadow;
 }
 
 .button:hover {
-  background-color:$white;
-  color:$brand-color;
+  background-color: $white;
+  text-decoration: none;
+  color: $brand-color;
 }
 
 .circle {

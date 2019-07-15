@@ -4,7 +4,23 @@
   border-right: 2px solid $darker-secondary-color;
   border-bottom: 2px solid $darker-secondary-color;
   transform: skew(25deg);
-  width: 50%;
+  width: 40%;
+  justify-content: center;
+  h2 {
+    font-size: 2.5em;
+    color: $darker-secondary-color;
+    text-align: center;
+    transform: skew(-25deg);
+  }
+}
+
+.bord-bis {
+  border-left: none;
+  border-top: none;
+  border-right: 2px solid $darker-secondary-color;
+  border-bottom: 2px solid $darker-secondary-color;
+  transform: skew(25deg);
+  width: 60%;
   justify-content: center;
   h2 {
     font-size: 2.5em;
@@ -76,13 +92,33 @@
   font-style: italic;
 }
 
-.masthead {
-  height: 50vh;
-  min-height: 250px;
-  background-image: url('../images/nos_real_categories/jumb_real.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.intro-realisation {
+  text-align: left;
+  margin-top: 4.55em;
+
+  .page-name {
+    margin-top: 2em;
+  }
+
+  .jumbotron {
+    background-image: url("../images/nos_real_categories/house_hand.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: top;
+    background-size: cover;
+  }
+
+  h1 {
+    color: $brand-color;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 3.5em;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    text-shadow: 2px 3px 2px $shadow;
+  }
 }
 
 .main_categories_row {
