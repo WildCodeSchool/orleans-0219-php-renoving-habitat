@@ -1,10 +1,11 @@
 {% block button %}
-    <div class="col-lg-6 mb-2">
-        <button type="button" class="button">Commencer mon projet</button>
 
-    </div>
     <div class="col-lg-6 mb-2">
-        <button type="button" class="button">Voir nos réalisations</button>
-
+        <a href="{{ path('projet') }}" class="p-3 button">Commencer mon projet</a>
     </div>
+
+    <div class="col-lg-6 mb-2">
+        <a href="{{ path('nos_real') }}" class="p-3 button">Voir nos réalisations</a>
+    </div>
+
 {% endblock %}
