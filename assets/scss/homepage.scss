@@ -190,10 +190,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     .card-logo {
-      //display: flex;
       width: 20em;
       margin-bottom: 3em;
-      //height: 25em;
     }
     .logo {
       height: 5em;
@@ -234,7 +232,6 @@
         transform: skew(-25deg);
       }
     }
-
   }
   .box {
     margin-top: 3em;
@@ -282,6 +279,15 @@
   }
   p {
     text-align: center;
+  }
+  a {
+    i {
+      font-size: 3em;
+      color: $brand-color;
+    }
+    i:hover {
+      color: $primary-color;
+    }
   }
 }
 
