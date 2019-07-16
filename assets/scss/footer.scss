@@ -122,7 +122,7 @@ footer {
     border-left: 1.563em solid $brand-color;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .footer_right_list,
     .footer_left_list {
       text-align: center;
@@ -138,7 +138,7 @@ footer {
     }
   }
 
-  @media (max-width: 1230px) {
+  @media (max-width: 1000px) {
     .first {
       order: 1;
     }
