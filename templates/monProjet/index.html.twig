@@ -6,7 +6,7 @@
         </div>
         <p class="text-center mb-4composer create-project symfony/website-skeleton my-project">Sélectionnez les catégories qui vous concernes</p>
         <div class="row main_categories_row">
-            <div class="col-sm text-center">
+            <div class="col-lg-4 text-center">
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
@@ -23,7 +23,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm text-center">
+            <div class="col-lg-4 text-center">
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
@@ -40,7 +40,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm text-center">
+            <div class="col-lg-4 text-center">
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="row main_categories_row">
-            <div class="col-sm text-center">
+            <div class="col-lg-4 text-center">
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
@@ -76,7 +76,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm text-center">
+            <div class="col-lg-4 text-center">
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
@@ -93,7 +93,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm text-center">
+            <div class="col-lg-4 text-center">
                 <div class="form-check form-check-inline">
                     <ul class="ul_nostyle">
                         <li>
@@ -121,7 +121,7 @@
         {% endfor %}
         {{ form_start(form) }}
             <div class="row form_container">
-                <div class="col-md-6 form_projet" id="formCouverture">
+                <div class="col-lg-6 form_projet" id="formCouverture">
                     <div class="card mt-4">
                         <!-- Default panel contents -->
                         <div class="card-header form_title">Couverture</div>
@@ -172,7 +172,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 form_projet" id="formRavalement">
+                <div class="col-lg-6 form_projet" id="formRavalement">
                     <div class="card mt-4">
                         <!-- Default panel contents -->
                         <div class="card-header form_title">Ravalement de façade</div>
@@ -241,7 +241,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 form_projet" id="formChauffage">
+                <div class="col-lg-6 form_projet" id="formChauffage">
                     <div class="card mt-4">
                         <!-- Default panel contents -->
                         <div class="card-header form_title">Chauffage maison</div>
@@ -296,7 +296,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 form_projet" id="formTerrassement">
+                <div class="col-lg-6 form_projet" id="formTerrassement">
                     <div class="card mt-4">
                         <!-- Default panel contents -->
                         <div class="card-header form_title">Travaux exterieur</div>
@@ -329,7 +329,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 form_projet" id="formTravauxInterieur">
+                <div class="col-lg-6 form_projet" id="formTravauxInterieur">
                     <div class="card mt-4">
                         <!-- Default panel contents -->
                         <div class="card-header form_title">Travaux intérieurs</div>
@@ -362,7 +362,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 form_projet" id="formSalleDeBain">
+                <div class="col-lg-6 form_projet" id="formSalleDeBain">
                     <div class="card mt-4">
                         <!-- Default panel contents -->
                         <div class="card-header form_title">Salle de bain</div>
@@ -413,21 +413,21 @@
             <p class="text-center requiredField"><span></span> Champs obligatoires</p>
         </div>
                 <div class="row pt-3">
-                    <div class="col-md-6 info_pers_form mt-2">
+                    <div class="col-lg-6 info_pers_form mt-2">
                         <label for="firstname">Prénom  <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.firstname, { 'attr': {'class': 'form-control'} }) }}
                     </div>
-                    <div class="col-md-6 info_pers_form mt-2">
+                    <div class="col-lg-6 info_pers_form mt-2">
                         <label for="lastname">Nom   <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.lastname, { 'attr': {'class': 'form-control'} }) }}
                     </div>
                 </div>
                 <div class="row pt-3">
-                    <div class="col-md-6 info_pers_form mt-2">
+                    <div class="col-lg-6 info_pers_form mt-2">
                         <label for="email">Email   <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.email, { 'attr': {'class': 'form-control'} }) }}
                     </div>
-                    <div class="col-md-6 info_pers_form mt-2">
+                    <div class="col-lg-6 info_pers_form mt-2">
                         <label for="address">Adresse   <span class="asterix">*</span></label>
                         {{ form_widget(form.personal.address, { 'attr': {'class': 'form-control'} }) }}
                     </div>
