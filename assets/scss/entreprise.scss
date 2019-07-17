@@ -120,6 +120,13 @@
       color: $brand-color;
       font-size: 1.5em;
     }
+    @media (max-width: 1000px) {
+      ul {
+        li {
+          display: block;
+        }
+      }
+    }
   }
 }
 
