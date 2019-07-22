@@ -2,30 +2,62 @@
 
 ![Wild Code School](https://wildcodeschool.fr/wp-content/uploads/2019/01/logo_pink_176x60.png)
 
-## Getting Started
 
-### Prerequisites
+## C'est parti!
 
-1. Check composer is installed
-2. Check yarn & node are installed
+### Prérequis
 
-### Install
+1. Verifier que `composer` est installé
+2. Verifier que `yarn` et `node` sont installés
+3. Verifier que `php-intl` est installé, sinon faire un `apt-get install php-intl`
 
-1. Clone this project
-2. Run `composer install`
-3. Run `yarn install`
+### Installation
 
-### Working
+1. Créer un dossier dans lequel vous placerez le projet. 
+2. Ensuite, il faut cloner le projet :
 
-1. Run `php bin/console server:run` to launch your local php web server
-2. Run `yarn run dev --watch` to launch your local server for assets
+    * placez vous à la racine de votre dossier et fait un git clone de l’url du projet.
 
+3. Installer les dépendances de Composer :
 
-## Deployment
+   * faire `composer install` via votre terminal.
+   *  A la question" Do you want to execute this recipe?" répondre "y" 
 
-Add additional notes about how to deploy this on a live system
+4. Installer Yarn :
 
-## Built With
+   * faire `yarn install` depuis le terminal.
+   
+5. Configuration de la connection à la base de données
+
+   * Copier/coller le fichier `.env` en `.env.local` à la racine du projet
+   *Ouvrir le fichier `.env.local` avec votre éditeur de texte préféré.
+   * A la ligne : `DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
+` insérer vos propres informations de connection.   
+
+6. Créer la base de données:
+
+    * avec `php bin/console doctrine:database:create`
+
+7. Installer la base de données :
+
+   * avec `php bin/console doctrine:schema:create` sur le terminal.
+   
+8. Jouer les migrations pour initialiser les données de l'application :
+
+    * avec `php bin/console doctrine:migration:migrate`
+   
+8. Compiler les assets :
+
+    * avec `yarn run encore production`
+   
+### Démarrage
+
+1. Démarrer le projet avec votre serveur local :
+
+   * taper la commande `php bin/console server:run`
+     
+    
+## Développer avec
 
 * [Symfony](https://github.com/symfony/symfony)
 * [GrumPHP](https://github.com/phpro/grumphp)
@@ -37,13 +69,16 @@ Add additional notes about how to deploy this on a live system
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
+## Auteurs
 
+Fait par les élèves de la [Wild Code School d'Orléans](https://wildcodeschool.fr)
 
-## Authors
+Profils Linkedin
 
-Wild Code School trainers team
-
+* [Jaffar Mallem](https://www.linkedin.com/in/jaffar-mallem/)
+* [Angel Rion Cervi](https://www.linkedin.com/in/angel-rion-cervi-034253147/)
+* [Manuel Leger](https://www.linkedin.com/in/manuel-leger-171905185/)
+* [Vanina Diot](https://www.linkedin.com/in/vanina-diot/)
 ## License
 
 MIT License

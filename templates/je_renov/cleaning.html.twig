@@ -1,4 +1,3 @@
-
 {% extends 'layout_visitor.html.twig' %}
 
 {% block body %}
@@ -15,37 +14,63 @@
     <div class="guaranty">
         {% include('guaranty/index.html.twig') %}
     </div>
-
+    <h2 class="text-center mt-2 sentence_intro"> Le savoir qui se construit avec des briques !</h2>
     <div class="container paragraph">
-        <p>"Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde etiam quantum ille
-            quem diligas atque adiuves, sustinere.</br>
-            Non enim neque tu possis, quamvis excellas, omnes tuos ad honores amplissimos perducere, ut Scipio P. Rupilium
-            potuit consulem efficere, fratrem eius L.</br>
-            non potuit. Quod si etiam possis quidvis deferre ad alterum, videndum est tamen, quid ille possit sustinere."</p>
-    </div>
+        <p>Tous les jours les murs de nos maisons subissent diverses agressions:</p>
+        <ul>
+            <li>Rayons UV</li>
+            <li>Humidité</li>
+            <li>La pluie</li>
+            <li>Poussières</li>
+            <li>La pollution</li>
+            <li>Le mouvement du sol</li>
+            <li>Le vent</li>
+            <li>Infiltrations d’eau,</li>
+            <li>Mousses, champignons</li>
+            <li>Micro-organismes</li>
+        </ul>
 
-    <div class="container-fluid ">
-        <div class="bord mx-auto mt-5 mb-5">
-            <h2 class="pb-2 display-4">Sinistres avérés</h2>
-        </div>
+        Ce qui entraine des:
+        <ul>
+            <li>changements de couleurs</li>
+            <li>décollements de peinture ou enduit</li>
+            <li>fissurations</li>
+        </ul>
+        On a donc une perte considérable du caractère ISOLANT des murs qui peut se ressentir sur vos factures et votre
+        bien être, avec une large gamme de solutions isolantes et esthétiques proposée:
+        <ul>
+            <li>isolation thermique</li>
+            <li>enduit</li>
+            <li>résine</li>
+            <li>bardage</li>
+            <li>Hydrofuge</li>
+        </ul>
+        <p>Le ravalement peut être décoratif, projeté, taloché, à l’ancienne, ou traditionnel. Nous effectuerons une étude
+            de l’état des murs et des fissures pour une bonne préconisation.</p>
+        <p>Renoving habitat vous garantit de nettoyer, traiter, réparer, protéger et embellir vos murs.
+            N’attendez pas qu’il soit trop tard.</p>
+
     </div>
 
     <div class="container">
-        <p class="paragraph mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{ asset('build/images/je_renov_images/wall_broken.jpg') }}" class="d-block w-100 carousel_img" alt="Mur cassé">
+                    <img src="{{ asset('build/images/je_renov_images/wall_broken.jpg') }}"
+                         class="d-block w-100 carousel_img" alt="Mur cassé">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('build/images/je_renov_images/wall_crack.jpg') }}" class="d-block w-100 carousel_img" alt="mur fissuré">
+                    <img src="{{ asset('build/images/je_renov_images/wall_crack.jpg') }}"
+                         class="d-block w-100 carousel_img" alt="mur fissuré">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('build/images/je_renov_images/wall_crumbled.jpg') }}" class="d-block w-100 carousel_img" alt="fenetre cassée">
+                    <img src="{{ asset('build/images/je_renov_images/wall_crumbled.jpg') }}"
+                         class="d-block w-100 carousel_img" alt="fenetre cassée">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('build/images/je_renov_images/wall_dirty.jpg') }}" class="d-block w-100 carousel_img" alt="mur sale">
+                    <img src="{{ asset('build/images/je_renov_images/wall_dirty.jpg') }}"
+                         class="d-block w-100 carousel_img" alt="mur sale">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -75,14 +100,16 @@
                         <div class="row">
 
                             <div class="col-md-6">
-                                <img src="{{ asset('build/images/je_renov_images/wall_paint.jpg') }}" class="card-img" alt="Mur peinturé">
+                                <img src="{{ asset('build/images/je_renov_images/wall_paint.jpg') }}" class="card-img"
+                                     alt="Mur peinturé">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">Peinture</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                        additional
-                                        content. This content is a little bit longer.</p>
+                                    <p class="card-text">Le choix de la peinture façade est important,
+                                        car au-delà de la couleur qui mettra en valeur la maison,
+                                        la qualité de la peinture influera sur la qualité du rendu et sa tenue dans le
+                                        temps.</p>
 
                                 </div>
                             </div>
@@ -96,14 +123,17 @@
                         <div class="row">
 
                             <div class="col-md-6">
-                                <img src="{{ asset('build/images/je_renov_images/wall_rock.jpg') }}" class="card-img" alt="mur en pierre">
+                                <img src="{{ asset('build/images/je_renov_images/wall_rock.jpg') }}" class="card-img"
+                                     alt="mur en pierre">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">Enduit en pierre</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                        additional
-                                        content. This content is a little bit longer.</p>
+                                    <p class="card-text">L'enduit projeté peut imiter la pierre et l'ardoise.
+                                        L'enduit est protecteur, il va protéger votre mur des intempéries.
+                                        Un mur en pierre peut embellir votre maison.
+                                        La pose d'enduits peut s'effectuer lors d'une construction de maison ou de
+                                        travaux de rénovation.</p>
 
                                 </div>
                             </div>
@@ -115,18 +145,21 @@
 
             <section class="row">
                 <section class="col-lg-6">
-                    <div class="card mb-3" >
+                    <div class="card mb-3">
                         <div class="row">
 
                             <div class="col-md-6">
-                                <img src="{{ asset('build/images/je_renov_images/wall_wood.jpg') }}" class="card-img" alt="bardage bois">
+                                <img src="{{ asset('build/images/je_renov_images/wall_wood.jpg') }}" class="card-img"
+                                     alt="bardage bois">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">Bardage en bois</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                        additional
-                                        content. This content is a little bit longer.</p>
+                                    <p class="card-text">Le bardage s’associe très bien aux autres matières comme la
+                                        brique ou le béton :
+                                        il apporte une touche de modernité ! En termes de technique de pose, les lames
+                                        peuvent être fixées de façon verticale ou horizontale,
+                                        chaque technique donnant un effet différent à votre maison</p>
 
                                 </div>
                             </div>
@@ -140,14 +173,24 @@
                         <div class="row">
 
                             <div class="col-md-6">
-                                <img src="{{ asset('build/images/je_renov_images/wall_crepis.jpg') }}" class="card-img" alt="crepis">
+                                <img src="{{ asset('build/images/je_renov_images/wall_crepis.jpg') }}" class="card-img"
+                                     alt="crepis">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">Enduit crépis</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                        additional
-                                        content. This content is a little bit longer.</p>
+                                    <p class="card-text">Crépir un mur comporte de nombreux avantages :
+
+                                        Revêtement esthétique,
+
+                                        Protection du mur contre la pollution et les intempéries,
+
+                                        Résistance du mur dans le temps, une diminution de la fréquence des ravalements,
+
+                                        Protection thermique et phonique du bâtiment,
+
+                                        Perméabilité à la vapeur d'eau,
+                                    </p>
 
                                 </div>
                             </div>
