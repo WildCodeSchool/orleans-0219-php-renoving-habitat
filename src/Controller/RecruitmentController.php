@@ -20,7 +20,7 @@ class RecruitmentController extends AbstractController
     /**
      * @Route("/", name="recruitment", methods={"GET","POST"})
      */
-    public function show(Request $request, \Swift_Mailer $mailer): Response
+    public function show(Request $request, \Swift_Mailer $mailer)
     {
         $cvUpload = new CvUpload();
         $form = $this->createForm(CvUploadType::class, $cvUpload);
