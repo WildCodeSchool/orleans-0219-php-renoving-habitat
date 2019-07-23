@@ -101,7 +101,7 @@
     <section class="form-recruitment">
         <br>
         <div class="text-center">
-            <div class="bord mx-auto mt-4 mb-5">
+            <div id="flashAnchor" class="bord mx-auto mt-4 mb-5">
                 <h2 class="pb-2 display-4">Mes informations</h2>
             </div>
         </div>
@@ -115,7 +115,7 @@
         {% endfor %}
         <div class="container">
             <div class="form-group">
-                {{ form_start(form) }}
+                {{ form_start(form,{'action': path('recruitment') ~ '#flashAnchor', 'method': 'POST'}) }}
                 <div>
                     <h3>Coordonnées</h3>
                 </div>
