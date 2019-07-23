@@ -16,18 +16,6 @@
     background-size: contain;
   }
 
-  @media screen and (max-width: 768px) {
-    .jumbotron {
-      height: 12em;
-      margin-bottom: 0;
-      h1 {
-        font-size: 2em;
-        //margin-bottom: 3em;
-        margin-top: 0;
-      }
-    }
-  }
-
   h1 {
     color: $brand-color;
     font-variant: small-caps;
@@ -36,6 +24,17 @@
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 3px;
     text-shadow: 2px 3px 2px $shadow;
+  }
+
+  @media screen and (max-width: 768px) {
+    .jumbotron {
+      height: 12em;
+      margin-bottom: 0;
+      h1 {
+        font-size: 2em;
+        margin-top: 0;
+      }
+    }
   }
 }
 
