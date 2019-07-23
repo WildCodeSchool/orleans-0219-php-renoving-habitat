@@ -2,12 +2,16 @@ let beforeArray =
     [
         require('../images/homepage/imgbf1_1.jpeg'),
         require('../images/homepage/imgbf2_1.png'),
+        require('../images/homepage/imgbf3_1.png'),
+        require('../images/homepage/imgbf4_1.png'),
     ];
 
 let afterArray =
     [
         require('../images/homepage/imgbf1_2.jpeg'),
         require('../images/homepage/imgbf2_2.jpeg'),
+        require('../images/homepage/imgbf3_2.png'),
+        require('../images/homepage/imgbf4_2.png'),
     ];
 
 let photoArrayIndex = 0;
