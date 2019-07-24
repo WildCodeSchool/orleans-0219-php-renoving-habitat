@@ -97,6 +97,17 @@
       transform: skew(-25deg);
     }
   }
+  @media (max-width: 768px) {
+    .bord {
+      width: 90%;
+      border-right: none;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  }
+
 }
 
 .presentation {
@@ -112,6 +123,27 @@
     background-repeat: no-repeat;
     margin-bottom: 0;
     background-position: right top;
+  }
+  @media screen and (max-width: 768px) {
+    .mainTitle {
+      margin-top: 0;
+      background-color: $transparent-white;
+    }
+    .jumbotron {
+      height: 15em;
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
   }
 
   h1 {
@@ -140,6 +172,18 @@
       transform: skew(-25deg);
     }
   }
+  @media (max-width: 768px) {
+    .bord {
+      width: 90%;
+      border-right: none;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
+  }
+
 
   p {
     color: $secondary-color;
@@ -179,6 +223,17 @@
       transform: skew(-25deg);
     }
   }
+  @media (max-width: 768px) {
+    .bord {
+      width: 90%;
+      border-right: none;
+
+      h2 {
+        font-size: 1em;
+      }
+    }
+  }
+
   .title {
     p {
       color: $secondary-color;
@@ -232,6 +287,16 @@
         transform: skew(-25deg);
       }
     }
+    @media (max-width: 768px) {
+      .bord {
+        width: 90%;
+        border-right: none;
+
+        h2 {
+          font-size: 1.5em;
+        }
+      }
+    }
   }
   .box {
     margin-top: 3em;
@@ -259,6 +324,18 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .bon-plans {
+    background-image: none;
+
+    .box {
+      display: flex;
+    }
+    p {
+      margin-top: 2em;
+    }
+  }
+}
 
 .avant-apres {
   background-color: $light-brand-color;
@@ -277,6 +354,17 @@
       transform: skew(-25deg);
     }
   }
+  @media screen and (max-width: 768px) {
+    .bord {
+      width: 90%;
+      border-right: none;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  }
+
   p {
     text-align: center;
   }
@@ -287,6 +375,13 @@
     }
     i:hover {
       color: $primary-color;
+    }
+  }
+  @media screen and (max-width: 768px ){
+    a {
+      i {
+        font-size: 1.5em;
+      }
     }
   }
 }
@@ -336,6 +431,17 @@
       transform: skew(-25deg);
     }
   }
+  @media (max-width: 768px) {
+    .bord {
+      width: 90%;
+      border-right: none;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  }
+
   .structure {
     .pic:hover .image {
       opacity: 0.65;
@@ -391,8 +497,10 @@
       opacity: 1;
     }
   }
+
 }
 
 .logo_partner {
   max-height: 4.8em !important;
 }
+
