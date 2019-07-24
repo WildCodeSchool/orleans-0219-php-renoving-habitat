@@ -27,7 +27,6 @@ body {
 h2 {
   font-variant: small-caps;
   color: $darker-secondary-color;
-  font-size: 2.5em;
 }
 
 a {
@@ -37,3 +36,10 @@ a {
 .custom-file-label::after{
      content: "Parcourir";
  }
+
+@media (max-width: 768px) {
+  p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}

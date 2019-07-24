@@ -25,21 +25,28 @@
     border-radius: 3px;
     text-shadow: 2px 3px 2px $shadow;
   }
+  @media screen and (max-width: 768px) {
+    .jumbotron {
+      height: 10em;
+      margin-bottom: 0;
+      h1 {
+        font-size: 2em;
+        margin-top: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .jumbotron {
+      h1 {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
-.panel{
-  text-align: center;
-  background-color: $brand-color;
-  color: $secondary-color;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-style: oblique;
-}
-.h5{
-  font-size: 2.5em;
-}
-.recruitment {
-  background-color: $brand-color;
+.form-recruitment {
   .bord {
     border-left: none;
     border-top: none;
@@ -55,11 +62,45 @@
       transform: skew(-25deg);
     }
   }
+  @media (max-width: 768px) {
+    .bord {
+      width: 90%;
+      border-right: none;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
+  }
 }
+
+.h5{
+  font-size: 2.5em;
+}
+.recruitment {
+  background-color: $brand-color;
+  .panel{
+    text-align: center;
+    background-color: $brand-color;
+    color: $secondary-color;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-style: oblique;
+  }
+  @media screen and (max-width: 768px) {
+    .panel {
+      h3 {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
 .custom-file-label::after{
   content: "Parcourir" !important;
 }
-.requiredField ::after {
+.requiredField ::after{
   font-size: 1em;
   color: $red;
   content: '*';

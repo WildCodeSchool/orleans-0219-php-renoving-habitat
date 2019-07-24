@@ -1,4 +1,3 @@
-
 {% extends 'layout_visitor.html.twig' %}
 
 {% block body %}
@@ -15,17 +14,19 @@
     <div class="guaranty">
         {% include('guaranty/index.html.twig') %}
     </div>
-    <h2 class="text-center mt-2 sentence_intro">Restez serein, vous serez bien isolez!</h2>
+    <h2 class="text-center mt-2 sentence_intro">Restez serein, vous serez bien isolé !</h2>
     <div class="container paragraph">
-        <p>Premières sources de déperdition calorifique d’une maison est la toiture.
+        <p>La première source de déperdition calorifique d’une maison est la toiture.
             Une bonne isolation améliore le confort thermique de votre maison et vous permet de réaliser des économies
             sur votre facture de chauffage.</p>
         Les plus :
         <ul class="list">
-            <li><i class="fas fa-plus"></i> réductions des bruits aériens</li>
+            <li><i class="fas fa-plus"></i> réduction des bruits aériens</li>
             <li><i class="fas fa-plus"></i> absorption acoustique</li>
-            <li><i class="fas fa-plus"></i> laisse respirer votre maison et donc limite ainsi les risques et effet néfaste de condensation</li>
-            <li><i class="fas fa-plus"></i> résiste à l’eau -incombustible</li>
+            <li><i class="fas fa-plus"></i> laisse respirer votre maison et limite donc ainsi les risques et les effets
+                néfastes de condensation
+            </li>
+            <li><i class="fas fa-plus"></i> résiste à l’eau - incombustible</li>
             <li><i class="fas fa-plus"></i> très léger pour votre plafond</li>
             <li><i class="fas fa-plus"></i> pas de tassements</li>
             <li><i class="fas fa-plus"></i> pas de pont thermique possible</li>
@@ -41,13 +42,16 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{ asset('build/images/je_renov_images/iso_moisi.jpg') }}" class="d-block w-100 carousel_img" alt="Isolation moisisure">
+                    <img src="{{ asset('build/images/je_renov_images/iso_moisi.jpg') }}"
+                         class="d-block w-100 carousel_img" alt="Isolation moisisure">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('build/images/je_renov_images/iso_elect.jpg') }}" class="d-block w-100 carousel_img" alt="Isolation electrique">
+                    <img src="{{ asset('build/images/je_renov_images/iso_elect.jpg') }}"
+                         class="d-block w-100 carousel_img" alt="Isolation electrique">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('build/images/je_renov_images/iso_humide.jpg') }}" class="d-block w-100 carousel_img" alt="Isolation humide">
+                    <img src="{{ asset('build/images/je_renov_images/iso_humide.jpg') }}"
+                         class="d-block w-100 carousel_img" alt="Isolation humide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -63,13 +67,14 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
-
     </div>
-    <div class="bord mx-auto mt-5 mb-5">
-        <h2 class="pb-2 display-4">Nos solutions</h2>
+
+    <div class="renov-title">
+        <div class="bord mx-auto my-5">
+            <h2 class="pb-2 display-4">Nos solutions</h2>
+        </div>
     </div>
+
     <div class="container-fluid" id="bg_card_iso">
         <div class="container">
             <section class="row">
@@ -78,13 +83,16 @@
                         <div class="row">
 
                             <div class="col-md-6">
-                                <img src="{{ asset('build/images/je_renov_images/isolation_thermique.jpg') }}" class="card-img" alt="Isolation thermique">
+                                <img src="{{ asset('build/images/je_renov_images/isolation_thermique.jpg') }}"
+                                     class="card-img" alt="Isolation thermique">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">Isolation thermique extérieur</h5>
-                                    <p class="card-text">Le principal avantage de l’isolation thermique par l’extérieur réside dans sa performance qui peut atteindre une qualité exceptionnelle.
-                                        L’isolant va venir créer une véritable enveloppe thermique autour d'un bâtiment</p>
+                                    <p class="card-text">Le principal avantage de l’isolation thermique par l’extérieur
+                                        réside dans sa performance qui peut atteindre une qualité exceptionnelle.
+                                        L’isolant va venir créer une véritable enveloppe thermique autour d'un
+                                        bâtiment</p>
 
                                 </div>
                             </div>
@@ -98,17 +106,17 @@
                         <div class="row">
 
                             <div class="col-md-6">
-                                <img src="{{ asset('build/images/je_renov_images/isolation_eco.jpg') }}" class="card-img" alt="isolation ecologique">
+                                <img src="{{ asset('build/images/je_renov_images/isolation_eco.jpg') }}"
+                                     class="card-img" alt="isolation ecologique">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">Isolation thermique écologique</h5>
-                                    <p class="card-text">Isoler sa maison avec des matières isolantes naturelles  permet :
-
+                                    <p class="card-text">Isoler sa maison avec des matières naturelles permet
                                         d’éliminer les ponts thermiques,
-                                        d’améliorer la performance thermique,
+                                        d’améliorer la performance thermique, et
                                         de rendre votre structure plus résistante face aux actions de ravalement.
-                                       </p>
+                                    </p>
 
                                 </div>
                             </div>
@@ -120,11 +128,12 @@
 
             <section class="row">
                 <section class="col-lg-6">
-                    <div class="card mb-3" >
+                    <div class="card mb-3">
                         <div class="row">
 
                             <div class="col-md-6">
-                                <img src="{{ asset('build/images/je_renov_images/isolation_soufflage.jpg') }}" class="card-img" alt="isolation souffleage">
+                                <img src="{{ asset('build/images/je_renov_images/isolation_soufflage.jpg') }}"
+                                     class="card-img" alt="isolation souffleage">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
@@ -149,13 +158,16 @@
                         <div class="row">
 
                             <div class="col-md-6">
-                                <img src="{{ asset('build/images/je_renov_images/isolation acoustique.jpg') }}" class="card-img" alt="isolation acoustique">
+                                <img src="{{ asset('build/images/je_renov_images/isolation acoustique.jpg') }}"
+                                     class="card-img" alt="isolation acoustique">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">Isolation acoustique</h5>
-                                    <p class="card-text">L’isolation acoustique offre des avantages qui garantissent un cadre de vie agréable et un environnement sain.
-                                        Il permet d’abaisser le seuil de pollution sonore à 35 décibels maximum, niveau réglementaire indispensable au confort des habitants</p>
+                                    <p class="card-text">L’isolation acoustique offre des avantages qui garantissent un
+                                        cadre de vie agréable et un environnement sain.
+                                        Il permet d’abaisser le seuil de pollution sonore à 35 décibels maximum, niveau
+                                        réglementaire indispensable au confort des habitants</p>
 
                                 </div>
                             </div>
@@ -165,8 +177,10 @@
                 </section>
             </section>
 
-            <div class="row mt-5 mb-5 text-center">
-                {% include('je_renov_button/index.html.twig') %}
+            <div class="renov-button">
+                <div class="row my-5 text-center">
+                    {% include('je_renov_button/index.html.twig') %}
+                </div>
             </div>
         </div>
     </div>

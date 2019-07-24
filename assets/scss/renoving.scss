@@ -1,18 +1,30 @@
+.renov-title {
+  .bord {
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid $darker-secondary-color;
+    border-bottom: 2px solid $darker-secondary-color;
+    transform: skew(25deg);
+    width: 40%;
+    justify-content: center;
 
-.bord {
-  border-left: none;
-  border-top: none;
-  border-right: 2px solid $darker-secondary-color;
-  border-bottom: 2px solid $darker-secondary-color;
-  transform: skew(25deg);
-  width: 40%;
-  justify-content: center;
+    h2 {
+      font-size: 2.5em;
+      color: $darker-secondary-color;
+      text-align: center;
+      transform: skew(-25deg);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .bord {
+      width: 90%;
+      border-right: none;
 
-  h2 {
-    font-size: 2.5em;
-    color: $darker-secondary-color;
-    text-align: center;
-    transform: skew(-25deg);
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
   }
 }
 
@@ -22,6 +34,7 @@
 .sentence_intro{
  font-style: italic;
 }
+
 .intro-renoving {
   text-align: left;
   margin-top: 4.55em;
@@ -198,25 +211,32 @@
   padding: 3em;
 }
 
-.button {
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  height: 3em;
-  width: 15em;
-  border: none;
-  border-radius: 3px;
-  background-color: $brand-color;
-  color: $white;
-  font-weight: bold;
-  font-variant: small-caps;
-  font-size: 1.5em;
-  box-shadow: 1px 2px $shadow;
-}
+.renov-button {
+  .button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    height: 3em;
+    width: 15em;
+    border: none;
+    border-radius: 3px;
+    background-color: $brand-color;
+    color: $white;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    box-shadow: 1px 2px $shadow;
+  }
 
-.button:hover {
-  background-color: $white;
-  text-decoration: none;
-  color: $brand-color;
+  .button:hover {
+    background-color: $white;
+    text-decoration: none;
+    color: $brand-color;
+  }
+  @media screen and (max-width: 400px) {
+    .button {
+      font-size: 1em;
+    }
+  }
 }
 
 .circle {

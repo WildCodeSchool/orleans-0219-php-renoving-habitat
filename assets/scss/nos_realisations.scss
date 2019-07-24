@@ -1,35 +1,61 @@
-.bord {
-  border-left: none;
-  border-top: none;
-  border-right: 2px solid $darker-secondary-color;
-  border-bottom: 2px solid $darker-secondary-color;
-  transform: skew(25deg);
-  width: 40%;
-  justify-content: center;
-  h2 {
-    font-size: 2.5em;
-    color: $darker-secondary-color;
-    text-align: center;
-    transform: skew(-25deg);
+.rea-title {
+  .bord {
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid $darker-secondary-color;
+    border-bottom: 2px solid $darker-secondary-color;
+    transform: skew(25deg);
+    width: 40%;
+    justify-content: center;
+
+    h2 {
+      font-size: 2.5em;
+      color: $darker-secondary-color;
+      text-align: center;
+      transform: skew(-25deg);
+    }
+  }
+  @media (max-width: 768px) {
+    .bord {
+      width: 90%;
+      border-right: none;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
   }
 }
+.rea-review {
+  .bord-bis {
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid $darker-secondary-color;
+    border-bottom: 2px solid $darker-secondary-color;
+    transform: skew(25deg);
+    width: 60%;
+    justify-content: center;
 
-.bord-bis {
-  border-left: none;
-  border-top: none;
-  border-right: 2px solid $darker-secondary-color;
-  border-bottom: 2px solid $darker-secondary-color;
-  transform: skew(25deg);
-  width: 60%;
-  justify-content: center;
-  h2 {
-    font-size: 2.5em;
-    color: $darker-secondary-color;
-    text-align: center;
-    transform: skew(-25deg);
+    h2 {
+      font-size: 2.5em;
+      color: $darker-secondary-color;
+      text-align: center;
+      transform: skew(-25deg);
+    }
+  }
+  @media (max-width: 768px) {
+    .bord-bis {
+      width: 90%;
+      border-right: none;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
   }
 }
-
 .nos_real_title_container {
   margin: 0 auto;
   width: 25%;
@@ -118,6 +144,17 @@
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 3px;
     text-shadow: 2px 3px 2px $shadow;
+  }
+
+  @media screen and (max-width: 768px) {
+    .jumbotron {
+      height: 12em;
+      margin-bottom: 0;
+      h1 {
+        font-size: 2em;
+        margin-top: 0;
+      }
+    }
   }
 }
 
