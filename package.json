@@ -19,7 +19,7 @@
         "@fortawesome/fontawesome-svg-core": "^1.2.19",
         "bootstrap": "^4.3.1",
         "font-awesome": "^4.7.0",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "juxtaposejs": "^1.1.6",
         "leaflet": "^1.5.1",
         "maphilight": "^1.4.0",
